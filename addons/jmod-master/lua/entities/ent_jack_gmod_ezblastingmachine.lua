@@ -49,8 +49,6 @@ if SERVER then
 			return
 		end
 
-		self:GetOwner() = activator
-
 		if activator:KeyDown(JMod.Config.AltFunctionKey) then
 			self:EmitSound("snds_jack_gmod/plunger.wav")
 			self:SetFired(true)

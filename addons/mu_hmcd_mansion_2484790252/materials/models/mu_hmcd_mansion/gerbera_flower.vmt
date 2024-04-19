@@ -1,6 +1,0 @@
-"VertexLitGeneric"
-{
-	"$basetexture"	"models\mu_hmcd_mansion\gerbera_flower"
-	"$surfaceprop" "paper"
-	"$translucent" 1
-}

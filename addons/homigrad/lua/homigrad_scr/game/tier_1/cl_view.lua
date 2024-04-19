@@ -214,9 +214,11 @@ local deathtexts = {
 	"TRY AGAIN"
 }
 net.Receive("pophead",function(len)
+
 	if LocalPlayer():InVehicle() then return end
 	if IsValid(playerSettingsPanel) then return end
-	if LocalPlayer():Alive() and LocalPlayer():GetActiveWeapon():GetClass() == "aact_weapact" then return end
+	if LocalPlayer():Alive() then return end
+
 	local rag = net.ReadEntity()
 	if GetConVar("hg_deathscreen"):GetBool() then
 	deathrag = rag
@@ -241,6 +243,7 @@ net.Receive("pophead",function(len)
 			playing = false
 		end)
 	end
+	
 	timer.Simple(4,function()
 		if GetConVar("hg_deathscreen"):GetBool() then
 			LocalPlayer():ScreenFade( SCREENFADE.OUT, Color( 0, 0, 0, 255 ), 0.2, 1 )
@@ -249,6 +252,7 @@ net.Receive("pophead",function(len)
 			rag:ManipulateBoneScale(6,Vector(1,1,1))
 		end
 	end)
+
 end)
 
 local weps = {
@@ -909,7 +913,13 @@ hook.Add("Think","mouthanim",function()
 end)
 
 net.Receive("fuckfake",function(len)
-	LocalPlayer():SetNWEntity("Ragdoll",nil)
+	
+	local ply = LocalPlayer()
+
+	if IsValid(ply) then
+		ply:SetNWEntity("Ragdoll",nil)
+	end
+
 end)
 
 local tab = {
