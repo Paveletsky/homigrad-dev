@@ -28,7 +28,6 @@ if SERVER then
 		end)
 
 		---
-		self:GetOwner() = self:GetOwner() or game.GetWorld()
 		self.NextSeek = CurTime() + math.Rand(1, 3)
 	end
 

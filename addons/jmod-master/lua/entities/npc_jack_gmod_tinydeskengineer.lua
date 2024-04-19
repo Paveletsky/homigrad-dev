@@ -66,8 +66,7 @@ function ENT:Explode()
 	self:Remove()
 end
 
-function ENT:OnKilled(dmg)
-	self:GetOwner() = dmg:GetAttacker()
+function ENT:OnKilled(dmg)	
 	self:EmitSound("snds_jack_gmod/yee.wav")
 
 	timer.Simple(1.4, function()

@@ -1,770 +1,421 @@
 "STEAM_0:0:543433635"	
 {
-	"deny"	
-	{
-	}
 	"allow"	
 	{
 	}
 	"name"	"Silly!!!"
-	"group"	"downer"
-}
-"STEAM_0:1:52783515"	
-{
 	"deny"	
 	{
 	}
+	"group"	"downer"
+}
+"STEAM_0:1:557028426"	
+{
 	"allow"	
 	{
 	}
-	"name"	"Fredy"
-	"group"	"stajer"
+	"name"	"ReDab"
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
 }
 "STEAM_0:1:628835900"	
 {
-	"name"	"Бомбино"
 	"deny"	
 	{
 	}
 	"allow"	
 	{
 	}
+	"name"	"Бомбино"
 	"group"	"admin"
 }
 "STEAM_0:1:666572162"	
 {
-	"allow"	
-	{
-	}
 	"name"	"Asorty"
 	"deny"	
+	{
+	}
+	"allow"	
 	{
 	}
 	"group"	"dadmin"
 }
 "STEAM_0:0:6764572"	
 {
-	"allow"	
+	"deny"	
 	{
 	}
-	"deny"	
+	"allow"	
 	{
 	}
 	"group"	"dsuperadmin"
 }
 "STEAM_0:1:512306095"	
 {
-	"name"	"Огузок"
 	"deny"	
 	{
 	}
 	"allow"	
 	{
 	}
+	"name"	"Огузок"
 	"group"	"admin"
 }
 "STEAM_0:1:439962135"	
 {
-	"allow"	
-	{
-	}
 	"name"	"mexanobober"
 	"deny"	
+	{
+	}
+	"allow"	
 	{
 	}
 	"group"	"dadmin"
 }
 "STEAM_1:0:190493017"	
 {
-	"allow"	
+	"deny"	
 	{
 	}
-	"deny"	
+	"allow"	
 	{
 	}
 	"group"	"dadmin"
 }
 "STEAM_0:0:628907987"	
 {
-	"deny"	
-	{
-	}
 	"allow"	
 	{
 	}
 	"name"	"Wilore"
+	"deny"	
+	{
+	}
 	"group"	"dadmin"
 }
 "STEAM_0:0:767011846"	
 {
-	"allow"	
-	{
-	}
 	"name"	"whiteroom"
 	"deny"	
+	{
+	}
+	"allow"	
 	{
 	}
 	"group"	"dadmin"
 }
 "STEAM_0:0:30588797"	
 {
-	"name"	"ХУЕЖУЙ"
 	"deny"	
 	{
 	}
 	"allow"	
 	{
 	}
+	"name"	"ХУЕЖУЙ"
 	"group"	"superadmin"
 }
 "STEAM_0:0:185099753"	
 {
-	"name"	"Dota Veteran"
 	"deny"	
 	{
 	}
 	"allow"	
 	{
 	}
+	"name"	"Dota Veteran"
 	"group"	"dsuperadmin"
 }
 "STEAM_0:0:596024999"	
 {
-	"allow"	
-	{
-	}
 	"name"	"Raptor2007"
 	"deny"	
+	{
+	}
+	"allow"	
 	{
 	}
 	"group"	"admin"
 }
 "STEAM_0:0:740423881"	
 {
-	"deny"	
-	{
-	}
 	"allow"	
 	{
 	}
 	"name"	"Йогурт"
+	"deny"	
+	{
+	}
 	"group"	"dadmin"
 }
 "STEAM_0:0:639989442"	
 {
-	"deny"	
-	{
-	}
 	"name"	"kirik1222v2"
 	"allow"	
+	{
+	}
+	"deny"	
 	{
 	}
 	"group"	"dsuperadmin"
 }
 "STEAM_0:1:506706507"	
 {
-	"deny"	
-	{
-	}
 	"allow"	
 	{
 	}
 	"name"	"Python"
+	"deny"	
+	{
+	}
 	"group"	"dadmin"
 }
 "STEAM_0:0:601135498"	
 {
-	"deny"	
-	{
-	}
 	"allow"	
 	{
 	}
 	"name"	"sigma тайно дёрнул"
+	"deny"	
+	{
+	}
 	"group"	"dadmin"
 }
 "STEAM_0:1:429035553"	
 {
-	"name"	"Мистер Котейкин"
 	"deny"	
 	{
 	}
 	"allow"	
 	{
 	}
+	"name"	"Мистер Котейкин"
 	"group"	"superadmin"
 }
 "STEAM_0:1:243547296"	
 {
-	"deny"	
-	{
-	}
 	"allow"	
 	{
 	}
 	"name"	"Nekro"
+	"deny"	
+	{
+	}
 	"group"	"dsuperadmin"
 }
-"STEAM_0:1:159129715"	
+"STEAM_0:1:533465795"	
 {
+	"name"	"ZenchIX"
 	"deny"	
 	{
 	}
 	"allow"	
 	{
 	}
-	"name"	"FurryOn"
-	"group"	"superadmin"
+	"group"	"dadmin"
 }
 "STEAM_0:1:569086770"	
 {
-	"name"	"Vorelas"
 	"deny"	
 	{
 	}
 	"allow"	
 	{
 	}
+	"name"	"Vorelas"
 	"group"	"dadmin"
 }
 "STEAM_0:0:63554495"	
 {
-	"allow"	
-	{
-	}
 	"name"	"Mega"
 	"deny"	
 	{
 	}
-	"group"	"dsuperadmin"
-}
-"STEAM_0:1:566510588"	
-{
-	"name"	"True"
-	"deny"	
-	{
-	}
 	"allow"	
 	{
 	}
 	"group"	"dsuperadmin"
-}
-"STEAM_0:1:501631169"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"Smile face"
-	"group"	"dadmin"
-}
-"STEAM_0:1:113994523"	
-{
-	"allow"	
-	{
-	}
-	"name"	"DEMOPAN"
-	"deny"	
-	{
-	}
-	"group"	"dadmin"
-}
-"STEAM_0:0:631315213"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"Vol_TD"
-	"group"	"downer"
-}
-"STEAM_0:0:98438518"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"Atlas"
-	"group"	"dadmin"
-}
-"STEAM_0:0:151776045"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"Evi"
-	"group"	"superadmin"
-}
-"STEAM_0:1:551189119"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"Бонзибадди"
-	"group"	"superadmin"
-}
-"STEAM_0:1:495301436"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"002"
-	"group"	"dsuperadmin"
-}
-"STEAM_0:1:734846498"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"КОТИК]:"
-	"group"	"dadmin"
-}
-"STEAM_0:0:625941240"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"Smiley"
-	"group"	"dadmin"
-}
-"STEAM_1:1:28681236"	
-{
-	"allow"	
-	{
-	}
-	"deny"	
-	{
-	}
-	"group"	"operator_n"
-}
-"STEAM_0:0:190493017"	
-{
-	"allow"	
-	{
-	}
-	"name"	"Stanley5"
-	"deny"	
-	{
-	}
-	"group"	"dadmin"
-}
-"STEAM_0:0:160992234"	
-{
-	"name"	"Диас ссд"
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"group"	"dadmin"
-}
-"STEAM_0:0:752812072"	
-{
-	"allow"	
-	{
-	}
-	"name"	"vladdy put"
-	"deny"	
-	{
-	}
-	"group"	"dadmin"
-}
-"STEAM_1:0:752812072"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"group"	"dadmin"
-}
-"STEAM_0:1:727667928"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"Cum_в_трусики2007"
-	"group"	"dadmin"
-}
-"STEAM_0:0:103738747"	
-{
-	"allow"	
-	{
-	}
-	"name"	"pep$1"
-	"deny"	
-	{
-	}
-	"group"	"dsuperadmin"
-}
-"STEAM_0:1:213816641"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"БХЕП"
-	"group"	"dadmin"
-}
-"STEAM_0:1:516201577"	
-{
-	"allow"	
-	{
-	}
-	"name"	"Tron fLoricic"
-	"deny"	
-	{
-	}
-	"group"	"dadmin"
-}
-"STEAM_0:1:630913433"	
-{
-	"name"	"Сектор каго?...."
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"group"	"operator_n"
-}
-"STEAM_0:1:455474396"	
-{
-	"allow"	
-	{
-	}
-	"name"	"SS22"
-	"deny"	
-	{
-	}
-	"group"	"dadmin"
-}
-"STEAM_0:0:33626004"	
-{
-	"allow"	
-	{
-	}
-	"name"	"Scorpiosha"
-	"deny"	
-	{
-	}
-	"group"	"dadmin"
-}
-"STEAM_0:0:549797157"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"дед"
-	"group"	"dadmin"
-}
-"STEAM_0:0:784914411"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"cheakin"
-	"group"	"dadmin"
-}
-"STEAM_0:1:431217110"	
-{
-	"name"	"Markuz"
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"group"	"dsuperadmin"
-}
-"STEAM_0:1:625165354"	
-{
-	"name"	"картонка"
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"group"	"operator_n"
-}
-"STEAM_0:0:458882073"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"group"	"dadmin"
-}
-"STEAM_0:0:597027690"	
-{
-	"name"	"not approved by the vatican"
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"group"	"downer"
-}
-"STEAM_0:1:549804715"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"DimFima"
-	"group"	"operator_n"
-}
-"STEAM_0:0:806529259"	
-{
-	"allow"	
-	{
-	}
-	"name"	"Воин"
-	"deny"	
-	{
-	}
-	"group"	"dadmin"
-}
-"STEAM_0:1:520242926"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"borislvov985"
-	"group"	"dadmin"
 }
 "STEAM_0:1:466499179"	
 {
-	"deny"	
-	{
-	}
 	"allow"	
 	{
 	}
 	"name"	"CodeOrange"
+	"deny"	
+	{
+	}
 	"group"	"stajer"
 }
-"STEAM_0:1:533465795"	
+"STEAM_0:1:501631169"	
 {
 	"allow"	
 	{
 	}
-	"name"	"ZenchIX"
+	"name"	"Smile face"
 	"deny"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:1:113994523"	
+{
+	"name"	"DEMOPAN"
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:0:484344087"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"true chelovek_"
+	"group"	"downer"
+}
+"STEAM_0:0:98438518"	
+{
+	"allow"	
+	{
+	}
+	"name"	"Atlas"
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:0:151776045"	
+{
+	"allow"	
+	{
+	}
+	"name"	"Evi"
+	"deny"	
+	{
+	}
+	"group"	"superadmin"
+}
+"STEAM_0:1:551189119"	
+{
+	"allow"	
+	{
+	}
+	"name"	"Бонзибадди"
+	"deny"	
+	{
+	}
+	"group"	"superadmin"
+}
+"STEAM_0:1:495301436"	
+{
+	"allow"	
+	{
+	}
+	"name"	"002"
+	"deny"	
+	{
+	}
+	"group"	"dsuperadmin"
+}
+"STEAM_0:1:734846498"	
+{
+	"allow"	
+	{
+	}
+	"name"	"КОТИК]:"
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:0:625941240"	
+{
+	"allow"	
+	{
+	}
+	"name"	"Smiley"
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_1:1:28681236"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"operator_n"
+}
+"STEAM_0:1:431217110"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"Markuz"
+	"group"	"dsuperadmin"
+}
+"STEAM_0:0:160992234"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"Диас ссд"
+	"group"	"dadmin"
+}
+"STEAM_0:0:752812072"	
+{
+	"name"	"vladdy put"
+	"deny"	
+	{
+	}
+	"allow"	
 	{
 	}
 	"group"	"dadmin"
 }
 "STEAM_0:1:432205149"	
 {
-	"deny"	
-	{
-	}
 	"allow"	
 	{
 	}
 	"name"	"Killa"
-	"group"	"dadmin"
-}
-"76561199550395081"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"group"	"admin"
-}
-"STEAM_0:0:223423229"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"Hut?"
-	"group"	"moderator_n"
-}
-"STEAM_0:0:484344087"	
-{
-	"name"	"true chelovek_"
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"group"	"downer"
-}
-"STEAM_0:1:198162751"	
-{
-	"allow"	
-	{
-	}
-	"name"	"VolTD"
-	"deny"	
-	{
-	}
-	"group"	"dsuperadmin"
-}
-"STEAM_0:0:235574043"	
-{
-	"allow"	
-	{
-	}
-	"name"	"Мудрык"
-	"deny"	
-	{
-	}
-	"group"	"dsuperadmin"
-}
-"STEAM_0:1:557028426"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"ReDab"
-	"group"	"dadmin"
-}
-"STEAM_0:1:200169040"	
-{
-	"name"	"mikropenis"
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"group"	"dadmin"
-}
-"STEAM_0:1:552095867"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"nixai kerpii"
-	"group"	"dadmin"
-}
-"STEAM_0:1:795064676"	
-{
-	"allow"	
-	{
-	}
-	"name"	"Танк \"Алёша\""
 	"deny"	
 	{
 	}
 	"group"	"dadmin"
 }
-"STEAM_0:0:67645726"	
-{
-	"name"	"FurryON"
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"group"	"superadmin"
-}
-"STEAM_0:1:612285428"	
+"STEAM_0:1:727667928"	
 {
 	"allow"	
 	{
 	}
-	"name"	"Kekwe"
+	"name"	"Cum_в_трусики2007"
 	"deny"	
 	{
 	}
 	"group"	"dadmin"
 }
-"STEAM_0:1:27804115"	
+"STEAM_0:0:103738747"	
 {
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"SANSILK"
-	"group"	"dadmin"
-}
-"STEAM_0:0:561784799"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"Posral Ne Smil"
-	"group"	"dadmin"
-}
-"STEAM_0:0:213007131"	
-{
-	"name"	"Чечен Визгун"
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"group"	"moderator_n"
-}
-"STEAM_0:0:545239143"	
-{
-	"name"	"1300BS"
+	"name"	"pep$1"
 	"deny"	
 	{
 	}
@@ -773,75 +424,41 @@
 	}
 	"group"	"dsuperadmin"
 }
-"STEAM_0:0:468069448"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"Pacifist"
-	"group"	"dadmin"
-}
-"STEAM_0:1:596318784"	
-{
-	"name"	"HaloMe"
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"group"	"dadmin"
-}
-"STEAM_0:1:785517070"	
+"STEAM_0:1:520242926"	
 {
 	"allow"	
 	{
 	}
-	"name"	"Man_Just_Man.v2"
-	"deny"	
-	{
-	}
-	"group"	"operator_n"
-}
-"STEAM_0:1:179308701"	
-{
-	"allow"	
-	{
-	}
-	"name"	"SiDead"
-	"deny"	
-	{
-	}
-	"group"	"superadmin"
-}
-"STEAM_0:1:581971206"	
-{
-	"allow"	
-	{
-	}
-	"name"	"سأكون سعيدا"
+	"name"	"borislvov985"
 	"deny"	
 	{
 	}
 	"group"	"dadmin"
 }
-"STEAM_0:0:421035503"	
+"STEAM_0:1:516201577"	
 {
-	"name"	"Minty"
+	"name"	"Tron fLoricic"
 	"deny"	
 	{
 	}
 	"allow"	
 	{
 	}
-	"group"	"helper"
+	"group"	"dadmin"
 }
-"STEAM_0:1:592378831"	
+"STEAM_0:0:458882073"	
 {
-	"name"	"Chesnok"
+	"allow"	
+	{
+	}
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:1:455474396"	
+{
+	"name"	"SS22"
 	"deny"	
 	{
 	}
@@ -852,7 +469,95 @@
 }
 "STEAM_0:1:74275307"	
 {
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
 	"name"	"Stepasha"
+	"group"	"dadmin"
+}
+"STEAM_0:0:549797157"	
+{
+	"allow"	
+	{
+	}
+	"name"	"дед"
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:1:592378831"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"Chesnok"
+	"group"	"dadmin"
+}
+"STEAM_0:0:421035503"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"Minty"
+	"group"	"helper"
+}
+"STEAM_0:1:625165354"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"картонка"
+	"group"	"operator_n"
+}
+"STEAM_0:1:213816641"	
+{
+	"allow"	
+	{
+	}
+	"name"	"БХЕП"
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:1:630913433"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"Сектор каго?...."
+	"group"	"operator_n"
+}
+"STEAM_0:1:549804715"	
+{
+	"allow"	
+	{
+	}
+	"name"	"DimFima"
+	"deny"	
+	{
+	}
+	"group"	"operator_n"
+}
+"STEAM_0:0:806529259"	
+{
+	"name"	"Воин"
 	"deny"	
 	{
 	}
@@ -861,45 +566,340 @@
 	}
 	"group"	"dadmin"
 }
-"STEAM_0:0:192154643"	
+"STEAM_0:1:581971206"	
+{
+	"name"	"سأكون سعيدا"
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:1:179308701"	
+{
+	"name"	"SiDead"
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"superadmin"
+}
+"STEAM_0:1:566510588"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"True"
+	"group"	"dsuperadmin"
+}
+"STEAM_0:1:596318784"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"HaloMe"
+	"group"	"dadmin"
+}
+"76561199550395081"	
 {
 	"allow"	
 	{
 	}
+	"deny"	
+	{
+	}
+	"group"	"admin"
+}
+"STEAM_0:0:223423229"	
+{
+	"allow"	
+	{
+	}
+	"name"	"Hut?"
+	"deny"	
+	{
+	}
+	"group"	"moderator_n"
+}
+"STEAM_0:0:631315213"	
+{
+	"allow"	
+	{
+	}
+	"name"	"Vol_TD"
+	"deny"	
+	{
+	}
+	"group"	"downer"
+}
+"STEAM_0:1:198162751"	
+{
+	"name"	"VolTD"
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"dsuperadmin"
+}
+"STEAM_0:0:235574043"	
+{
+	"name"	"Мудрык"
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"dsuperadmin"
+}
+"STEAM_0:0:545239143"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"1300BS"
+	"group"	"dsuperadmin"
+}
+"STEAM_0:1:200169040"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"mikropenis"
+	"group"	"dadmin"
+}
+"STEAM_0:1:552095867"	
+{
+	"allow"	
+	{
+	}
+	"name"	"nixai kerpii"
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:1:795064676"	
+{
+	"name"	"Танк \"Алёша\""
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:0:561784799"	
+{
+	"allow"	
+	{
+	}
+	"name"	"Posral Ne Smil"
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:1:612285428"	
+{
+	"name"	"Kekwe"
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:1:27804115"	
+{
+	"allow"	
+	{
+	}
+	"name"	"SANSILK"
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:0:67645726"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"FurryON"
+	"group"	"superadmin"
+}
+"STEAM_0:0:213007131"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"Чечен Визгун"
+	"group"	"moderator_n"
+}
+"STEAM_0:1:52783515"	
+{
+	"allow"	
+	{
+	}
+	"name"	"Fredy"
+	"deny"	
+	{
+	}
+	"group"	"stajer"
+}
+"STEAM_0:0:468069448"	
+{
+	"allow"	
+	{
+	}
+	"name"	"Pacifist"
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:0:190493017"	
+{
+	"name"	"Stanley5"
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:1:785517070"	
+{
+	"name"	"Man_Just_Man.v2"
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"operator_n"
+}
+"STEAM_1:0:752812072"	
+{
+	"allow"	
+	{
+	}
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:1:159129715"	
+{
+	"allow"	
+	{
+	}
+	"name"	"FurryOn"
+	"deny"	
+	{
+	}
+	"group"	"superadmin"
+}
+"STEAM_0:0:784914411"	
+{
+	"allow"	
+	{
+	}
+	"name"	"cheakin"
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:0:33626004"	
+{
+	"name"	"Scorpiosha"
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:0:597027690"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"not approved by the vatican"
+	"group"	"downer"
+}
+"STEAM_0:0:192154643"	
+{
 	"name"	"Smug Hat Kid"
 	"deny"	
+	{
+	}
+	"allow"	
 	{
 	}
 	"group"	"dsuperadmin"
 }
 "76561199145023391"	
 {
-	"deny"	
+	"allow"	
 	{
 	}
-	"allow"	
+	"deny"	
 	{
 	}
 	"group"	"dadmin"
 }
 "STEAM_0:1:208951754"	
 {
-	"deny"	
-	{
-	}
 	"allow"	
 	{
 	}
 	"name"	"drochu_v_noski2011"
+	"deny"	
+	{
+	}
 	"group"	"dadmin"
 }
 "STEAM_0:1:426846788"	
 {
-	"allow"	
-	{
-	}
 	"name"	"Tweetle"
 	"deny"	
+	{
+	}
+	"allow"	
 	{
 	}
 	"group"	"admin"

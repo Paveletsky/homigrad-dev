@@ -733,3 +733,53 @@
 [15:02:06] Мамин пирожок suicided!
 [15:02:38] Бомбино suicided!
 [15:03:13] Server is shutting down/changing levels.
+
+
+
+[15:39:04] New map: ttt_blocc
+[15:41:21] Client "ХУЕЖУЙ" connected.
+[15:41:39] Client "ХУЕЖУЙ" spawned in server <STEAM_0:0:30588797> (took 18 seconds).
+[15:41:40] ХУЕЖУЙ<STEAM_0:0:30588797> changed their name to Маклер
+[15:42:34] Маклер<STEAM_0:0:30588797> changed their name to Makler
+[15:42:41] (SILENT) Makler Respawned Themself
+[15:51:57] Makler: !levels
+[15:53:25] Makler suicided!
+[15:56:13] (SILENT) Makler Respawned Themself
+[15:56:18] Makler suicided!
+[15:56:47] (SILENT) Makler Respawned Themself
+[15:56:49] Makler suicided!
+[15:57:04] (SILENT) Makler Respawned Themself
+[15:57:06] Makler suicided!
+[15:57:40] (SILENT) Makler Respawned Themself
+[15:57:40] Makler suicided!
+[15:57:51] (SILENT) Makler Respawned Themself
+[15:57:54] Makler suicided!
+[15:58:07] (SILENT) Makler Respawned Themself
+[15:58:10] Makler suicided!
+[15:58:26] (SILENT) Makler Respawned Themself
+[15:58:29] Makler suicided!
+[15:58:38] (SILENT) Makler Respawned Themself
+[15:58:39] Makler suicided!
+[15:59:36] (SILENT) Makler Respawned Themself
+[15:59:37] Makler suicided!
+[15:59:50] (SILENT) Makler Respawned Themself
+[15:59:51] Makler suicided!
+[16:00:31] (SILENT) Makler Respawned Themself
+[16:00:31] Makler suicided!
+[16:00:41] Makler granted god mode upon Themself
+[16:00:41] (SILENT) Makler Respawned Themself
+[16:00:42] Makler suicided!
+[16:00:48] (SILENT) Makler Respawned Themself
+[16:00:49] Makler suicided!
+[16:00:57] (SILENT) Makler Respawned Themself
+[16:00:59] Makler suicided!
+[16:02:25] (SILENT) Makler Respawned Themself
+[16:02:25] Makler suicided!
+[16:07:14] (SILENT) Makler Respawned Themself
+[16:07:16] Makler suicided!
+[16:07:24] (SILENT) Makler Respawned Themself
+[16:07:28] Makler suicided!
+[16:07:39] (SILENT) Makler Respawned Themself
+[16:07:43] Makler suicided!
+[16:07:52] (SILENT) Makler Respawned Themself
+[16:07:55] Makler suicided!
