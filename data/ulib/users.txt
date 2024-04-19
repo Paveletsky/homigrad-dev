@@ -9,16 +9,16 @@
 	}
 	"group"	"downer"
 }
-"STEAM_0:1:557028426"	
+"STEAM_0:1:52783515"	
 {
 	"allow"	
 	{
 	}
-	"name"	"ReDab"
+	"name"	"Fredy"
 	"deny"	
 	{
 	}
-	"group"	"dadmin"
+	"group"	"stajer"
 }
 "STEAM_0:1:628835900"	
 {
@@ -44,10 +44,10 @@
 }
 "STEAM_0:0:6764572"	
 {
-	"deny"	
+	"allow"	
 	{
 	}
-	"allow"	
+	"deny"	
 	{
 	}
 	"group"	"dsuperadmin"
@@ -76,10 +76,10 @@
 }
 "STEAM_1:0:190493017"	
 {
-	"deny"	
+	"allow"	
 	{
 	}
-	"allow"	
+	"deny"	
 	{
 	}
 	"group"	"dadmin"
@@ -114,7 +114,7 @@
 	"allow"	
 	{
 	}
-	"name"	"ХУЕЖУЙ"
+	"name"	"Makler"
 	"group"	"superadmin"
 }
 "STEAM_0:0:185099753"	
@@ -172,16 +172,16 @@
 	}
 	"group"	"dadmin"
 }
-"STEAM_0:0:601135498"	
+"STEAM_0:1:179308701"	
 {
-	"allow"	
-	{
-	}
-	"name"	"sigma тайно дёрнул"
+	"name"	"SiDead"
 	"deny"	
 	{
 	}
-	"group"	"dadmin"
+	"allow"	
+	{
+	}
+	"group"	"superadmin"
 }
 "STEAM_0:1:429035553"	
 {
@@ -271,15 +271,15 @@
 	}
 	"group"	"dadmin"
 }
-"STEAM_0:0:484344087"	
+"STEAM_0:0:631315213"	
 {
-	"deny"	
-	{
-	}
 	"allow"	
 	{
 	}
-	"name"	"true chelovek_"
+	"name"	"Vol_TD"
+	"deny"	
+	{
+	}
 	"group"	"downer"
 }
 "STEAM_0:0:98438518"	
@@ -350,23 +350,23 @@
 }
 "STEAM_1:1:28681236"	
 {
-	"deny"	
+	"allow"	
 	{
 	}
-	"allow"	
+	"deny"	
 	{
 	}
 	"group"	"operator_n"
 }
-"STEAM_0:1:431217110"	
+"STEAM_0:0:103738747"	
 {
+	"name"	"pep$1"
 	"deny"	
 	{
 	}
 	"allow"	
 	{
 	}
-	"name"	"Markuz"
 	"group"	"dsuperadmin"
 }
 "STEAM_0:0:160992234"	
@@ -413,27 +413,27 @@
 	}
 	"group"	"dadmin"
 }
-"STEAM_0:0:103738747"	
+"STEAM_0:1:431217110"	
 {
-	"name"	"pep$1"
 	"deny"	
 	{
 	}
 	"allow"	
 	{
 	}
+	"name"	"Markuz"
 	"group"	"dsuperadmin"
 }
-"STEAM_0:1:520242926"	
+"STEAM_0:1:625165354"	
 {
-	"allow"	
-	{
-	}
-	"name"	"borislvov985"
 	"deny"	
 	{
 	}
-	"group"	"dadmin"
+	"allow"	
+	{
+	}
+	"name"	"картонка"
+	"group"	"operator_n"
 }
 "STEAM_0:1:516201577"	
 {
@@ -446,11 +446,12 @@
 	}
 	"group"	"dadmin"
 }
-"STEAM_0:0:458882073"	
+"STEAM_0:1:213816641"	
 {
 	"allow"	
 	{
 	}
+	"name"	"БХЕП"
 	"deny"	
 	{
 	}
@@ -467,16 +468,16 @@
 	}
 	"group"	"dadmin"
 }
-"STEAM_0:1:74275307"	
+"STEAM_0:1:549804715"	
 {
-	"deny"	
-	{
-	}
 	"allow"	
 	{
 	}
-	"name"	"Stepasha"
-	"group"	"dadmin"
+	"name"	"DimFima"
+	"deny"	
+	{
+	}
+	"group"	"operator_n"
 }
 "STEAM_0:0:549797157"	
 {
@@ -489,7 +490,18 @@
 	}
 	"group"	"dadmin"
 }
-"STEAM_0:1:592378831"	
+"STEAM_0:0:33626004"	
+{
+	"name"	"Scorpiosha"
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:0:597027690"	
 {
 	"deny"	
 	{
@@ -497,7 +509,28 @@
 	"allow"	
 	{
 	}
-	"name"	"Chesnok"
+	"name"	"not approved by the vatican"
+	"group"	"downer"
+}
+"STEAM_0:1:520242926"	
+{
+	"allow"	
+	{
+	}
+	"name"	"borislvov985"
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:0:458882073"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
 	"group"	"dadmin"
 }
 "STEAM_0:0:421035503"	
@@ -511,7 +544,7 @@
 	"name"	"Minty"
 	"group"	"helper"
 }
-"STEAM_0:1:625165354"	
+"STEAM_0:1:74275307"	
 {
 	"deny"	
 	{
@@ -519,41 +552,8 @@
 	"allow"	
 	{
 	}
-	"name"	"картонка"
-	"group"	"operator_n"
-}
-"STEAM_0:1:213816641"	
-{
-	"allow"	
-	{
-	}
-	"name"	"БХЕП"
-	"deny"	
-	{
-	}
+	"name"	"Stepasha"
 	"group"	"dadmin"
-}
-"STEAM_0:1:630913433"	
-{
-	"deny"	
-	{
-	}
-	"allow"	
-	{
-	}
-	"name"	"Сектор каго?...."
-	"group"	"operator_n"
-}
-"STEAM_0:1:549804715"	
-{
-	"allow"	
-	{
-	}
-	"name"	"DimFima"
-	"deny"	
-	{
-	}
-	"group"	"operator_n"
 }
 "STEAM_0:0:806529259"	
 {
@@ -566,27 +566,27 @@
 	}
 	"group"	"dadmin"
 }
-"STEAM_0:1:581971206"	
+"STEAM_0:0:784914411"	
 {
-	"name"	"سأكون سعيدا"
-	"deny"	
+	"allow"	
 	{
 	}
-	"allow"	
+	"name"	"cheakin"
+	"deny"	
 	{
 	}
 	"group"	"dadmin"
 }
-"STEAM_0:1:179308701"	
+"STEAM_0:0:601135498"	
 {
-	"name"	"SiDead"
-	"deny"	
-	{
-	}
 	"allow"	
 	{
 	}
-	"group"	"superadmin"
+	"name"	"sigma тайно дёрнул"
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
 }
 "STEAM_0:1:566510588"	
 {
@@ -612,10 +612,10 @@
 }
 "76561199550395081"	
 {
-	"allow"	
+	"deny"	
 	{
 	}
-	"deny"	
+	"allow"	
 	{
 	}
 	"group"	"admin"
@@ -631,15 +631,15 @@
 	}
 	"group"	"moderator_n"
 }
-"STEAM_0:0:631315213"	
+"STEAM_0:0:484344087"	
 {
-	"allow"	
-	{
-	}
-	"name"	"Vol_TD"
 	"deny"	
 	{
 	}
+	"allow"	
+	{
+	}
+	"name"	"true chelovek_"
 	"group"	"downer"
 }
 "STEAM_0:1:198162751"	
@@ -664,16 +664,16 @@
 	}
 	"group"	"dsuperadmin"
 }
-"STEAM_0:0:545239143"	
+"STEAM_0:1:557028426"	
 {
-	"deny"	
-	{
-	}
 	"allow"	
 	{
 	}
-	"name"	"1300BS"
-	"group"	"dsuperadmin"
+	"name"	"ReDab"
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
 }
 "STEAM_0:1:200169040"	
 {
@@ -708,16 +708,16 @@
 	}
 	"group"	"dadmin"
 }
-"STEAM_0:0:561784799"	
+"STEAM_0:0:67645726"	
 {
-	"allow"	
-	{
-	}
-	"name"	"Posral Ne Smil"
 	"deny"	
 	{
 	}
-	"group"	"dadmin"
+	"allow"	
+	{
+	}
+	"name"	"FurryON"
+	"group"	"superadmin"
 }
 "STEAM_0:1:612285428"	
 {
@@ -741,16 +741,16 @@
 	}
 	"group"	"dadmin"
 }
-"STEAM_0:0:67645726"	
+"STEAM_0:0:561784799"	
 {
-	"deny"	
-	{
-	}
 	"allow"	
 	{
 	}
-	"name"	"FurryON"
-	"group"	"superadmin"
+	"name"	"Posral Ne Smil"
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
 }
 "STEAM_0:0:213007131"	
 {
@@ -763,16 +763,16 @@
 	"name"	"Чечен Визгун"
 	"group"	"moderator_n"
 }
-"STEAM_0:1:52783515"	
+"STEAM_0:0:545239143"	
 {
-	"allow"	
-	{
-	}
-	"name"	"Fredy"
 	"deny"	
 	{
 	}
-	"group"	"stajer"
+	"allow"	
+	{
+	}
+	"name"	"1300BS"
+	"group"	"dsuperadmin"
 }
 "STEAM_0:0:468069448"	
 {
@@ -809,10 +809,10 @@
 }
 "STEAM_1:0:752812072"	
 {
-	"allow"	
+	"deny"	
 	{
 	}
-	"deny"	
+	"allow"	
 	{
 	}
 	"group"	"dadmin"
@@ -828,20 +828,9 @@
 	}
 	"group"	"superadmin"
 }
-"STEAM_0:0:784914411"	
+"STEAM_0:1:581971206"	
 {
-	"allow"	
-	{
-	}
-	"name"	"cheakin"
-	"deny"	
-	{
-	}
-	"group"	"dadmin"
-}
-"STEAM_0:0:33626004"	
-{
-	"name"	"Scorpiosha"
+	"name"	"سأكون سعيدا"
 	"deny"	
 	{
 	}
@@ -850,7 +839,7 @@
 	}
 	"group"	"dadmin"
 }
-"STEAM_0:0:597027690"	
+"STEAM_0:1:592378831"	
 {
 	"deny"	
 	{
@@ -858,8 +847,19 @@
 	"allow"	
 	{
 	}
-	"name"	"not approved by the vatican"
-	"group"	"downer"
+	"name"	"Chesnok"
+	"group"	"dadmin"
+}
+"STEAM_0:1:630913433"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"Сектор каго?...."
+	"group"	"operator_n"
 }
 "STEAM_0:0:192154643"	
 {
@@ -874,10 +874,10 @@
 }
 "76561199145023391"	
 {
-	"allow"	
+	"deny"	
 	{
 	}
-	"deny"	
+	"allow"	
 	{
 	}
 	"group"	"dadmin"
