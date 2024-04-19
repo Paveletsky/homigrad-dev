@@ -97,7 +97,7 @@ end
 function meta:osNetShop()
 
 	local toSend = {}
-	for class, item in pairs(octoshop.items) do
+	for class, item in pairs(fundot.items) do
 		local canBuy = item.CanBuy
 		table.insert(toSend, {
 			class = class,
