@@ -1,17 +1,17 @@
-hook.Add('player.loaded', 'player-data', function(client)
+-- hook.Add('player.loaded', 'player-data', function(client)
     
-    dangautils.db:PrepareQuery([[
-		SELECT data FROM greatude_users
-            WHERE steamId = ? 
-	]], { client:SteamID(), }, 
-    function(q, st, res)
-        if res and res.data then
-            res = util.JSONToTable(res[1].data) or {}
-            client.dbvars = data       
-        end
-    end)
+--     dangautils.db:PrepareQuery([[
+-- 		SELECT data FROM greatude_users
+--             WHERE steamId = ? 
+-- 	]], { client:SteamID(), }, 
+--     function(q, st, res)
+--         if res and res.data then
+--             res = util.JSONToTable(res[1].data) or {}
+--             client.dbvars = data       
+--         end
+--     end)
 
-end)
+-- end)
 
 local meta = FindMetaTable 'Player'
 function meta:SetDBVar(name, val)

@@ -17,11 +17,14 @@ function PANEL:Init()
     self:SetSize(700, 400)
     self:Center()
     self:MakePopup()
-    self:SetTitle('Хуй')
+    self:SetTitle('')
+    -- self:ShowCloseButton(true)
 
     self.TabPanel = self:Add("DPropertySheet")
         self.TabPanel:Dock(FILL)
-
+        self.TabPanel:DockMargin(15, 15, 15, 15)
+        self.TabPanel.Paint = nil
+    
     self.InventoryPanel = self.TabPanel:Add("DPanel")
         self.InventoryPanel.Paint = function() end
         self.InventoryPanel:Dock(FILL)
@@ -45,6 +48,20 @@ function PANEL:Init()
 
         self.ItemsPanel = self.ShopPanel:Add("DPanel")
         self.ItemsPanel:Dock(FILL)
+
+        -- self.Paint = function(this, w, h)
+        --     -- Отрисовываем основной фон панели с закругленными углами
+        --     draw.RoundedBox(10, 0, 0, w, h, Color(255, 255, 255))
+        
+        --     -- Устанавливаем цвет для внутренней обводки
+        --     surface.SetDrawColor(Color(255, 255, 255))
+        
+        --     -- Отрисовываем внутреннюю обводку
+        --     local innerBorderSize = 3  -- Размер внутренней обводки
+        --     draw.RoundedBox(10, innerBorderSize, innerBorderSize, w - innerBorderSize * 2, h - innerBorderSize * 2, Color(55, 55, 55, 255))
+        -- end
+        
+        
 
     self:Show()
 end
@@ -194,15 +211,6 @@ net.Receive('octoshop.rInventory', function(len)
 
 end)
 
-vgui.Register('fdShopPanel', PANEL, 'DFrame')
-
-if Entity(1) then
-
-    if fundot.ShopMenu then fundot.ShopMenu:Remove() end
-    fundot.ShopMenu = vgui.Create('fdShopPanel')
-
-end
-
 net.Receive('octoshop.rShop', function(len)
 
 	local data = net.ReadTable()
@@ -224,3 +232,8 @@ net.Receive('octoshop.rShop', function(len)
 	fundot.ShopMenu:UpdateShop()
 
 end)
+
+
+vgui.Register('fdShopPanel', PANEL, 'DFrame')
+-- if fundot.ShopMenu then fundot.ShopMenu:Remove() end
+-- fundot.ShopMenu = vgui.Create('fdShopPanel')
