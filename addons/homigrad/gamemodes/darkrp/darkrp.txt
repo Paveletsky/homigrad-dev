@@ -1,0 +1,7 @@
+"darkrp"
+{
+	"base"		"sandbox"
+	"title"		"DarkRP"
+	"maps"		""
+	"menusystem"	"1"
+}

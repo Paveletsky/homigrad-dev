@@ -1,0 +1,8 @@
+[20:49:00] New map: cs_laundry
+[21:21:51] Client "zheka12pro" connected.
+[21:23:24] Client "zheka12pro" spawned in server <STEAM_0:0:599072146> (took 93 seconds).
+[21:27:33] Dropped "zheka12pro" from server<STEAM_0:0:599072146>
+[21:27:53] Client "zheka12pro" connected.
+[21:28:51] Client "zheka12pro" spawned in server <STEAM_0:0:599072146> (took 58 seconds).
+[21:31:28] Dropped "zheka12pro" from server<STEAM_0:0:599072146>
+<Logging continued in "data/ulx_logs/12-07-23.txt">

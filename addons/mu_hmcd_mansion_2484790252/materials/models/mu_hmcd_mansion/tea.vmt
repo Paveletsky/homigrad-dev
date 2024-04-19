@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\mu_hmcd_mansion\tea"
+	"$surfaceprop" "paper"
+	"$translucent" "1"
+	Proxies
+	{
+		PlayerWeaponColor
+		{
+			resultVar	$selfillumtint
+		}
+	}
+
+}

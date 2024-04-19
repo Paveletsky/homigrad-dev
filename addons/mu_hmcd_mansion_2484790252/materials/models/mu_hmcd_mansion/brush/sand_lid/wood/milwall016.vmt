@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\mu_hmcd_mansion\brush\sand_lid\wood\milwall016"
+	"$surfaceprop" "wood_panel"
+
+}

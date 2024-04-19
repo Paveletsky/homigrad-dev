@@ -1,0 +1,10 @@
+"vertexlitgeneric"
+{
+"$basetexture" "models\mu_hmcd_mansion\weapon_cuestick\woack"
+	"$surfaceprop" "wood"
+	"$envmap" "env_cubemap"
+	$basealphaenvmapmask 1
+	$envmapsaturation 0.1	
+	"$envmaptint"			"[0.1 0.1 0.1]"
+
+}

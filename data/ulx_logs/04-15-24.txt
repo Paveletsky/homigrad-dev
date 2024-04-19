@@ -1,0 +1,1951 @@
+[16:59:13] New map: ttt_clue_2022
+[17:01:43] Client "Paveletsky" connected.
+[17:02:07] Client "Paveletsky" spawned in server <STEAM_0:0:30588797> (took 24 seconds).
+[17:02:22] Client "Dota Veteran" connected.
+[17:02:52] Client "Dota Veteran" spawned in server <STEAM_0:0:185099753> (took 30 seconds).
+[17:03:33] Dropped "Dota Veteran" from server<STEAM_0:0:185099753>
+[17:03:33] Dota Veteran suicided!
+[17:04:20] Client "Dota Veteran" connected.
+[17:04:56] Client "Dota Veteran" spawned in server <STEAM_0:0:185099753> (took 36 seconds).
+[17:04:59] Server is shutting down/changing levels.
+
+
+
+[17:10:04] New map: ttt_clue_2022
+[17:12:07] Client "Paveletsky" connected.
+[17:12:36] Client "Paveletsky" spawned in server <STEAM_0:0:30588797> (took 29 seconds).
+[17:14:28] Client "Dota Veteran" connected.
+[17:15:05] Client "Dota Veteran" spawned in server <STEAM_0:0:185099753> (took 37 seconds).
+[17:15:37] (SILENT) Paveletsky Respawned Themself
+[17:15:37] (SILENT) Dota Veteran Respawned Themself
+[17:16:51] Paveletsky suicided!
+[17:16:53] Client "Dany_lo" connected.
+[17:17:52] Paveletsky suicided!
+[17:18:30] Client "Dany_lo" spawned in server <STEAM_0:1:794748548> (took 97 seconds).
+[17:19:16] Dany_lo suicided!
+[17:22:29] Paveletsky: !levels
+[17:23:52] Dota Veteran suicided!
+[17:24:15] Client "Dominic" connected.
+[17:24:17] Server is shutting down/changing levels.
+
+
+
+[17:25:13] New map: ttt_clue_2022
+[17:26:04] Client "Paveletsky" connected.
+[17:26:21] Client "Dota Veteran" connected.
+[17:26:23] Client "Paveletsky" spawned in server <STEAM_0:0:30588797> (took 19 seconds).
+[17:26:45] Client "Dota Veteran" spawned in server <STEAM_0:0:185099753> (took 24 seconds).
+[17:26:51] Client "Dominic" connected.
+[17:27:11] Paveletsky suicided!
+[17:28:48] Dropped "Dota Veteran" from server<STEAM_0:0:185099753>
+[17:28:48] Dota Veteran suicided!
+[17:29:01] Server is shutting down/changing levels.
+
+
+
+[17:29:55] New map: ttt_clue_2022
+[17:32:42] Server is shutting down/changing levels.
+
+
+
+[17:33:39] New map: ttt_clue_2022
+[17:33:42] Client "Dominic" connected.
+[17:35:30] Client "Dominic" spawned in server <STEAM_0:1:227086796> (took 108 seconds).
+[17:37:47] Dropped "Dominic" from server<STEAM_0:1:227086796>
+[17:44:52] Client "Paveletsky" connected.
+[17:45:10] Client "Paveletsky" spawned in server <STEAM_0:0:30588797> (took 18 seconds).
+[17:47:20] Dropped "Paveletsky" from server<STEAM_0:0:30588797>
+[17:47:21] Client "Paveletsky" connected.
+[17:47:38] Client "Paveletsky" spawned in server <STEAM_0:0:30588797> (took 17 seconds).
+[17:48:20] Client "Dota Veteran" connected.
+[17:48:36] Client "G H O S T" connected.
+[17:48:43] Client "Dota Veteran" spawned in server <STEAM_0:0:185099753> (took 23 seconds).
+[17:49:06] Client "Dominic" connected.
+[17:49:17] Client "ALADYWKA" connected.
+[17:49:37] Client "Бомбино" connected.
+[17:49:56] Client "Frdeng" connected.
+[17:49:56] Client "Stanley5" connected.
+[17:50:03] Client "MAESTRO(Remix)" connected.
+[17:50:04] Client "Dominic" spawned in server <STEAM_0:1:227086796> (took 58 seconds).
+[17:50:05] Paveletsky suicided!
+[17:50:09] Client "ДАНЯ ПИДОР" connected.
+[17:50:23] Client "лысое чмо" connected.
+[17:50:42] Client "ALADYWKA" spawned in server <STEAM_0:1:499599183> (took 85 seconds).
+[17:50:43] Client "Бомбино" spawned in server <STEAM_0:1:628835900> (took 66 seconds).
+[17:51:01] Client "G H O S T" spawned in server <STEAM_0:0:489640987> (took 145 seconds).
+[17:51:06] Client "Stanley5" spawned in server <STEAM_0:0:190493017> (took 70 seconds).
+[17:51:07] Client "Frdeng" spawned in server <STEAM_0:1:606601614> (took 71 seconds).
+[17:51:27] Paveletsky suicided!
+[17:51:33] Dominic suicided!
+[17:51:34] Бомбино: !menu
+[17:51:34] Client "Medgat" connected.
+[17:51:53] Client "Мистер Котейкин" connected.
+[17:52:14] ALADYWKA suicided!
+[17:52:21] Stanley5 suicided!
+[17:52:22] Frdeng suicided!
+[17:52:27] Frdeng: ебать лагает
+[17:52:33] Frdeng: ура своо
+[17:52:45] Client "MAESTRO(Remix)" spawned in server <STEAM_0:0:573407889> (took 162 seconds).
+[17:52:47] G H O S T suicided!
+[17:53:19] Stanley5 suicided!
+[17:53:34] Бомбино suicided!
+[17:53:37] Dota Veteran suicided!
+[17:53:39] Dominic suicided!
+[17:53:42] Client "Medgat" spawned in server <STEAM_0:0:779139135> (took 128 seconds).
+[17:53:58] Client "ДАНЯ ПИДОР" spawned in server <STEAM_0:1:545857221> (took 229 seconds).
+[17:54:08] G H O S T suicided!
+[17:54:16] Frdeng: уебан
+[17:54:26] Paveletsky: !levels
+[17:54:31] MAESTRO(Remix) suicided!
+[17:54:44] Dropped "Frdeng" from server<STEAM_0:1:606601614>
+[17:54:44] Frdeng suicided!
+[17:54:46] Client "Frdeng" connected.
+[17:54:52] ALADYWKA suicided!
+[17:54:55] Dota Veteran suicided!
+[17:54:59] Stanley5 suicided!
+[17:55:01] Client "БОЦМАН ДОЛБАЁБ" connected.
+[17:55:28] Client "Frdeng" spawned in server <STEAM_0:1:606601614> (took 42 seconds).
+[17:55:52] Dominic suicided!
+[17:55:58] Бомбино suicided!
+[17:56:14] Бомбино suicided!
+[17:56:23] ALADYWKA suicided!
+[17:56:27] Dota Veteran suicided!
+[17:56:32] Medgat suicided!
+[17:56:40] Client "БОЦМАН ДОЛБАЁБ" spawned in server <STEAM_0:1:707791100> (took 99 seconds).
+[17:56:50] ALADYWKA suicided!
+[17:56:50] ALADYWKA suicided!
+[17:56:50] Бомбино suicided!
+[17:56:55] Client "лысое чмо" spawned in server <STEAM_0:0:605817218> (took 392 seconds).
+[17:57:08] Dominic suicided!
+[17:57:08] G H O S T suicided!
+[17:57:20] Dropped "лысое чмо" from server<STEAM_0:0:605817218>
+[17:57:25] Dota Veteran suicided!
+[17:57:28] Dropped "Frdeng" from server<STEAM_0:1:606601614>
+[17:57:28] Frdeng suicided!
+[17:57:31] Client "Frdeng" connected.
+[17:58:05] Client "『M』『D』『K』" connected.
+[17:58:06] Client "Frdeng" spawned in server <STEAM_0:1:606601614> (took 35 seconds).
+[17:58:16] Dota Veteran suicided!
+[17:58:25] Medgat suicided!
+[17:58:25] ALADYWKA suicided!
+[17:58:43] Бомбино suicided!
+[17:58:47] MAESTRO(Remix) suicided!
+[17:59:28] Client "『M』『D』『K』" spawned in server <STEAM_0:1:225435941> (took 83 seconds).
+[17:59:29] БОЦМАН ДОЛБАЁБ suicided!
+[17:59:37] Dota Veteran suicided!
+[17:59:40] Бомбино suicided!
+[17:59:55] Dominic suicided!
+[18:00:29] Dropped "БОЦМАН ДОЛБАЁБ" from server<STEAM_0:1:707791100>
+[18:00:29] БОЦМАН ДОЛБАЁБ suicided!
+[18:00:54] Client "true chelovek_" connected.
+[18:01:21] Stanley5 suicided!
+[18:01:24] 『M』『D』『K』 suicided!
+[18:01:42] Medgat suicided!
+[18:01:46] 『M』『D』『K』 suicided!
+[18:01:47] Dropped "Medgat" from server<STEAM_0:0:779139135>
+[18:01:48] Client "Medgat" connected.
+[18:02:25] Client "Medgat" spawned in server <STEAM_0:0:779139135> (took 37 seconds).
+[18:02:35] Client "true chelovek_" spawned in server <STEAM_0:0:484344087> (took 101 seconds).
+[18:02:38] Stanley5 suicided!
+[18:02:40] MAESTRO(Remix) suicided!
+[18:03:11] true chelovek_ suicided!
+[18:03:16] Client "lenin228prokiller" connected.
+[18:03:45] MAESTRO(Remix) suicided!
+[18:03:50] Dropped "true chelovek_" from server<STEAM_0:0:484344087>
+[18:03:50] true chelovek_ suicided!
+[18:04:04] Medgat suicided!
+[18:04:07] Stanley5 suicided!
+[18:04:14] Dropped "MAESTRO(Remix)" from server<STEAM_0:0:573407889>
+[18:04:15] Бомбино suicided!
+[18:04:34] Client "true chelovek_" connected.
+[18:04:42] Frdeng suicided!
+[18:04:53] Dominic suicided!
+[18:04:53] Бомбино suicided!
+[18:04:53] Client "Танк "Алёша"" connected.
+[18:04:58] ALADYWKA suicided!
+[18:05:37] Client "lenin228prokiller" connected.
+[18:05:38] Client "Sasa" connected.
+[18:05:38] Client "true chelovek_" spawned in server <STEAM_0:0:484344087> (took 64 seconds).
+[18:05:48] Бомбино suicided!
+[18:06:21] Medgat suicided!
+[18:06:22] (Console) banned Medgat for 10 minute(s) (Kicked and Banned for RDM)
+[18:06:22] ALADYWKA suicided!
+[18:06:43] Dominic suicided!
+[18:06:49] Client "Танк "Алёша"" spawned in server <STEAM_0:1:795064676> (took 116 seconds).
+[18:06:58] Client "Главное понятие" connected.
+[18:07:01] Stanley5 suicided!
+[18:07:02] Танк "Алёша": !menu
+[18:07:03] Dota Veteran: !levelnext teamdm
+[18:07:08] Dominic suicided!
+[18:07:09] Medgat suicided!
+[18:07:13] Dota Veteran: !levelnext HL2DM
+[18:07:26] Stanley5: !menu
+[18:07:27] G H O S T: ./rtv
+[18:07:30] 『M』『D』『K』 suicided!
+[18:07:30] Stanley5 suicided!
+[18:07:34] ALADYWKA suicided!
+[18:07:41] Танк "Алёша" suicided!
+[18:07:48] Dominic suicided!
+[18:07:51] Танк "Алёша": !menu
+[18:07:54] Stanley5 Запустил голосование за mu_hmcd_workplace_v3
+[18:07:55] Frdeng: Yes
+[18:07:55] Dominic: Yes
+[18:07:55] Бомбино: No
+[18:07:56] (SILENT) Танк "Алёша" Respawned Themself
+[18:07:56] Dota Veteran: Yes
+[18:07:57] G H O S T: Yes
+[18:07:57] Client "Sasa" spawned in server <STEAM_0:0:593541024> (took 139 seconds).
+[18:07:57] Stanley5: Yes
+[18:07:57] ДАНЯ ПИДОР suicided!
+[18:07:57] 『M』『D』『K』: Yes
+[18:07:59] Medgat: No
+[18:07:59] Танк "Алёша" granted god mode upon Themself
+[18:07:59] Танк "Алёша": !god
+[18:08:02] Бомбино suicided!
+[18:08:09] ДАНЯ ПИДОР: Yes
+[18:08:11] ALADYWKA: Yes
+[18:08:12] true chelovek_: No
+[18:08:14] Paveletsky: No
+[18:08:14] Vote results: Option 'Yes' won, changemap pending approval. (8/13)
+[18:08:18] Stanley5 suicided!
+[18:08:18] Paveletsky suicided!
+[18:08:33] ALADYWKA suicided!
+[18:08:36] G H O S T suicided!
+[18:08:36] (Console) banned G H O S T for 10 minute(s) (Kicked and Banned for RDM)
+[18:08:40] true chelovek_ suicided!
+[18:08:44] ДАНЯ ПИДОР suicided!
+[18:08:58] Dota Veteran suicided!
+[18:08:58] 『M』『D』『K』 suicided!
+[18:08:58] Client "Главное понятие" spawned in server <STEAM_0:1:114298453> (took 120 seconds).
+[18:08:58] Dominic suicided!
+[18:08:58] Dropped "Medgat" from server<STEAM_0:0:779139135>
+[18:08:58] Medgat suicided!
+[18:09:00] Stanley5: Yes
+[18:09:00] Stanley5 approved the votemap
+[18:09:00] Server is shutting down/changing levels.
+
+
+
+[18:09:18] New map: mu_hmcd_workplace_v3
+[18:09:19] Client "Главное понятие" connected.
+[18:09:19] Client "Paveletsky" connected.
+[18:09:20] Client "Dominic" connected.
+[18:09:20] Client "Dota Veteran" connected.
+[18:09:20] Client "G H O S T" connected.
+[18:09:20] Client "ДАНЯ ПИДОР" connected.
+[18:09:20] Client "Бомбино" connected.
+[18:09:27] Client "ALADYWKA" connected.
+[18:09:27] Client "Танк "Алёша"" connected.
+[18:09:27] Client "ALADYWKA" connected.
+[18:09:27] Client "Танк "Алёша"" connected.
+[18:09:27] Client "Frdeng" connected.
+[18:09:27] Client "Frdeng" connected.
+[18:09:27] Client "Sasa" connected.
+[18:09:27] Client "Sasa" connected.
+[18:09:27] Client "『M』『D』『K』" connected.
+[18:09:31] Client "Stanley5" connected.
+[18:09:34] Client "Древний Русс" connected.
+[18:09:35] Client "Medgat" connected.
+[18:09:47] Client "Paveletsky" spawned in server <STEAM_0:0:30588797> (took 28 seconds).
+[18:09:52] Client "Stanley5" spawned in server <STEAM_0:0:190493017> (took 21 seconds).
+[18:09:54] Client "ДАНЯ ПИДОР" spawned in server <STEAM_0:1:545857221> (took 34 seconds).
+[18:09:57] Client "Танк "Алёша"" spawned in server <STEAM_0:1:795064676> (took 30 seconds).
+[18:09:58] Client "Приколяшечка!!!" connected.
+[18:10:00] Client "ALADYWKA" spawned in server <STEAM_0:1:499599183> (took 33 seconds).
+[18:10:01] Client "『M』『D』『K』" spawned in server <STEAM_0:1:225435941> (took 34 seconds).
+[18:10:02] Client "Dota Veteran" spawned in server <STEAM_0:0:185099753> (took 42 seconds).
+[18:10:02] Paveletsky suicided!
+[18:10:10] Client "Главное понятие" spawned in server <STEAM_0:1:114298453> (took 51 seconds).
+[18:10:11] Client "Frdeng" spawned in server <STEAM_0:1:606601614> (took 44 seconds).
+[18:10:31] Client "Бомбино" spawned in server <STEAM_0:1:628835900> (took 71 seconds).
+[18:10:36] Client "Dominic" spawned in server <STEAM_0:1:227086796> (took 76 seconds).
+[18:10:40] Client "Medgat" spawned in server <STEAM_0:0:779139135> (took 65 seconds).
+[18:10:42] Client "G H O S T" spawned in server <STEAM_0:0:489640987> (took 82 seconds).
+[18:11:16] Client "Древний Русс" spawned in server <STEAM_0:1:778238721> (took 102 seconds).
+[18:11:20] Client "Sasa" spawned in server <STEAM_0:0:593541024> (took 113 seconds).
+[18:11:22] Frdeng: тдм
+[18:11:23] Frdeng: гоу
+[18:11:38] Frdeng: гоу
+[18:11:39] Frdeng: тдм
+[18:11:40] ДАНЯ ПИДОР suicided!
+[18:11:52] Dropped "ДАНЯ ПИДОР" from server<STEAM_0:1:545857221>
+[18:12:01] Танк "Алёша" suicided!
+[18:12:32] Frdeng: !motd
+[18:12:47] Client "Приколяшечка!!!" spawned in server <STEAM_0:1:570194485> (took 169 seconds).
+[18:12:50] Client "lenin228prokiller" connected.
+[18:13:04] Древний Русс: Сфордвард
+[18:13:09] Древний Русс: СЭР ДА СЭР
+[18:13:26] 『M』『D』『K』 suicided!
+[18:13:35] Client "lenin228prokiller" spawned in server <STEAM_0:0:765082650> (took 45 seconds).
+[18:13:36] Sasa suicided!
+[18:13:37] Бомбино suicided!
+[18:13:42] Танк "Алёша" suicided!
+[18:13:45] Танк "Алёша": !MENU
+[18:13:49] (SILENT) Танк "Алёша" Respawned Themself
+[18:13:50] Танк "Алёша" granted god mode upon Themself
+[18:13:50] Танк "Алёша": !GOD
+[18:14:01] Приколяшечка!!!: н\
+[18:14:20] Древний Русс suicided!
+[18:14:30] Древний Русс: МЕНЯ ЧЕРНЫЙ ЗАРЕЗАл((((((((((((((
+[18:14:59] Главное понятие suicided!
+[18:15:07] Sasa suicided!
+[18:15:07] Stanley5 suicided!
+[18:15:09] Dota Veteran suicided!
+[18:15:09] (Console) banned Dota Veteran for 10 minute(s) (Kicked and Banned for RDM)
+[18:15:10] Dota Veteran suicided!
+[18:15:10] (Console) banned Dota Veteran for 10 minute(s) (Kicked and Banned for RDM)
+[18:15:16] lenin228prokiller: да блять
+[18:15:24] Dropped "Sasa" from server<STEAM_0:0:593541024>
+[18:15:26] 『M』『D』『K』 suicided!
+[18:15:41] Medgat suicided!
+[18:16:30] Бомбино suicided!
+[18:16:40] Dota Veteran: !levelnext hl2dm
+[18:16:44] (SILENT) Paveletsky Respawned Themself
+[18:17:02] Client "лысое чмо" connected.
+[18:17:04] lenin228prokiller suicided!
+[18:17:14] Dota Veteran suicided!
+[18:17:14] Paveletsky suicided!
+[18:17:30] Client "лысое чмо" spawned in server <STEAM_0:0:605817218> (took 28 seconds).
+[18:17:44] Древний Русс suicided!
+[18:17:54] Бомбино suicided!
+[18:17:58] лысое чмо: почему я во фрикаме летать не могу
+[18:17:58] Frdeng suicided!
+[18:18:00] Древний Русс: меня зарезал чикатило((
+[18:18:00] Dropped "Приколяшечка!!!" from server<STEAM_0:1:570194485>
+[18:18:00] Приколяшечка!!! suicided!
+[18:18:08] Бомбино: !levels
+[18:18:09] Танк "Алёша" granted god mode upon Themself
+[18:18:09] Танк "Алёша": !GOD
+[18:18:25] Бомбино suicided!
+[18:18:26] lenin228prokiller suicided!
+[18:18:32] Бомбино: !menu
+[18:18:54] Бомбино: !menu
+[18:18:58] Танк "Алёша" granted god mode upon Themself
+[18:18:58] Танк "Алёша": !GOD
+[18:19:07] Бомбино banned Dota Veteran for 5 minutes (RDM)
+[18:19:07] Dropped "Dota Veteran" from server<STEAM_0:0:185099753>
+[18:19:07] Dota Veteran suicided!
+[18:19:44] Medgat suicided!
+[18:19:46] Frdeng suicided!
+[18:20:00] Dropped "Medgat" from server<STEAM_0:0:779139135>
+[18:20:01] Client "Medgat" connected.
+[18:20:08] 『M』『D』『K』 suicided!
+[18:20:23] Древний Русс suicided!
+[18:20:28] Client "Medgat" spawned in server <STEAM_0:0:779139135> (took 27 seconds).
+[18:20:29] Древний Русс: ща сприду
+[18:20:46] G H O S T suicided!
+[18:21:01] Танк "Алёша": !ПЩВ
+[18:21:03] Танк "Алёша" granted god mode upon Themself
+[18:21:03] Танк "Алёша": !GOD
+[18:21:14] (SILENT) Paveletsky Respawned Themself
+[18:21:17] (SILENT) Paveletsky Respawned Themself
+[18:21:17] Танк "Алёша" granted god mode upon Themself
+[18:21:17] Танк "Алёша": !GOD
+[18:21:28] Client "San4oyS" connected.
+[18:21:29] Dominic suicided!
+[18:21:31] Танк "Алёша" granted god mode upon Themself
+[18:21:31] Танк "Алёша": !GOD
+[18:21:43] Танк "Алёша" granted god mode upon Themself
+[18:21:43] Танк "Алёша": !GOD
+[18:21:57] Танк "Алёша" granted god mode upon Themself
+[18:21:57] Танк "Алёша": !GOD
+[18:22:00] Танк "Алёша" granted god mode upon Themself
+[18:22:00] Танк "Алёша": !GOD
+[18:22:10] Танк "Алёша" granted god mode upon Themself
+[18:22:10] Танк "Алёша": !GOD
+[18:22:27] Client "6uit-Hear10₆₆" connected.
+[18:22:44] Client "San4oyS" spawned in server <STEAM_0:1:83401869> (took 76 seconds).
+[18:22:47] Танк "Алёша" granted god mode upon Themself
+[18:22:47] Танк "Алёша": !GOD
+[18:22:55] Главное понятие suicided!
+[18:22:55] (Console) banned Главное понятие for 10 minute(s) (Kicked and Banned for RDM)
+[18:23:21] Client "6uit-Hear10₆₆" spawned in server <STEAM_0:0:610647292> (took 54 seconds).
+[18:23:22] Paveletsky suicided!
+[18:23:23] Древний Русс: убейте алешу
+[18:23:37] Танк "Алёша" granted god mode upon Themself
+[18:23:37] Танк "Алёша": !GOD
+[18:23:44] Танк "Алёша" granted god mode upon Themself
+[18:23:44] Танк "Алёша": !GOD
+[18:23:52] Древний Русс: читер
+[18:24:03] Главное понятие suicided!
+[18:24:03] (Console) banned Главное понятие for 10 minute(s) (Kicked and Banned for RDM)
+[18:24:03] ALADYWKA suicided!
+[18:24:05] Танк "Алёша" granted god mode upon Themself
+[18:24:05] Танк "Алёша": !GOD
+[18:24:19] Client "БОЦМАН ДОЛБАЁБ" connected.
+[18:24:38] Client "Dota Veteran" connected.
+[18:25:00] Танк "Алёша" suicided!
+[18:25:00] Бомбино exploded Танк "Алёша"
+[18:25:00] Бомбино: !explode Танк
+[18:25:05] Client "Dota Veteran" spawned in server <STEAM_0:0:185099753> (took 27 seconds).
+[18:25:05] Танк "Алёша": !MENU
+[18:25:07] (SILENT) Танк "Алёша" Respawned Themself
+[18:25:08] Танк "Алёша" granted god mode upon Themself
+[18:25:08] Танк "Алёша": !GOD
+[18:25:21] Танк "Алёша" suicided!
+[18:25:21] Бомбино exploded Танк "Алёша"
+[18:25:21] Бомбино: !explode Танк
+[18:25:23] Танк "Алёша": !MENU
+[18:25:25] (SILENT) Танк "Алёша" Respawned Themself
+[18:25:28] Танк "Алёша" granted god mode upon Themself
+[18:25:28] Танк "Алёша": !GOD
+[18:25:42] Танк "Алёша" suicided!
+[18:25:42] Бомбино exploded Танк "Алёша"
+[18:25:42] Бомбино: !explode Танк
+[18:25:45] Танк "Алёша": !MENU
+[18:25:47] Client "БОЦМАН ДОЛБАЁБ" spawned in server <STEAM_0:1:707791100> (took 88 seconds).
+[18:25:47] (SILENT) Танк "Алёша" Respawned Themself
+[18:25:48] Танк "Алёша" granted god mode upon Themself
+[18:25:48] Танк "Алёша": !GOD
+[18:26:10] Client "bebrochka" connected.
+[18:26:28] San4oyS suicided!
+[18:26:28] (Console) banned San4oyS for 10 minute(s) (Kicked and Banned for RDM)
+[18:26:53] Dropped "San4oyS" from server<STEAM_0:1:83401869>
+[18:26:58] lenin228prokiller suicided!
+[18:27:08] Танк "Алёша" suicided!
+[18:27:08] Бомбино exploded Танк "Алёша"
+[18:27:08] Бомбино: !explode Танк
+[18:27:08] Главное понятие suicided!
+[18:27:09] Client "ItsBizarreMan" connected.
+[18:27:10] Танк "Алёша": !MENU
+[18:27:12] (SILENT) Танк "Алёша" Respawned Themself
+[18:27:14] Танк "Алёша" granted god mode upon Themself
+[18:27:14] Танк "Алёша": !GOD
+[18:27:17] Client "bebrochka" spawned in server <STEAM_0:1:524335631> (took 67 seconds).
+[18:27:24] Frdeng suicided!
+[18:27:36] Танк "Алёша" suicided!
+[18:27:36] Бомбино exploded Танк "Алёша"
+[18:27:36] Бомбино: !explode Танк
+[18:27:38] Танк "Алёша": !MENU
+[18:27:40] (SILENT) Танк "Алёша" Respawned Themself
+[18:27:41] Танк "Алёша" granted god mode upon Themself
+[18:27:41] Танк "Алёша": !GOD
+[18:27:47] bebrochka: всем привет кого не видел
+[18:27:47] 6uit-Hear10₆₆ suicided!
+[18:27:48] Танк "Алёша" suicided!
+[18:27:48] Бомбино exploded Танк "Алёша"
+[18:27:48] Бомбино: !explode Танк
+[18:27:49] Танк "Алёша": !MENU
+[18:27:50] Бомбино suicided!
+[18:27:50] Medgat suicided!
+[18:27:51] (SILENT) Танк "Алёша" Respawned Themself
+[18:27:51] Древний Русс suicided!
+[18:27:51] 『M』『D』『K』 suicided!
+[18:27:52] G H O S T suicided!
+[18:27:52] Танк "Алёша" granted god mode upon Themself
+[18:27:52] Танк "Алёша": !GOD
+[18:27:53] 6uit-Hear10₆₆: уродина
+[18:27:53] Танк "Алёша" suicided!
+[18:27:53] Бомбино exploded Танк "Алёша"
+[18:27:53] Бомбино: !explode Танк
+[18:27:56] Танк "Алёша": !MENU
+[18:27:59] (SILENT) Танк "Алёша" Respawned Themself
+[18:28:02] Танк "Алёша" granted god mode upon Themself
+[18:28:02] Танк "Алёша": !GOD
+[18:28:04] лысое чмо voted for gm_ploschadka (1/8)
+[18:28:04] лысое чмо: !votemap 14
+[18:28:04] Frdeng: Тдм ебани
+[18:28:10] лысое чмо: э
+[18:28:26] 6uit-Hear10₆₆ suicided!
+[18:28:28] БОЦМАН ДОЛБАЁБ suicided!
+[18:28:37] Client "ItsBizarreMan" spawned in server <STEAM_0:0:534583511> (took 88 seconds).
+[18:28:45] Танк "Алёша" granted god mode upon Themself
+[18:28:45] Танк "Алёша": !god
+[18:28:47] лысое чмо suicided!
+[18:28:49] Бомбино suicided!
+[18:28:57] Танк "Алёша" granted god mode upon Themself
+[18:28:57] Танк "Алёша": !god
+[18:28:59] Dropped "ALADYWKA" from server<STEAM_0:1:499599183>
+[18:28:59] ALADYWKA suicided!
+[18:29:02] Танк "Алёша" suicided!
+[18:29:02] Бомбино exploded Танк "Алёша"
+[18:29:02] Бомбино: !explode Танк
+[18:29:05] Танк "Алёша": !menu
+[18:29:06] (SILENT) Танк "Алёша" Respawned Themself
+[18:29:07] Танк "Алёша" granted god mode upon Themself
+[18:29:07] Танк "Алёша": !god
+[18:29:31] Dota Veteran: !levelnext DM
+[18:29:41] Бомбино suicided!
+[18:29:44] Dota Veteran: /levelnext DM
+[18:29:46] Dropped "Paveletsky" from server<STEAM_0:0:30588797>
+[18:29:49] Client "Paveletsky" connected.
+[18:30:00] Dropped "Dota Veteran" from server<STEAM_0:0:185099753>
+[18:30:04] Client "Dota Veteran" connected.
+[18:30:06] Client "Paveletsky" spawned in server <STEAM_0:0:30588797> (took 17 seconds).
+[18:30:10] Танк "Алёша" granted god mode upon Themself
+[18:30:10] Танк "Алёша": !god
+[18:30:20] лысое чмо suicided!
+[18:30:23] Бомбино suicided!
+[18:30:28] Client "Dota Veteran" spawned in server <STEAM_0:0:185099753> (took 24 seconds).
+[18:30:28] Dropped "БОЦМАН ДОЛБАЁБ" from server<STEAM_0:1:707791100>
+[18:30:28] БОЦМАН ДОЛБАЁБ suicided!
+[18:30:31] 6uit-Hear10₆₆: !menu
+[18:30:32] Танк "Алёша" suicided!
+[18:30:32] Бомбино exploded Танк "Алёша"
+[18:30:32] Бомбино: !explode Танк
+[18:30:39] Танк "Алёша": t
+[18:30:40] Client "БОЦМАН ДОЛБАЁБ" connected.
+[18:30:42] Танк "Алёша": !menu
+[18:30:43] (SILENT) Танк "Алёша" Respawned Themself
+[18:30:45] Танк "Алёша" granted god mode upon Themself
+[18:30:45] Танк "Алёша": !god
+[18:30:45] 6uit-Hear10₆₆: !help
+[18:31:19] Client "БОЦМАН ДОЛБАЁБ" spawned in server <STEAM_0:1:707791100> (took 39 seconds).
+[18:31:19] Древний Русс suicided!
+[18:31:20] Главное понятие suicided!
+[18:31:20] (Console) banned Главное понятие for 10 minute(s) (Kicked and Banned for RDM)
+[18:31:25] лысое чмо suicided!
+[18:31:25] Древний Русс: хай гайс ваххавхахва
+[18:31:38] лысое чмо: !votemap
+[18:31:55] 6uit-Hear10₆₆ suicided!
+[18:32:15] Бомбино suicided!
+[18:32:42] Бомбино: !menu
+[18:32:46] Client "ZXC_abort" connected.
+[18:32:48] Главное понятие suicided!
+[18:32:48] (Console) banned Главное понятие for 10 minute(s) (Kicked and Banned for RDM)
+[18:33:22] Medgat suicided!
+[18:33:23] Древний Русс suicided!
+[18:33:29] Dropped "bebrochka" from server<STEAM_0:1:524335631>
+[18:33:29] Client "bebrochka" connected.
+[18:33:50] Client "bebrochka" spawned in server <STEAM_0:1:524335631> (took 21 seconds).
+[18:34:17] bebrochka: а че я летать не могу в спекте
+[18:34:25] bebrochka: помогите
+[18:34:26] Бомбино suicided!
+[18:34:38] Танк "Алёша" suicided!
+[18:34:43] 6uit-Hear10₆₆: !motd
+[18:34:45] Dominic suicided!
+[18:34:50] 6uit-Hear10₆₆: !help
+[18:34:50] Frdeng: ой
+[18:34:54] Client "Мистер Котейкин" connected.
+[18:35:00] ItsBizarreMan suicided!
+[18:35:02] Танк "Алёша": !menu
+[18:35:02] Бомбино: !menu
+[18:35:03] Dropped "Medgat" from server<STEAM_0:0:779139135>
+[18:35:06] bebrochka: а че я летать не могу в спекте
+[18:35:07] (SILENT) Бомбино is now administrating
+[18:35:07] bebrochka: помогите
+[18:35:14] Dota Veteran<STEAM_0:0:185099753> spawned model models/props_c17/oildrum001_explosive.mdl
+[18:35:16] Client "Azatoth" connected.
+[18:35:23] (SILENT) Бомбино Respawned Themself
+[18:35:25] Танк "Алёша" to Frdeng: мне тебя забанить или что?
+[18:35:27] Бомбино granted god mode upon Themself
+[18:35:27] Бомбино: !god
+[18:35:29] Танк "Алёша" to Frdeng: мне тебя забанить или что?
+[18:35:30] Танк "Алёша" to Frdeng: мне тебя забанить или что?
+[18:35:30] Танк "Алёша" to Frdeng: мне тебя забанить или что?
+[18:35:37] (SILENT) Paveletsky Respawned Themself
+[18:35:40] Frdeng: не нада
+[18:35:44] Paveletsky: !bring Dota Veteran
+[18:35:46] 『M』『D』『K』 suicided!
+[18:35:48] (SILENT) Paveletsky Respawned Dota Veteran
+[18:35:49] bebrochka: а че я летать не могу в спекте
+[18:35:50] Paveletsky brought Dota Veteran
+[18:35:50] Paveletsky: !bring Dota Veteran
+[18:35:50] bebrochka: помогите
+[18:35:51] Frdeng: не бей
+[18:35:52] Frdeng: дядя
+[18:36:06] Stanley5 suicided!
+[18:36:16] Dota Veteran suicided!
+[18:36:16] Dropped "6uit-Hear10₆₆" from server<STEAM_0:0:610647292>
+[18:36:16] 6uit-Hear10₆₆ suicided!
+[18:36:16] Client "oolong_leaf" connected.
+[18:36:27] Client "Azatoth" spawned in server <STEAM_0:1:434220474> (took 71 seconds).
+[18:36:32] Client "ZXC_abort" connected.
+[18:36:49] Client "oolong_leaf" spawned in server <STEAM_0:1:568805709> (took 33 seconds).
+[18:36:50] Frdeng: хули меня отпиздил
+[18:37:24] Frdeng suicided!
+[18:37:35] Древний Русс: что ты выберешь абъебос
+[18:37:52] Древний Русс: мохнатную пизду или мохнатый хуй
+[18:38:02] bebrochka: последнее
+[18:38:20] Древний Русс: но он с помощью струи мочи мжет пондять т ебе на 30 метров! вау
+[18:38:22] Бомбино<STEAM_0:1:628835900> spawned sent ent_drop_flashlight
+[18:38:23] Древний Русс: титинк
+[18:38:33] G H O S T suicided!
+[18:38:38] Dropped "ItsBizarreMan" from server<STEAM_0:0:534583511>
+[18:38:54] Paveletsky suicided!
+[18:38:58] Бомбино granted god mode upon Themself
+[18:38:58] Бомбино: !god
+[18:39:05] Paveletsky suicided!
+[18:39:06] Client "ItsBizarreMan" connected.
+[18:39:17] Client "San4oyS" connected.
+[18:39:36] Dominic suicided!
+[18:39:45] БОЦМАН ДОЛБАЁБ suicided!
+[18:39:49] (SILENT) Бомбино Respawned Themself
+[18:39:50] Client "ItsBizarreMan" spawned in server <STEAM_0:0:534583511> (took 44 seconds).
+[18:39:50] Бомбино granted god mode upon Themself
+[18:39:50] Бомбино: !god
+[18:39:56] Client "Sasa" connected.
+[18:39:58] Древний Русс suicided!
+[18:40:01] oolong_leaf suicided!
+[18:40:04] Dropped "БОЦМАН ДОЛБАЁБ" from server<STEAM_0:1:707791100>
+[18:40:28] Client "6uit-Hear10₆₆" connected.
+[18:40:28] Client "San4oyS" spawned in server <STEAM_0:1:83401869> (took 71 seconds).
+[18:40:37] bebrochka suicided!
+[18:40:41] lenin228prokiller suicided!
+[18:40:46] G H O S T suicided!
+[18:40:47] Stanley5 suicided!
+[18:40:48] Client "6uit-Hear10₆₆" spawned in server <STEAM_0:0:610647292> (took 20 seconds).
+[18:41:08] bebrochka: а че я летать не могу в спекте
+[18:41:11] лысое чмо: афк 9999999
+[18:41:15] San4oyS: Тоже самое.
+[18:41:16] Paveletsky: пока нельзя
+[18:41:18] Бомбино: !menu
+[18:41:19] bebrochka: блять
+[18:41:19] Paveletsky: баг
+[18:41:24] Dota Veteran suicided!
+[18:41:28] 6uit-Hear10₆₆: чо с этим сервером
+[18:41:42] Бомбино banned lenin228prokiller for 15 minutes (3.15)
+[18:41:42] Dropped "lenin228prokiller" from server<STEAM_0:0:765082650>
+[18:41:42] lenin228prokiller suicided!
+[18:42:08] 『M』『D』『K』 suicided!
+[18:42:20] Dropped "6uit-Hear10₆₆" from server<STEAM_0:0:610647292>
+[18:42:20] 6uit-Hear10₆₆ suicided!
+[18:42:26] San4oyS suicided!
+[18:42:35] Dota Veteran suicided!
+[18:42:35] Dota Veteran suicided!
+[18:43:03] ItsBizarreMan suicided!
+[18:43:14] oolong_leaf suicided!
+[18:43:30] Dominic suicided!
+[18:43:51] Танк "Алёша" suicided!
+[18:43:51] Танк "Алёша" suicided!
+[18:44:24] Dominic was killed by gb_rocket_rp3
+[18:44:25] G H O S T suicided!
+[18:44:44] Frdeng suicided!
+[18:44:44] Frdeng suicided!
+[18:44:51] Dota Veteran suicided!
+[18:44:53] Client "† RESIST †" connected.
+[18:44:59] Stanley5 suicided!
+[18:45:00] oolong_leaf suicided!
+[18:45:22] Dropped "oolong_leaf" from server<STEAM_0:1:568805709>
+[18:45:25] Dota Veteran Запустил голосование за gm_eliden_hmcd
+[18:45:26] Танк "Алёша": No
+[18:45:26] G H O S T: Yes
+[18:45:27] bebrochka: Yes
+[18:45:27] Dota Veteran: Yes
+[18:45:27] San4oyS: Yes
+[18:45:28] Paveletsky: Yes
+[18:45:30] Dropped "Древний Русс" from server<STEAM_0:1:778238721>
+[18:45:30] Древний Русс suicided!
+[18:45:30] ItsBizarreMan: Yes
+[18:45:30] лысое чмо: Yes
+[18:45:30] ItsBizarreMan suicided!
+[18:45:40] Бомбино: No
+[18:45:41] Dominic: Yes
+[18:45:43] Client "Мистер Котейкин" spawned in server <STEAM_0:1:429035553> (took 649 seconds).
+[18:45:46] Vote results: Option 'Yes' won, changemap pending approval. (8/16)
+[18:45:48] Dota Veteran: Yes
+[18:45:48] Dota Veteran approved the votemap
+[18:45:48] Server is shutting down/changing levels.
+
+
+
+[18:46:05] New map: gm_eliden_hmcd
+[18:46:06] Client "San4oyS" connected.
+[18:46:06] Client "Azatoth" connected.
+[18:46:07] Client "Paveletsky" connected.
+[18:46:11] Client "ItsBizarreMan" connected.
+[18:46:11] Client "bebrochka" connected.
+[18:46:11] Client "Главное понятие" connected.
+[18:46:11] Client "Бомбино" connected.
+[18:46:11] Client "Frdeng" connected.
+[18:46:11] Client "Танк "Алёша"" connected.
+[18:46:11] Client "『M』『D』『K』" connected.
+[18:46:11] Client "лысое чмо" connected.
+[18:46:11] Client "Stanley5" connected.
+[18:46:11] Client "Dominic" connected.
+[18:46:11] Client "Dota Veteran" connected.
+[18:46:11] Client "G H O S T" connected.
+[18:46:28] Client "Paveletsky" spawned in server <STEAM_0:0:30588797> (took 21 seconds).
+[18:46:30] Client "Stanley5" spawned in server <STEAM_0:0:190493017> (took 19 seconds).
+[18:46:33] Client "Azatoth" spawned in server <STEAM_0:1:434220474> (took 27 seconds).
+[18:46:37] Client "Dota Veteran" spawned in server <STEAM_0:0:185099753> (took 26 seconds).
+[18:46:37] Client "San4oyS" spawned in server <STEAM_0:1:83401869> (took 31 seconds).
+[18:46:41] Client "Frdeng" spawned in server <STEAM_0:1:606601614> (took 30 seconds).
+[18:46:45] Paveletsky suicided!
+[18:46:47] Client "† RESIST †" spawned in server <STEAM_0:1:95746817> (took 50 seconds).
+[18:46:47] Client "лысое чмо" spawned in server <STEAM_0:0:605817218> (took 36 seconds).
+[18:46:49] Client "Dominic" spawned in server <STEAM_0:1:227086796> (took 38 seconds).
+[18:46:53] Client "Главное понятие" spawned in server <STEAM_0:1:114298453> (took 42 seconds).
+[18:46:54] Stanley5: ой
+[18:46:55] Client "ItsBizarreMan" spawned in server <STEAM_0:0:534583511> (took 44 seconds).
+[18:46:56] Client "Танк "Алёша"" spawned in server <STEAM_0:1:795064676> (took 45 seconds).
+[18:46:58] Client "『M』『D』『K』" spawned in server <STEAM_0:1:225435941> (took 47 seconds).
+[18:47:03] Client "bebrochka" spawned in server <STEAM_0:1:524335631> (took 52 seconds).
+[18:47:05] Client "G H O S T" spawned in server <STEAM_0:0:489640987> (took 54 seconds).
+[18:47:11] Client "Мистер Котейкин" spawned in server <STEAM_0:1:429035553> (took 74 seconds).
+[18:47:14] Stanley5: а где
+[18:47:18] Stanley5: где граната
+[18:47:20] Client "Бомбино" spawned in server <STEAM_0:1:628835900> (took 69 seconds).
+[18:47:29] Stanley5 suicided!
+[18:47:37] bebrochka: новый хост
+[18:47:47] bebrochka: кайф
+[18:47:53] Frdeng: ГДЕ ГРАНАТА
+[18:48:05] bebrochka: аъъахъа
+[18:48:08] ItsBizarreMan suicided!
+[18:48:23] Client "yeat?" connected.
+[18:48:28] bebrochka suicided!
+[18:48:28] (Console) banned bebrochka for 10 minute(s) (Kicked and Banned for RDM)
+[18:48:34] лысое чмо suicided!
+[18:48:38] лысое чмо: !votemap
+[18:48:54] 『M』『D』『K』 suicided!
+[18:48:54] (Console) banned 『M』『D』『K』 for 10 minute(s) (Kicked and Banned for RDM)
+[18:48:55] лысое чмо: почему нету де_скул4 в списке карт!?!?!?!
+[18:49:15] Paveletsky: ПОзже вернут
+[18:49:16] Бомбино suicided!
+[18:49:23] лысое чмо: и поч я во фрикаме летать не могу
+[18:49:24] Paveletsky: Сейчас нельзя
+[18:49:35] Paveletsky: сидед лох потому что
+[18:49:45] Stanley5 suicided!
+[18:49:45] (Console) banned Stanley5 for 10 minute(s) (Kicked and Banned for RDM)
+[18:49:47] лысое чмо: ты тоже не можешь?
+[18:49:51] Client "ZXC_abort" spawned in server <STEAM_0:1:585825035> (took 234 seconds).
+[18:49:54] Paveletsky: не могу
+[18:49:57] Client "Crowley Skyline" connected.
+[18:50:04] Client "yeat?" spawned in server <STEAM_0:0:517838368> (took 101 seconds).
+[18:50:16] G H O S T suicided!
+[18:50:19] Мистер Котейкин suicided!
+[18:50:22] Frdeng suicided!
+[18:50:40] Dropped "ZXC_abort" from server<STEAM_0:1:585825035>
+[18:50:40] ZXC_abort suicided!
+[18:50:42] Client "Древний Русс" connected.
+[18:50:52] Client "Crowley Skyline" spawned in server <STEAM_0:0:513586828> (took 55 seconds).
+[18:50:58] bebrochka: пинком
+[18:51:08] Client "Bounty Hunter" connected.
+[18:51:16] Dominic suicided!
+[18:51:24] Dropped "Главное понятие" from server<STEAM_0:1:114298453>
+[18:51:24] Главное понятие suicided!
+[18:51:34] Azatoth suicided!
+[18:51:36] Бомбино suicided!
+[18:51:37] G H O S T suicided!
+[18:51:37] (Console) banned G H O S T for 10 minute(s) (Kicked and Banned for RDM)
+[18:51:45] Dota Veteran suicided!
+[18:51:45] (Console) banned Dota Veteran for 10 minute(s) (Kicked and Banned for RDM)
+[18:52:00] Мистер Котейкин banned Dota Veteran for 11 hours 40 minutes (A.A)
+[18:52:00] Dropped "Dota Veteran" from server<STEAM_0:0:185099753>
+[18:52:08] † RESIST † suicided!
+[18:52:14] Client "Bounty Hunter" spawned in server <STEAM_0:0:616881631> (took 66 seconds).
+[18:52:22] Мистер Котейкин suicided!
+[18:52:36] Client "Древний Русс" spawned in server <STEAM_0:1:778238721> (took 114 seconds).
+[18:52:42] Frdeng: че за песня
+[18:53:08] Мистер Котейкин: !menu
+[18:53:09] Stanley5 suicided!
+[18:53:16] (SILENT) Мистер Котейкин Respawned Themself
+[18:53:45] Мистер Котейкин<STEAM_0:1:429035553> spawned ragdoll models/humans/group01/male_cheaple.mdl
+[18:53:48] Мистер Котейкин<STEAM_0:1:429035553> spawned ragdoll models/humans/group01/female_01.mdl
+[18:54:13] Client "GaGarin" connected.
+[18:54:26] ItsBizarreMan suicided!
+[18:54:32] (TEAM) † RESIST †: k
+[18:54:36] Бомбино suicided!
+[18:54:39] yeat? suicided!
+[18:54:39] yeat? suicided!
+[18:54:39] † RESIST † suicided!
+[18:54:42] Dropped "ItsBizarreMan" from server<STEAM_0:0:534583511>
+[18:54:42] ItsBizarreMan suicided!
+[18:54:46] Frdeng: уроа
+[18:54:47] Frdeng: своо
+[18:54:47] лысое чмо: де скул!!!
+[18:54:51] bebrochka: аххаха
+[18:54:51] Мистер Котейкин: !ьутг
+[18:55:11] bebrochka: тикрейт пропал
+[18:55:13] bebrochka: (
+[18:55:19] bebrochka: о
+[18:55:22] bebrochka: появился
+[18:55:25] San4oyS suicided!
+[18:55:25] San4oyS suicided!
+[18:55:25] San4oyS suicided!
+[18:55:25] Bounty Hunter suicided!
+[18:55:25] (Console) banned San4oyS for 10 minute(s) (Kicked and Banned for RDM)
+[18:55:25] (Console) banned San4oyS for 10 minute(s) (Kicked and Banned for RDM)
+[18:55:25] (Console) banned San4oyS for 10 minute(s) (Kicked and Banned for RDM)
+[18:55:33] Client "GaGarin" spawned in server <STEAM_0:1:63073442> (took 80 seconds).
+[18:55:37] Crowley Skyline suicided!
+[18:55:37] yeat? suicided!
+[18:55:38] 『M』『D』『K』 suicided!
+[18:55:38] (Console) banned 『M』『D』『K』 for 10 minute(s) (Kicked and Banned for RDM)
+[18:55:39] 『M』『D』『K』 suicided!
+[18:55:39] (Console) banned 『M』『D』『K』 for 10 minute(s) (Kicked and Banned for RDM)
+[18:55:48] Танк "Алёша" suicided!
+[18:55:50] Dropped "Танк "Алёша"" from server<STEAM_0:1:795064676>
+[18:56:07] † RESIST † suicided!
+[18:56:19] Dominic suicided!
+[18:56:35] Azatoth suicided!
+[18:56:38] лысое чмо suicided!
+[18:56:39] Бомбино suicided!
+[18:57:09] Dropped "San4oyS" from server<STEAM_0:1:83401869>
+[18:57:12] Client "lenin228prokiller" connected.
+[18:57:37] Client "lenin228prokiller" spawned in server <STEAM_0:0:765082650> (took 25 seconds).
+[18:57:38] Frdeng suicided!
+[18:57:38] Frdeng suicided!
+[18:57:52] Бомбино: котейкин
+[18:57:54] Бомбино: ай ай ай
+[18:58:00] Бомбино: я демку пишу
+[18:58:05] Мистер Котейкин suicided!
+[18:58:08] bebrochka suicided!
+[18:58:16] Бомбино: !menu
+[18:58:17] Dropped "GaGarin" from server<STEAM_0:1:63073442>
+[18:58:21] лысое чмо: жопу порвали
+[18:58:38] Dropped "Мистер Котейкин" from server<STEAM_0:1:429035553>
+[18:58:43] Бомбино banned † RESIST † for 6 hours (оск родни + оск администрации)
+[18:58:43] Dropped "† RESIST †" from server<STEAM_0:1:95746817>
+[18:58:59] Stanley5: блять нога сломанаэ
+[18:59:20] Client "ItsBizarreMan" connected.
+[18:59:21] G H O S T suicided!
+[18:59:30] bebrochka: <hsv=t()*300>левел энд
+[18:59:53] Бомбино: ты ласт
+[18:59:58] Бомбино: лучше кильнись
+[19:00:01] Client "ItsBizarreMan" spawned in server <STEAM_0:0:534583511> (took 41 seconds).
+[19:00:03] Client "НАХУЮНАМОТАНО" connected.
+[19:00:03] Бомбино: пж
+[19:00:11] Бомбино: ну пж
+[19:00:17] bebrochka: уебите его нахуй
+[19:00:19] Бомбино: он не там
+[19:00:22] Stanley5 suicided!
+[19:00:39] Crowley Skyline suicided!
+[19:00:39] Crowley Skyline suicided!
+[19:00:46] G H O S T suicided!
+[19:00:46] (Console) banned G H O S T for 10 minute(s) (Kicked and Banned for RDM)
+[19:00:52] Client "Мистер Котейкин" connected.
+[19:01:23] Client "sealeongoth" connected.
+[19:01:29] Stanley5 suicided!
+[19:01:29] лысое чмо suicided!
+[19:01:29] yeat? suicided!
+[19:01:29] 『M』『D』『K』 suicided!
+[19:01:29] bebrochka suicided!
+[19:01:35] лысое чмо: карта хуйня
+[19:01:35] bebrochka: пиздец
+[19:01:40] bebrochka: как меня уебало
+[19:01:41] Stanley5: лучшая карта
+[19:01:49] лысое чмо: мало народу и типы время тянут
+[19:01:56] Stanley5: азатох я твоя совесть
+[19:02:04] Stanley5: я знаю ты дрочишь на фурри
+[19:02:22] Dominic suicided!
+[19:02:23] Бомбино suicided!
+[19:02:25] Azatoth suicided!
+[19:02:30] Client "Мистер Котейкин" spawned in server <STEAM_0:1:429035553> (took 98 seconds).
+[19:02:37] лысое чмо: го офис
+[19:03:07] Crowley Skyline suicided!
+[19:03:30] Мистер Котейкин: !menu
+[19:03:38] 『M』『D』『K』 suicided!
+[19:03:38] 『M』『D』『K』 suicided!
+[19:03:38] G H O S T suicided!
+[19:03:38] (SILENT) Мистер Котейкин Respawned Themself
+[19:03:40] Frdeng suicided!
+[19:03:50] Client "Tweetle" connected.
+[19:03:54] Dominic suicided!
+[19:04:01] ItsBizarreMan suicided!
+[19:04:06] Client "John F. Kennedy" connected.
+[19:04:08] лысое чмо suicided!
+[19:04:17] Bounty Hunter suicided!
+[19:04:18] Dropped "Dominic" from server<STEAM_0:1:227086796>
+[19:04:18] лысое чмо: сука нахуярили обнов сервер сдыхает
+[19:04:36] bebrochka suicided!
+[19:05:04] Azatoth suicided!
+[19:05:13] Бомбино suicided!
+[19:05:18] bebrochka: +
+[19:05:21] lenin228prokiller suicided!
+[19:05:21] lenin228prokiller suicided!
+[19:05:25] bebrochka: !menu
+[19:05:27] лысое чмо: ставьте скулшут реально пох народу маловато
+[19:05:31] Древний Русс suicided!
+[19:05:59] bebrochka: а где карта школы блять
+[19:06:30] G H O S T suicided!
+[19:06:39] лысое чмо suicided!
+[19:06:41] Бомбино suicided!
+[19:07:00] Client "Tweetle" spawned in server <STEAM_0:1:426846788> (took 190 seconds).
+[19:07:07] ItsBizarreMan suicided!
+[19:07:07] Crowley Skyline suicided!
+[19:07:14] Client "Psychopath" connected.
+[19:07:14] yeat? suicided!
+[19:07:19] Frdeng suicided!
+[19:07:38] Stanley5 suicided!
+[19:07:52] bebrochka suicided!
+[19:07:55] bebrochka: !menu
+[19:08:02] Dropped "Мистер Котейкин" from server<STEAM_0:1:429035553>
+[19:08:04] лысое чмо: поставьте шкилу
+[19:08:06] Crowley Skyline suicided!
+[19:08:06] (Console) banned Crowley Skyline for 10 minute(s) (Kicked and Banned for RDM)
+[19:08:17] Бомбино: ты ласт
+[19:08:21] Бомбино: убейся пж
+[19:08:26] Crowley Skyline suicided!
+[19:08:26] (Console) banned Crowley Skyline for 10 minute(s) (Kicked and Banned for RDM)
+[19:08:27] 『M』『D』『K』 suicided!
+[19:08:30] lenin228prokiller suicided!
+[19:08:31] Stanley5: я гей
+[19:08:32] Древний Русс suicided!
+[19:08:38] bebrochka: куда все карты пропали
+[19:08:40] bebrochka: гдн школа
+[19:08:43] bebrochka: где бибисотка
+[19:09:07] Client "Usha" connected.
+[19:09:08] Stanley5 suicided!
+[19:09:15] Bounty Hunter suicided!
+[19:09:15] 『M』『D』『K』 suicided!
+[19:09:15] Древний Русс suicided!
+[19:09:15] Древний Русс suicided!
+[19:09:15] Древний Русс suicided!
+[19:09:15] (Console) banned Древний Русс for 10 minute(s) (Kicked and Banned for RDM)
+[19:09:15] (Console) banned Древний Русс for 10 minute(s) (Kicked and Banned for RDM)
+[19:09:15] (Console) banned Древний Русс for 10 minute(s) (Kicked and Banned for RDM)
+[19:09:15] lenin228prokiller suicided!
+[19:09:20] yeat? suicided!
+[19:09:29] Frdeng suicided!
+[19:09:37] Client "Usha" spawned in server <STEAM_0:1:499149205> (took 30 seconds).
+[19:09:43] Crowley Skyline suicided!
+[19:10:05] bebrochka: нахуя ты своих закрываешь
+[19:10:12] bebrochka suicided!
+[19:10:15] лысое чмо suicided!
+[19:10:16] Tweetle suicided!
+[19:10:16] Tweetle suicided!
+[19:10:16] Tweetle suicided!
+[19:10:16] (Console) banned Tweetle for 10 minute(s) (Kicked and Banned for RDM)
+[19:10:16] (Console) banned Tweetle for 10 minute(s) (Kicked and Banned for RDM)
+[19:10:16] (Console) banned Tweetle for 10 minute(s) (Kicked and Banned for RDM)
+[19:10:16] Tweetle suicided!
+[19:10:16] Tweetle suicided!
+[19:10:16] Tweetle suicided!
+[19:10:16] Tweetle suicided!
+[19:10:16] Tweetle suicided!
+[19:10:16] Бомбино suicided!
+[19:10:16] (Console) banned Tweetle for 10 minute(s) (Kicked and Banned for RDM)
+[19:10:16] (Console) banned Tweetle for 10 minute(s) (Kicked and Banned for RDM)
+[19:10:16] (Console) banned Tweetle for 10 minute(s) (Kicked and Banned for RDM)
+[19:10:16] (Console) banned Tweetle for 10 minute(s) (Kicked and Banned for RDM)
+[19:10:16] (Console) banned Tweetle for 10 minute(s) (Kicked and Banned for RDM)
+[19:10:18] Stanley5 Запустил голосование за de_secretcamp_classix
+[19:10:20] G H O S T: Yes
+[19:10:20] Tweetle: No
+[19:10:21] Древний Русс: Yes
+[19:10:21] Stanley5: Yes
+[19:10:22] лысое чмо: No
+[19:10:22] bebrochka: Yes
+[19:10:24] Bounty Hunter: Yes
+[19:10:24] lenin228prokiller: Yes
+[19:10:26] bebrochka: !menu
+[19:10:29] 『M』『D』『K』: Yes
+[19:10:29] Бомбино: No
+[19:10:30] Frdeng: No
+[19:10:31] ItsBizarreMan: No
+[19:10:31] Usha: No
+[19:10:37] Paveletsky: Yes
+[19:10:39] Vote results: Vote was unsuccessful.
+[19:10:42] лысое чмо: !votemap
+[19:11:07] (SILENT) Бомбино Respawned Themself
+[19:11:08] Stanley5 зпустил голосование de_secretcamp_classix gm_hoodcorner_extended ttt_clue_2022 ttt_drugbust
+[19:11:13] Древний Русс: gm_hoodcorner_extended
+[19:11:14] lenin228prokiller: gm_hoodcorner_extended
+[19:11:15] Stanley5: ttt_drugbust
+[19:11:16] Client "6uit-Hear10₆₆" connected.
+[19:11:17] Бомбино suicided!
+[19:11:18] 『M』『D』『K』: de_secretcamp_classix
+[19:11:20] Usha: gm_hoodcorner_extended
+[19:11:20] bebrochka: ttt_drugbust
+[19:11:20] Frdeng: ttt_drugbust
+[19:11:23] G H O S T: ttt_drugbust
+[19:11:23] ItsBizarreMan: ttt_drugbust
+[19:11:27] лысое чмо: gm_hoodcorner_extended
+[19:11:27] Dropped "yeat?" from server<STEAM_0:0:517838368>
+[19:11:29] Vote results: Vote was unsuccessful.
+[19:11:35] G H O S T suicided!
+[19:11:37] Dropped "лысое чмо" from server<STEAM_0:0:605817218>
+[19:11:38] Azatoth suicided!
+[19:11:54] Client "6uit-Hear10₆₆" spawned in server <STEAM_0:0:610647292> (took 38 seconds).
+[19:12:09] Usha suicided!
+[19:12:14] Bounty Hunter suicided!
+[19:12:18] Crowley Skyline suicided!
+[19:12:52] 6uit-Hear10₆₆: почему на этом сервере не могу вещи подбирать?
+[19:13:02] 『M』『D』『K』 suicided!
+[19:13:03] bebrochka suicided!
+[19:13:07] Бомбино suicided!
+[19:13:17] 6uit-Hear10₆₆: почему на этом сервере не могу вещи подбирать?
+[19:13:26] 6uit-Hear10₆₆: +
+[19:14:17] ItsBizarreMan suicided!
+[19:14:20] Dropped "ItsBizarreMan" from server<STEAM_0:0:534583511>
+[19:14:25] lenin228prokiller suicided!
+[19:14:26] Stanley5 suicided!
+[19:14:28] G H O S T suicided!
+[19:14:28] Древний Русс suicided!
+[19:14:37] Бомбино: прости
+[19:14:40] Frdeng suicided!
+[19:14:40] Бомбино: случайно взял
+[19:14:42] Stanley5: какой эпик
+[19:14:45] Tweetle suicided!
+[19:14:51] Client "ItsBizarreMan" connected.
+[19:14:57] Client "ItsBizarreMan" connected.
+[19:14:59] Crowley Skyline: /actnet
+[19:15:22] Client "mercedes amg hoe" connected.
+[19:15:24] Crowley Skyline suicided!
+[19:15:24] Azatoth suicided!
+[19:15:29] Client "Kazah" connected.
+[19:15:30] lenin228prokiller suicided!
+[19:15:35] Client "ItsBizarreMan" spawned in server <STEAM_0:0:534583511> (took 38 seconds).
+[19:15:44] Бомбино suicided!
+[19:15:47] Tweetle suicided!
+[19:15:47] Tweetle suicided!
+[19:15:47] Древний Русс suicided!
+[19:15:47] (Console) banned Tweetle for 10 minute(s) (Kicked and Banned for RDM)
+[19:15:47] (Console) banned Tweetle for 10 minute(s) (Kicked and Banned for RDM)
+[19:15:57] Dropped "Tweetle" from server<STEAM_0:1:426846788>
+[19:15:58] Client "Tweetle" connected.
+[19:16:11] Client "mercedes amg hoe" spawned in server <STEAM_0:0:157734964> (took 49 seconds).
+[19:16:29] Client "Tweetle" spawned in server <STEAM_0:1:426846788> (took 31 seconds).
+[19:16:34] 6uit-Hear10₆₆ suicided!
+[19:16:34] Dropped "ItsBizarreMan" from server<STEAM_0:0:534583511>
+[19:16:35] mercedes amg hoe: я вру
+[19:16:54] Бомбино: !menu
+[19:16:57] Client "ItsBizarreMan" connected.
+[19:16:57] Frdeng suicided!
+[19:16:59] mercedes amg hoe: осуждаю
+[19:17:07] Древний Русс: авыалудаю
+[19:17:08] Бомбино: !menu
+[19:17:10] Бомбино banned lenin228prokiller for 2 hours (упоминание родни)
+[19:17:10] Dropped "lenin228prokiller" from server<STEAM_0:0:765082650>
+[19:17:12] mercedes amg hoe: сам такой
+[19:17:17] Древний Русс: лол бро это не твич
+[19:17:25] Bounty Hunter suicided!
+[19:17:25] Bounty Hunter suicided!
+[19:17:28] mercedes amg hoe: лол кек бро чел боже
+[19:17:28] Usha suicided!
+[19:17:29] 『M』『D』『K』 suicided!
+[19:17:33] Client "ItsBizarreMan" spawned in server <STEAM_0:0:534583511> (took 36 seconds).
+[19:17:41] Stanley5: вардроб добавили кста
+[19:18:15] Client "Kazah" spawned in server <STEAM_0:1:625662918> (took 166 seconds).
+[19:18:51] Crowley Skyline suicided!
+[19:18:51] Crowley Skyline suicided!
+[19:18:53] G H O S T suicided!
+[19:19:01] 6uit-Hear10₆₆ suicided!
+[19:19:10] 『M』『D』『K』 suicided!
+[19:19:21] Tweetle suicided!
+[19:19:27] Client "dekorian" connected.
+[19:19:29] Stanley5 suicided!
+[19:19:30] Usha suicided!
+[19:19:39] Stanley5: когда хомисайд
+[19:19:49] bebrochka suicided!
+[19:19:55] Dropped "mercedes amg hoe" from server<STEAM_0:0:157734964>
+[19:19:55] mercedes amg hoe suicided!
+[19:20:04] Stanley5: бомбино когда хомисайд?
+[19:20:06] Stanley5: бомбино когда хомисайд?
+[19:20:12] Bounty Hunter suicided!
+[19:20:12] Bounty Hunter suicided!
+[19:20:13] Frdeng suicided!
+[19:20:13] Бомбино suicided!
+[19:20:13] (Console) banned Bounty Hunter for 10 minute(s) (Kicked and Banned for RDM)
+[19:20:13] (Console) banned Bounty Hunter for 10 minute(s) (Kicked and Banned for RDM)
+[19:20:15] Azatoth suicided!
+[19:20:50] Bounty Hunter suicided!
+[19:20:58] Client "ZaN" connected.
+[19:21:00] Dropped "Kazah" from server<STEAM_0:1:625662918>
+[19:21:00] Kazah suicided!
+[19:21:03] Client "Kazah" connected.
+[19:21:17] ItsBizarreMan suicided!
+[19:21:31] Древний Русс suicided!
+[19:22:00] G H O S T suicided!
+[19:22:01] bebrochka: БЛЯЯЯЯЯЯЯЯЯЯЯ
+[19:22:02] 6uit-Hear10₆₆ suicided!
+[19:22:14] Azatoth suicided!
+[19:22:20] Client "Kazah" spawned in server <STEAM_0:1:625662918> (took 77 seconds).
+[19:22:22] Tweetle suicided!
+[19:22:22] Tweetle suicided!
+[19:22:23] Crowley Skyline suicided!
+[19:22:28] Dropped "Crowley Skyline" from server<STEAM_0:0:513586828>
+[19:22:32] Frdeng suicided!
+[19:22:34] Client "Crowley Skyline" connected.
+[19:22:53] bebrochka suicided!
+[19:22:53] bebrochka suicided!
+[19:22:54] Client "Crowley Skyline" spawned in server <STEAM_0:0:513586828> (took 20 seconds).
+[19:22:55] Usha suicided!
+[19:22:55] Usha suicided!
+[19:22:55] Древний Русс: ЗАНЯТО НАХУЙ
+[19:22:57] Бомбино suicided!
+[19:23:31] Tweetle suicided!
+[19:23:32] Crowley Skyline suicided!
+[19:23:32] Crowley Skyline suicided!
+[19:23:33] Client "GaGarin" connected.
+[19:23:39] G H O S T suicided!
+[19:23:59] Usha suicided!
+[19:24:06] Бомбино suicided!
+[19:24:06] Бомбино suicided!
+[19:24:12] Client "GaGarin" spawned in server <STEAM_0:1:63073442> (took 39 seconds).
+[19:24:23] Client "gigOS" connected.
+[19:24:43] Dropped "Бомбино" from server<STEAM_0:1:628835900>
+[19:24:46] Dropped "Usha" from server<STEAM_0:1:499149205>
+[19:24:52] Dropped "GaGarin" from server<STEAM_0:1:63073442>
+[19:24:56] bebrochka suicided!
+[19:25:03] 6uit-Hear10₆₆ suicided!
+[19:25:03] 6uit-Hear10₆₆ suicided!
+[19:25:28] Bounty Hunter suicided!
+[19:25:31] Azatoth suicided!
+[19:25:44] Client "gigOS" spawned in server <STEAM_0:0:155488647> (took 81 seconds).
+[19:26:13] Client "ZaN" spawned in server <STEAM_0:1:186480340> (took 315 seconds).
+[19:26:27] ItsBizarreMan suicided!
+[19:26:33] Kazah suicided!
+[19:26:36] Stanley5 suicided!
+[19:26:42] Kazah: ебать я лох		</body>
+	</html>
+[19:26:46] 『M』『D』『K』 suicided!
+[19:26:54] bebrochka: а как танцы поменять
+[19:26:59] bebrochka: знает кто то?
+[19:27:00] Dropped "ZaN" from server<STEAM_0:1:186480340>
+[19:27:00] Dropped "Paveletsky" from server<STEAM_0:0:30588797>
+[19:27:14] Frdeng suicided!
+[19:27:24] bebrochka: <hsv=t()*300>как танцы поменять?
+[19:27:41] Древний Русс suicided!
+[19:27:48] Древний Русс: на нах
+[19:27:49] gigOS suicided!
+[19:27:52] Древний Русс: окурки
+[19:27:55] Dropped "Древний Русс" from server<STEAM_0:1:778238721>
+[19:28:07] Frdeng suicided!
+[19:28:25] bebrochka: <hsv=t()*300>как танцы поменять?
+[19:28:32] Kazah suicided!
+[19:28:33] G H O S T suicided!
+[19:28:58] Crowley Skyline suicided!
+[19:29:03] Stanley5: могут
+[19:29:06] Bounty Hunter suicided!
+[19:29:16] Azatoth suicided!
+[19:29:22] 『M』『D』『K』 suicided!
+[19:29:28] 6uit-Hear10₆₆ suicided!
+[19:29:28] 6uit-Hear10₆₆ suicided!
+[19:29:32] Stanley5 suicided!
+[19:29:39] bebrochka: <hsv=t()*300>как танцы поменять?
+[19:29:46] Tweetle: !levelnext css
+[19:29:53] Dropped "Frdeng" from server<STEAM_0:1:606601614>
+[19:29:53] Frdeng suicided!
+[19:30:37] Azatoth suicided!
+[19:30:38] 『M』『D』『K』 suicided!
+[19:30:38] 『M』『D』『K』 suicided!
+[19:30:42] Bounty Hunter suicided!
+[19:31:06] Dropped "『M』『D』『K』" from server<STEAM_0:1:225435941>
+[19:31:11] ItsBizarreMan suicided!
+[19:31:17] Kazah suicided!
+[19:31:36] Crowley Skyline suicided!
+[19:31:36] Dropped "Stanley5" from server<STEAM_0:0:190493017>
+[19:31:42] Client "baunti" connected.
+[19:31:50] G H O S T suicided!
+[19:31:50] (Console) banned G H O S T for 10 minute(s) (Kicked and Banned for RDM)
+[19:31:50] G H O S T suicided!
+[19:31:50] bebrochka was killed by func_movelinear
+[19:31:50] (Console) banned G H O S T for 10 minute(s) (Kicked and Banned for RDM)
+[19:32:08] bebrochka: мое тело сломало тикрейт
+[19:32:11] bebrochka: пизда
+[19:32:30] Client "лысое чмо" connected.
+[19:32:46] Client "baunti" spawned in server <STEAM_0:1:427024250> (took 64 seconds).
+[19:32:46] 6uit-Hear10₆₆ suicided!
+[19:32:49] Client "лысое чмо" spawned in server <STEAM_0:0:605817218> (took 19 seconds).
+[19:33:17] Bounty Hunter suicided!
+[19:33:17] Bounty Hunter suicided!
+[19:33:18] лысое чмо suicided!
+[19:33:20] Dropped "лысое чмо" from server<STEAM_0:0:605817218>
+[19:33:45] 6uit-Hear10₆₆ suicided!
+[19:33:56] Azatoth suicided!
+[19:34:01] Client "dekorian" spawned in server <STEAM_0:0:463142880> (took 874 seconds).
+[19:34:01] Crowley Skyline suicided!
+[19:34:01] Crowley Skyline suicided!
+[19:34:08] Dropped "Bounty Hunter" from server<STEAM_0:0:616881631>
+[19:34:20] dekorian: /l ( ͡° ͜ʖ ͡°)
+[19:34:48] Kazah suicided!
+[19:34:51] Tweetle suicided!
+[19:34:51] Tweetle suicided!
+[19:35:03] Client "лысое чмо" connected.
+[19:35:05] Client "лысое чмо" connected.
+[19:35:21] Kazah suicided!
+[19:35:21] Kazah suicided!
+[19:35:21] (Console) banned Kazah for 10 minute(s) (Kicked and Banned for RDM)
+[19:35:21] (Console) banned Kazah for 10 minute(s) (Kicked and Banned for RDM)
+[19:35:21] Azatoth suicided!
+[19:35:28] Client "лысое чмо" spawned in server <STEAM_0:0:605817218> (took 23 seconds).
+[19:35:41] baunti: пошли за мной
+[19:36:00] dekorian suicided!
+[19:36:05] baunti suicided!
+[19:36:05] Dropped "dekorian" from server<STEAM_0:0:463142880>
+[19:36:09] baunti: КТО И КАК
+[19:36:19] baunti: сука бляя
+[19:36:22] Client "Stanley5" connected.
+[19:36:32] Client "ALADYWKA" connected.
+[19:36:37] baunti: блять че с прицелом?
+[19:36:41] Client "Stanley5" spawned in server <STEAM_0:0:190493017> (took 19 seconds).
+[19:36:41] baunti: я привыкнуть не могу
+[19:36:41] 6uit-Hear10₆₆ suicided!
+[19:36:47] Client "Nics" connected.
+[19:36:52] baunti: и этот шампиньен че делает?
+[19:37:05] baunti: давай бля
+[19:37:07] Crowley Skyline suicided!
+[19:37:12] baunti: хуй во рту у меня
+[19:37:36] bebrochka suicided!
+[19:37:41] Crowley Skyline suicided!
+[19:37:41] G H O S T suicided!
+[19:37:42] Dropped "лысое чмо" from server<STEAM_0:0:605817218>
+[19:37:42] лысое чмо suicided!
+[19:37:59] G H O S T suicided!
+[19:38:01] bebrochka suicided!
+[19:38:01] (Console) banned bebrochka for 10 minute(s) (Kicked and Banned for RDM)
+[19:38:01] bebrochka suicided!
+[19:38:01] (Console) banned bebrochka for 10 minute(s) (Kicked and Banned for RDM)
+[19:38:02] bebrochka suicided!
+[19:38:02] (Console) banned bebrochka for 10 minute(s) (Kicked and Banned for RDM)
+[19:38:04] bebrochka: ебана
+[19:38:06] bebrochka: пиздец
+[19:38:08] bebrochka: соирян
+[19:38:09] Client "ALADYWKA" spawned in server <STEAM_0:1:499599183> (took 97 seconds).
+[19:38:10] Crowley Skyline suicided!
+[19:38:11] bebrochka: сорян
+[19:38:13] Azatoth suicided!
+[19:38:22] ItsBizarreMan suicided!
+[19:38:32] ItsBizarreMan: bind . kick_nig
+[19:38:45] bebrochka: neg на конце
+[19:39:13] 6uit-Hear10₆₆ suicided!
+[19:39:26] Tweetle suicided!
+[19:39:30] Stanley5 suicided!
+[19:39:30] baunti suicided!
+[19:39:33] baunti: да сука
+[19:39:37] baunti: Я ЖЕ ПОПАЛ
+[19:39:43] gigOS: я в бронек
+[19:39:57] baunti suicided!
+[19:39:57] (Console) banned baunti for 10 minute(s) (Kicked and Banned for RDM)
+[19:40:35] Azatoth suicided!
+[19:40:39] G H O S T suicided!
+[19:40:52] Client "oolong_leaf" connected.
+[19:41:06] 6uit-Hear10₆₆ suicided!
+[19:41:11] Client "oolong_leaf" spawned in server <STEAM_0:1:568805709> (took 19 seconds).
+[19:41:22] Client "БОЦМАН ДОЛБАЁБ" connected.
+[19:41:25] Dropped "oolong_leaf" from server<STEAM_0:1:568805709>
+[19:41:28] Client "Vondar" connected.
+[19:41:34] Tweetle suicided!
+[19:41:34] gigOS suicided!
+[19:41:34] ItsBizarreMan suicided!
+[19:41:39] bebrochka suicided!
+[19:41:54] Tweetle suicided!
+[19:41:54] (Console) banned Tweetle for 10 minute(s) (Kicked and Banned for RDM)
+[19:41:55] ALADYWKA suicided!
+[19:41:57] bebrochka: <hsv=t()*300>как танцы поменять?
+[19:42:07] baunti: блять да закончите
+[19:42:15] baunti: <hsv=t()*300>надо отсосать у меня
+[19:42:34] Tweetle: !forcepolice
+[19:42:43] Crowley Skyline suicided!
+[19:42:43] Crowley Skyline suicided!
+[19:42:45] bebrochka suicided!
+[19:42:46] Stanley5 suicided!
+[19:42:47] gigOS suicided!
+[19:43:01] Client "БОЦМАН ДОЛБАЁБ" spawned in server <STEAM_0:1:707791100> (took 99 seconds).
+[19:43:05] bebrochka suicided!
+[19:43:09] bebrochka: CERF
+[19:43:11] bebrochka: сука
+[19:43:22] Tweetle suicided!
+[19:43:22] (Console) banned Tweetle for 10 minute(s) (Kicked and Banned for RDM)
+[19:43:30] G H O S T suicided!
+[19:43:30] (Console) banned G H O S T for 10 minute(s) (Kicked and Banned for RDM)
+[19:43:33] bebrochka: сука я заспавнился
+[19:43:36] Crowley Skyline suicided!
+[19:43:36] bebrochka: и упал с лестницы
+[19:43:50] 6uit-Hear10₆₆ suicided!
+[19:43:57] Dropped "ItsBizarreMan" from server<STEAM_0:0:534583511>
+[19:43:57] ItsBizarreMan suicided!
+[19:44:05] Tweetle: Неужели кто их убил
+[19:44:08] Azatoth suicided!
+[19:44:10] bebrochka: да
+[19:44:23] Stanley5 suicided!
+[19:44:33] Dropped "gigOS" from server<STEAM_0:0:155488647>
+[19:44:33] gigOS suicided!
+[19:44:43] БОЦМАН ДОЛБАЁБ suicided!
+[19:44:45] ALADYWKA suicided!
+[19:45:04] bebrochka killed baunti using weapon_kabar
+[19:45:06] Kazah suicided!
+[19:45:07] Crowley Skyline suicided!
+[19:45:09] baunti: ДА БЛЯЯ
+[19:45:11] baunti: Я ТАК И ЗНАЛ
+[19:45:14] baunti: ШЛЮХА ЕБАНАЯ
+[19:45:14] bebrochka suicided!
+[19:45:14] Tweetle suicided!
+[19:45:36] Client "240km/h PEEK  максимка" connected.
+[19:45:39] Client "gigOS" connected.
+[19:45:56] Stanley5 suicided!
+[19:46:06] bebrochka suicided!
+[19:46:07] Stanley5: МЕНЯ УМБИЛИ
+[19:46:09] Crowley Skyline suicided!
+[19:46:10] Stanley5: МЕНЯ УМБИЛИ
+[19:46:14] 6uit-Hear10₆₆: чо
+[19:46:17] bebrochka: реально?
+[19:46:38] G H O S T suicided!
+[19:47:00] 6uit-Hear10₆₆ suicided!
+[19:47:04] baunti suicided!
+[19:47:07] baunti: ДА БЛЯ
+[19:47:11] bebrochka: аххаха
+[19:47:12] БОЦМАН ДОЛБАЁБ suicided!
+[19:47:15] baunti: КАКОЙ ТО ХУЕСОС МЕНЯ ПИЗДИЛ
+[19:47:23] bebrochka: это трейтер
+[19:47:35] Azatoth suicided!
+[19:47:40] Client "gigOS" spawned in server <STEAM_0:0:155488647> (took 121 seconds).
+[19:47:53] Tweetle suicided!
+[19:47:58] baunti: молодца
+[19:48:05] bebrochka: ну блин
+[19:48:08] bebrochka: ну блиииииииииин
+[19:48:19] baunti: че с прицелом?
+[19:48:25] Tweetle: !levelnext homicide
+[19:48:26] baunti: у вас тоже с прицелом?
+[19:48:27] Azatoth suicided!
+[19:48:37] Stanley5 suicided!
+[19:48:37] Stanley5 suicided!
+[19:48:46] Kazah suicided!
+[19:48:52] Stanley5: кроули за чтоооооо
+[19:48:54] bebrochka suicided!
+[19:49:14] Stanley5: жадина говядина
+[19:49:35] Tweetle suicided!
+[19:49:40] gigOS suicided!
+[19:50:35] Crowley Skyline suicided!
+[19:50:42] G H O S T suicided!
+[19:50:51] ALADYWKA suicided!
+[19:50:57] bebrochka: мой труп облутали раз 15
+[19:51:11] bebrochka: да
+[19:51:13] БОЦМАН ДОЛБАЁБ suicided!
+[19:51:32] Client "240km/h PEEK  максимка" spawned in server <STEAM_0:0:792544928> (took 356 seconds).
+[19:51:33] baunti suicided!
+[19:51:36] 6uit-Hear10₆₆: фу
+[19:51:37] baunti: я гей
+[19:51:38] 6uit-Hear10₆₆: крыса
+[19:51:54] БОЦМАН ДОЛБАЁБ suicided!
+[19:52:05] bebrochka suicided!
+[19:52:08] bebrochka: ХАВХАВХАВХ
+[19:52:12] bebrochka: СУКА Я ЕБАЛ ЭТУ ИГРУ
+[19:52:19] baunti: я тебя тоже
+[19:52:26] Stanley5: СЕДРИК ЩЯС ЗАЙДЕТ
+[19:52:29] БОЦМАН ДОЛБАЁБ suicided!
+[19:52:58] Stanley5 suicided!
+[19:52:59] 240km/h PEEK  максимка suicided!
+[19:52:59] 240km/h PEEK  максимка suicided!
+[19:53:28] baunti suicided!
+[19:53:30] gigOS suicided!
+[19:53:32] baunti: ПИДОРСКОЕ ЧМО ТЫ ГОСТ
+[19:53:35] baunti: ЕБАЛ ТЕБЯ НАХУЙ
+[19:53:35] G H O S T suicided!
+[19:53:41] baunti: ПРОСТО ШАМПИНЬЕН ЕБАНЫЙ РДМ
+[19:53:46] baunti: ЕГО ЕЩЕ И НЕ БАНЯТ
+[19:53:52] Tweetle suicided!
+[19:53:56] baunti: СУКА ОН ЕЩЕ ДРУГИХ ФРИ КИЛОМ ДЕЛАЛ
+[19:53:57] БОЦМАН ДОЛБАЁБ suicided!
+[19:54:00] ALADYWKA suicided!
+[19:54:06] Stanley5 played sound ambient/creatures/town_child_scream1.wav
+[19:54:10] baunti: ЕБАТЬ НУ ВЫ ГЕНИИ АДМИНЫ
+[19:54:21] Stanley5 played sound ambient/creatures/town_child_scream1.wav
+[19:54:33] bebrochka suicided!
+[19:54:33] bebrochka suicided!
+[19:54:38] Azatoth suicided!
+[19:54:38] 6uit-Hear10₆₆ suicided!
+[19:54:47] Stanley5 played sound ambient/levels/citadel/citadel_ambient_scream_loop1.wav
+[19:54:56] G H O S T suicided!
+[19:54:56] Kazah suicided!
+[19:55:06] Dropped "Stanley5" from server<STEAM_0:0:190493017>
+[19:55:06] Stanley5 suicided!
+[19:55:07] Client "Stanley5" connected.
+[19:55:11] Client "Stanley5" connected.
+[19:55:18] 6uit-Hear10₆₆ suicided!
+[19:55:18] 6uit-Hear10₆₆ suicided!
+[19:55:18] Tweetle suicided!
+[19:55:18] (Console) banned 6uit-Hear10₆₆ for 10 minute(s) (Kicked and Banned for RDM)
+[19:55:18] (Console) banned 6uit-Hear10₆₆ for 10 minute(s) (Kicked and Banned for RDM)
+[19:55:18] Crowley Skyline suicided!
+[19:55:21] Dropped "6uit-Hear10₆₆" from server<STEAM_0:0:610647292>
+[19:55:24] baunti suicided!
+[19:55:25] Client "6uit-Hear10₆₆" connected.
+[19:55:25] Tweetle: !menu
+[19:55:31] Client "Stanley5" spawned in server <STEAM_0:0:190493017> (took 20 seconds).
+[19:55:32] baunti: СУКА ЕБАЛ Я ЭТУ ХУЕТУ БЛЯ
+[19:55:34] baunti: КРЫСА ЕБАНАЯ
+[19:55:36] Tweetle: !menu
+[19:55:46] Tweetle banned steamid STEAM_0:0:610647292 for 5 hours ( RDM)
+[19:55:47] Stanley5 played sound ambient/levels/citadel/citadel_ambient_scream_loop1.wav
+[19:55:52] Stanley5 played sound ambient/creatures/town_child_scream1.wav
+[19:55:54] Tweetle suicided!
+[19:55:56] gigOS suicided!
+[19:56:01] baunti suicided!
+[19:56:15] baunti: СУКА ЧТО ТЫ БЛЯТЬ ТАКОЕ ЧМО ЕБАНОЕ МЕНЯ ИЗБИЛО И УБОИЛО ЕЩЕ И ЕГО НЕ ЗАБАНИЛИ
+[19:56:17] БОЦМАН ДОЛБАЁБ suicided!
+[19:56:20] baunti: БЛЯЯЯЯЯЯЯЯЯЯ АДМИНБАСЫ АЛОО
+[19:56:29] baunti: ХУЛИ ВЫ НЕ БАНИТЕ ЗА РДМ
+[19:57:09] Kazah suicided!
+[19:57:09] Kazah suicided!
+[19:57:10] 240km/h PEEK  максимка: афк 9999999
+[19:57:35] baunti: блять помогите я застрял
+[19:57:54] baunti suicided!
+[19:57:56] Tweetle suicided!
+[19:57:59] gigOS suicided!
+[19:57:59] baunti: блять что за говно?
+[19:58:05] baunti: какого хуя пинок не работал?
+[19:58:09] Azatoth suicided!
+[19:58:13] Stanley5: Бля у меня ноги сломаны
+[19:58:14] baunti: и хули нету вызова админа когда ты застрял
+[19:58:48] baunti: ЧЕ ТАК ЛАГАЕТ
+[19:58:58] Stanley5: тикрейт имба
+[19:59:08] bebrochka: кайфуем
+[19:59:16] Client "1000часовсинглдраф" connected.
+[19:59:20] Kazah: так надо
+[19:59:35] Stanley5: это реквием
+[19:59:36] Client "Беброман2004" connected.
+[19:59:42] Stanley5: то что ты видишь реально
+[19:59:51] Kazah: это пиздец
+[19:59:58] baunti: ЧЕ ТАК ЛАГАЕТ?
+[20:00:04] baunti: А ВСЕ перестало
+[20:00:08] Kazah: этот простлел просто имба
+[20:00:08] baunti: БЛЯ ХУЛИ
+[20:00:11] БОЦМАН ДОЛБАЁБ suicided!
+[20:00:15] baunti: УРААА
+[20:00:24] Tweetle: !levelnext css
+[20:00:37] Dropped "Crowley Skyline" from server<STEAM_0:0:513586828>
+[20:00:37] Crowley Skyline suicided!
+[20:00:59] Client "Crowley Skyline" connected.
+[20:01:08] Azatoth suicided!
+[20:01:12] Client "1000часовсинглдраф" spawned in server <STEAM_0:0:156639517> (took 116 seconds).
+[20:01:14] baunti suicided!
+[20:01:21] baunti: ДА СУКА ЕБАНАЯ ТЫ БЕБРОЧКА
+[20:01:22] Kazah suicided!
+[20:01:37] Client "Crowley Skyline" spawned in server <STEAM_0:0:513586828> (took 38 seconds).
+[20:01:50] baunti: бляя
+[20:01:59] БОЦМАН ДОЛБАЁБ suicided!
+[20:02:03] baunti: Боцман говорит свое мя просто.
+[20:02:05] gigOS suicided!
+[20:02:05] gigOS suicided!
+[20:02:08] Tweetle suicided!
+[20:02:08] G H O S T suicided!
+[20:02:08] G H O S T suicided!
+[20:02:09] baunti: токо без боцман
+[20:02:10] Stanley5 suicided!
+[20:02:10] Azatoth suicided!
+[20:02:10] baunti suicided!
+[20:02:10] gigOS suicided!
+[20:02:10] bebrochka suicided!
+[20:02:10] Tweetle suicided!
+[20:02:10] ALADYWKA suicided!
+[20:02:10] БОЦМАН ДОЛБАЁБ suicided!
+[20:02:10] 1000часовсинглдраф suicided!
+[20:02:10] Crowley Skyline suicided!
+[20:02:10] Kazah suicided!
+[20:02:10] G H O S T suicided!
+[20:02:14] Dropped "bebrochka" from server<STEAM_0:1:524335631>
+[20:02:21] Dropped "Tweetle" from server<STEAM_0:1:426846788>
+[20:02:39] (Console) changed the map to gm_eliden_hmcd
+[20:02:40] Server is shutting down/changing levels.
+
+
+
+[20:02:55] New map: gm_eliden_hmcd
+[20:02:55] Server is shutting down/changing levels.
+
+
+
+[20:03:10] New map: gm_eliden_hmcd
+[20:03:27] Client "1000часовсинглдраф" spawned in server <STEAM_0:0:156639517> (took 17 seconds).
+[20:03:28] Client "240km/h PEEK  максимка" spawned in server <STEAM_0:0:792544928> (took 18 seconds).
+[20:03:28] Client "Stanley5" spawned in server <STEAM_0:0:190493017> (took 18 seconds).
+[20:03:28] Client "baunti" spawned in server <STEAM_0:1:427024250> (took 18 seconds).
+[20:03:29] Client "Crowley Skyline" spawned in server <STEAM_0:0:513586828> (took 19 seconds).
+[20:03:30] Client "ALADYWKA" spawned in server <STEAM_0:1:499599183> (took 20 seconds).
+[20:03:43] Client "G H O S T" spawned in server <STEAM_0:0:489640987> (took 33 seconds).
+[20:03:45] Client "БОЦМАН ДОЛБАЁБ" spawned in server <STEAM_0:1:707791100> (took 35 seconds).
+[20:03:51] Stanley5 suicided!
+[20:03:53] Client "Azatoth" spawned in server <STEAM_0:1:434220474> (took 43 seconds).
+[20:03:55] 1000часовсинглдраф suicided!
+[20:03:58] 1000часовсинглдраф: збс
+[20:03:58] Client "gigOS" spawned in server <STEAM_0:0:155488647> (took 48 seconds).
+[20:04:00] baunti: ДАУН ДЛЯ ПРОВЕРКИ
+[20:04:15] 240km/h PEEK  максимка suicided!
+[20:04:25] Client "Беброман2004" connected.
+[20:04:29] Client "Kazah" spawned in server <STEAM_0:1:625662918> (took 79 seconds).
+[20:04:49] Crowley Skyline suicided!
+[20:04:49] БОЦМАН ДОЛБАЁБ suicided!
+[20:04:55] gigOS suicided!
+[20:04:56] Dropped "240km/h PEEK  максимка" from server<STEAM_0:0:792544928>
+[20:04:56] 240km/h PEEK  максимка suicided!
+[20:05:02] Client "Беброман2004" spawned in server <STEAM_0:0:165302080> (took 37 seconds).
+[20:05:25] gigOS suicided!
+[20:05:34] Crowley Skyline suicided!
+[20:05:37] Client "Paveletsky" connected.
+[20:05:57] Client "Paveletsky" spawned in server <STEAM_0:0:30588797> (took 20 seconds).
+[20:06:12] G H O S T suicided!
+[20:06:12] G H O S T suicided!
+[20:06:24] Paveletsky suicided!
+[20:06:46] БОЦМАН ДОЛБАЁБ suicided!
+[20:07:07] Беброман2004 suicided!
+[20:07:22] Paveletsky: свободная камера работает у вас?
+[20:07:27] G H O S T suicided!
+[20:07:31] ALADYWKA suicided!
+[20:07:31] (Console) banned ALADYWKA for 10 minute(s) (Kicked and Banned for RDM)
+[20:07:31] 1000часовсинглдраф suicided!
+[20:07:36] Paveletsky: в чат напиши
+[20:07:37] Paveletsky: не слышу
+[20:07:43] baunti suicided!
+[20:07:52] baunti: БЛЯТЬ ГИГОС СУКА ЕБАНЫЙ ПИДОРАС
+[20:07:58] Paveletsky: трупаки в чат напишите работает камера свободная?
+[20:08:02] 1000часовсинглдраф: нет
+[20:08:03] G H O S T: +
+[20:08:05] 1000часовсинглдраф: а
+[20:08:06] baunti: не работает
+[20:08:07] G H O S T: работает
+[20:08:08] 1000часовсинглдраф: работает
+[20:08:10] baunti: а вот
+[20:08:11] Paveletsky: все заебись
+[20:08:14] baunti: работает
+[20:08:32] gigOS suicided!
+[20:08:33] Stanley5 suicided!
+[20:08:34] Dropped "Paveletsky" from server<STEAM_0:0:30588797>
+[20:08:51] Azatoth suicided!
+[20:09:15] БОЦМАН ДОЛБАЁБ suicided!
+[20:09:15] БОЦМАН ДОЛБАЁБ suicided!
+[20:09:27] gigOS suicided!
+[20:09:28] (Console) banned gigOS for 10 minute(s) (Kicked and Banned for RDM)
+[20:09:28] Crowley Skyline suicided!
+[20:09:58] G H O S T suicided!
+[20:09:58] (Console) banned G H O S T for 10 minute(s) (Kicked and Banned for RDM)
+[20:10:08] baunti suicided!
+[20:10:11] baunti: СУКА
+[20:10:12] baunti: Я ЖЕ ПОПАЛ
+[20:10:22] baunti: БЛЯТЬ ПОРАВЬТЕ ЕЩЕ ПРИЦЕЛИВАНИЕ
+[20:10:25] baunti: ЧЗХ С НИМ
+[20:10:34] baunti: СДЕЛАЙТЕ ХОТЯБЫ КАК В ДОБРОГРАДЕ
+[20:10:43] 1000часовсинглдраф: ту сторону чекай
+[20:10:58] baunti: А ТО ЭТО ПОЛНОЕ ГОВНО
+[20:11:03] Client "KASHAKTO" connected.
+[20:11:10] baunti: ХУЙ СОСАТЬ НОВЫЙ ПРЕВЫКНЕШЬ А НЕ СМОТРЕТЬ НА ЭТОТ ПРИЦЕЛ
+[20:11:25] baunti: \
+[20:11:38] G H O S T: !spawm
+[20:11:40] G H O S T: !spawn
+[20:11:40] Stanley5<STEAM_0:0:190493017> spawned model models/props_c17/oildrum001_explosive.mdl
+[20:11:45] ALADYWKA suicided!
+[20:11:53] Client "KASHAKTO" spawned in server <STEAM_0:1:847376805> (took 50 seconds).
+[20:11:55] baunti: ну ало need a the end to round blya
+[20:12:01] Stanley5<STEAM_0:0:190493017> spawned NPC npc_drg_huggy_wuggy
+[20:12:02] 1000часовсинглдраф was killed by npc_drg_huggy_wuggy
+[20:12:04] Kazah was killed by npc_drg_huggy_wuggy
+[20:12:08] 1000часовсинглдраф: какой нахуй хаги ваги
+[20:12:10] baunti: ПЗАЗАХЪАЪАЪААХААХАХАХАХ
+[20:12:23] Client "GaGarin" connected.
+[20:12:31] Azatoth suicided!
+[20:12:32] Dropped "KASHAKTO" from server<STEAM_0:1:847376805>
+[20:12:38] Stanley5 suicided!
+[20:12:44] Беброман2004 suicided!
+[20:12:55] 1000часовсинглдраф suicided!
+[20:12:55] 1000часовсинглдраф: ХАХАХАХА
+[20:12:58] 1000часовсинглдраф: что
+[20:13:02] G H O S T suicided!
+[20:13:04] gigOS: ОТКРОЙ
+[20:13:08] Client "GaGarin" spawned in server <STEAM_0:1:63073442> (took 45 seconds).
+[20:13:12] Kazah suicided!
+[20:13:35] Dropped "G H O S T" from server<STEAM_0:0:489640987>
+[20:13:35] Stanley5 started a vote (Хотити хомисайд?)
+[20:13:37] gigOS: Нет
+[20:13:37] Crowley Skyline: Нет
+[20:13:37] ALADYWKA: Нет
+[20:13:37] 1000часовсинглдраф: Да
+[20:13:37] БОЦМАН ДОЛБАЁБ: Да
+[20:13:38] baunti: Нет
+[20:13:38] Stanley5: Да
+[20:13:38] Azatoth: Да
+[20:13:39] Kazah: Нет
+[20:13:41] Беброман2004: Нет
+[20:13:49] baunti suicided!
+[20:13:52] baunti: ДА СУКА
+[20:13:55] Vote results: Option 'Нет' won. (6/11)
+[20:13:55] baunti: ПОЧЕМУ КОГДА Я ЛЕЗ ТУДА
+[20:14:02] baunti: СРАЗУ ЖЕ ОТТУДА ВЫЛЕЗ КОМБАЙН
+[20:14:17] Dropped "GaGarin" from server<STEAM_0:1:63073442>
+[20:14:17] baunti: БЛЯ Я ХОЧУ ЗАНЯТЬСЯ СЕКСОМ С STANLEY5
+[20:14:48] Crowley Skyline suicided!
+[20:15:10] gigOS suicided!
+[20:15:19] ALADYWKA suicided!
+[20:15:21] baunti: абаме vs мой пидор
+[20:15:24] БОЦМАН ДОЛБАЁБ suicided!
+[20:15:44] Kazah suicided!
+[20:15:59] Stanley5 suicided!
+[20:16:14] baunti suicided!
+[20:16:18] baunti: ЕБАТЬ
+[20:16:29] baunti: А АЛО
+[20:16:34] 1000часовсинглдраф: КАКАЯ СПИНА НАХУЙ
+[20:16:37] 1000часовсинглдраф: ВЫ ЕБАНУТЫЕ
+[20:16:38] baunti: БЛЯ ВЫ ДВА ДАУНА КАК ВЫ ТАМ ОКОЗАЛИСЬ
+[20:16:45] baunti: АЛООООООООООООООООООООО
+[20:16:46] 1000часовсинглдраф: Добей меня\
+[20:16:48] 1000часовсинглдраф: бро
+[20:16:59] 1000часовсинглдраф suicided!
+[20:16:59] 1000часовсинглдраф: хуярь
+[20:17:03] Stanley5<STEAM_0:0:190493017> spawned model models/props_c17/oildrum001_explosive.mdl
+[20:17:21] baunti: АЛООО АДМИН РАЗХУЯРЬ ИХ ПОЛГАРКОЙ
+[20:17:26] 1000часовсинглдраф: хаги ваги
+[20:17:29] 1000часовсинглдраф: спавьнте
+[20:17:54] baunti: Stanley5 ночью у меня в кроватке эти слова  оброботаешь)
+[20:18:10] ALADYWKA suicided!
+[20:18:10] (Console) banned ALADYWKA for 10 minute(s) (Kicked and Banned for RDM)
+[20:18:10] Crowley Skyline suicided!
+[20:18:25] baunti: а похуй ребенка тоже можно ебать
+[20:18:33] БОЦМАН ДОЛБАЁБ suicided!
+[20:18:38] Crowley Skyline: изнасиловали ребенка суки
+[20:18:39] Crowley Skyline: чурки
+[20:19:11] Stanley5<STEAM_0:0:190493017> spawned model models/props_c17/oildrum001_explosive.mdl
+[20:19:11] Stanley5<STEAM_0:0:190493017> spawned model models/props_c17/oildrum001_explosive.mdl
+[20:19:11] Stanley5<STEAM_0:0:190493017> spawned model models/props_c17/oildrum001_explosive.mdl
+[20:19:17] Azatoth suicided!
+[20:19:17] gigOS suicided!
+[20:19:17] Беброман2004 suicided!
+[20:19:22] 1000часовсинглдраф: ура
+[20:19:42] baunti suicided!
+[20:19:42] baunti suicided!
+[20:19:49] baunti: СУКА ЕБАЛАЙ ТЫ ХУЕСОСНЫЙ
+[20:19:58] 1000часовсинглдраф suicided!
+[20:20:15] baunti: не мешайте я ебу по секрету Stanley5
+[20:20:25] Kazah suicided!
+[20:20:30] 1000часовсинглдраф: а херли меня свой убил
+[20:20:46] baunti: ТИРАРЫСТЫЫЫ
+[20:20:56] БОЦМАН ДОЛБАЁБ suicided!
+[20:21:06] Azatoth suicided!
+[20:21:35] baunti: НЕ МЕШАЙТЕ МНЕ ЕБАТЬ В ЖОПУ STANLEY5
+[20:21:36] Client "LiTTLe" connected.
+[20:22:32] ALADYWKA suicided!
+[20:24:32] (TEAM) baunti: 1
+[20:24:35] baunti: 1988
+[20:24:37] Client "wusix hbn.gg" connected.
+[20:24:58] Kazah: 1488
+[20:25:05] БОЦМАН ДОЛБАЁБ: 14888
+[20:25:09] БОЦМАН ДОЛБАЁБ: 1488
+[20:25:29] Client "wusix hbn.gg" spawned in server <STEAM_0:0:74317098> (took 52 seconds).
+[20:25:39] Crowley Skyline suicided!
+[20:25:58] wusix hbn.gg: !menu
+[20:26:20] gigOS suicided!
+[20:26:36] baunti: БЛЯЯ ЗАКОНЧИТЕЕ РАААААААУНД
+[20:27:01] baunti: Crowley skyline можно ты меня трахнешь?
+[20:27:15] baunti: :)
+[20:27:53] 1000часовсинглдраф: он для такого эфекта что выкурил?
+[20:28:36] baunti: не мешайте я сосу Crowley Skyline
+[20:28:46] Беброман2004 suicided!
+[20:29:44] Беброман2004 suicided!
+[20:29:44] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:29:44] Беброман2004 suicided!
+[20:29:44] Беброман2004 suicided!
+[20:29:44] 1000часовсинглдраф suicided!
+[20:29:44] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:29:44] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:29:49] 1000часовсинглдраф: ДА ЧТО ТЫ ДЕЛАЕШЬ
+[20:29:56] Dropped "wusix hbn.gg" from server<STEAM_0:0:74317098>
+[20:29:56] wusix hbn.gg suicided!
+[20:30:06] Dropped "1000часовсинглдраф" from server<STEAM_0:0:156639517>
+[20:30:25] Client "ФитöĤяшкā ツ" connected.
+[20:30:31] Kazah suicided!
+[20:30:31] Kazah suicided!
+[20:30:31] baunti suicided!
+[20:30:50] Client "вусикс" connected.
+[20:30:53] ALADYWKA suicided!
+[20:31:05] gigOS suicided!
+[20:31:15] Client "вусикс" spawned in server <STEAM_0:1:242039710> (took 25 seconds).
+[20:31:19] Stanley5 suicided!
+[20:31:25] Client "ФитöĤяшкā ツ" spawned in server <STEAM_0:1:114483606> (took 60 seconds).
+[20:31:27] baunti: где ты?
+[20:31:52] baunti: стой
+[20:32:01] Kazah suicided!
+[20:32:01] (Console) banned Kazah for 10 minute(s) (Kicked and Banned for RDM)
+[20:32:02] Azatoth suicided!
+[20:32:04] Беброман2004 suicided!
+[20:32:04] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:32:07] baunti suicided!
+[20:32:07] baunti suicided!
+[20:32:10] Беброман2004 suicided!
+[20:32:10] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:32:12] baunti: ДА ТЫ ЕБАНАТ
+[20:32:18] baunti: ДАЙ МНЕ У НЕГО ОТСОСАТЬ НОРМАЛЬНО
+[20:32:23] Беброман2004 suicided!
+[20:32:23] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:32:25] Беброман2004 suicided!
+[20:32:25] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:32:27] Беброман2004 suicided!
+[20:32:27] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:32:28] Беброман2004 suicided!
+[20:32:28] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:32:29] baunti suicided!
+[20:32:29] (Console) banned baunti for 10 minute(s) (Kicked and Banned for RDM)
+[20:32:29] Беброман2004 suicided!
+[20:32:29] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:32:31] Беброман2004 suicided!
+[20:32:31] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:32:32] baunti: ГИГОС ТЫ ЕБАЛАЙ
+[20:32:33] Беброман2004 suicided!
+[20:32:33] baunti suicided!
+[20:32:33] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:32:33] (Console) banned baunti for 10 minute(s) (Kicked and Banned for RDM)
+[20:32:34] baunti: ХУЕСОС БЛЯ
+[20:32:36] Беброман2004 suicided!
+[20:32:36] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:32:37] Беброман2004 suicided!
+[20:32:37] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:32:37] Беброман2004 suicided!
+[20:32:37] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:32:38] Беброман2004 suicided!
+[20:32:38] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:32:38] Crowley Skyline suicided!
+[20:32:39] baunti suicided!
+[20:32:39] (Console) banned baunti for 10 minute(s) (Kicked and Banned for RDM)
+[20:32:39] baunti: ХУЛИ ТЫ МЕНЯ УБИЛ
+[20:32:45] Kazah: ахахахах
+[20:32:46] baunti: ДА ПЕРЕСТАНЬ ТЫ БАНИТЬ КОНСОЛЬ
+[20:33:02] baunti: ПИДОРАСИНА ТЫ ГИГОС
+[20:33:07] baunti: НОРМАЛЬНО ОТСОСАТЬ НЕ ДАЛ
+[20:33:10] БОЦМАН ДОЛБАЁБ suicided!
+[20:33:30] baunti: 1988
+[20:33:39] Kazah: 1941
+[20:33:41] вусикс suicided!
+[20:34:22] gigOS suicided!
+[20:34:22] Client "KASHAKTO" connected.
+[20:34:27] ALADYWKA suicided!
+[20:34:39] baunti suicided!
+[20:34:39] (Console) banned baunti for 10 minute(s) (Kicked and Banned for RDM)
+[20:34:41] baunti: что
+[20:34:45] baunti: ЧЕГО БЛЯТЬ
+[20:34:50] baunti: Я ДАЖЕ НЕ ПОЯВИЛСЯ
+[20:34:53] baunti: МЕНЯ ПРОСТО ТАК БЛЯ
+[20:34:58] Client "GaGarin" connected.
+[20:35:00] baunti: КТО ЗА ЧТО И КАК
+[20:35:02] baunti: И ПОЧЕМУ
+[20:35:03] Client "KASHAKTO" spawned in server <STEAM_0:1:847376805> (took 41 seconds).
+[20:35:04] baunti: ЧТО БЛЯТЬ
+[20:35:09] baunti: АЛО КАЗАХ
+[20:35:17] БОЦМАН ДОЛБАЁБ suicided!
+[20:35:17] БОЦМАН ДОЛБАЁБ suicided!
+[20:35:21] вусикс suicided!
+[20:35:21] (Console) banned вусикс for 10 minute(s) (Kicked and Banned for RDM)
+[20:35:21] Azatoth suicided!
+[20:35:39] Dropped "KASHAKTO" from server<STEAM_0:1:847376805>
+[20:36:03] Client "GaGarin" spawned in server <STEAM_0:1:63073442> (took 65 seconds).
+[20:36:09] Client "KASHAKTO" connected.
+[20:36:10] gigOS suicided!
+[20:36:10] (Console) banned gigOS for 10 minute(s) (Kicked and Banned for RDM)
+[20:36:16] Dropped "gigOS" from server<STEAM_0:0:155488647>
+[20:36:30] Crowley Skyline suicided!
+[20:36:39] Client "KASHAKTO" spawned in server <STEAM_0:1:847376805> (took 30 seconds).
+[20:36:46] baunti: Как так то пупсик?
+[20:36:49] baunti: как ты умер то?
+[20:37:28] Kazah killed KASHAKTO using player
+[20:37:46] KASHAKTO: /jon
+[20:37:49] KASHAKTO: /join
+[20:38:09] ФитöĤяшкā ツ suicided!
+[20:39:34] baunti: !levelend
+[20:39:36] Беброман2004 suicided!
+[20:39:55] Dropped "KASHAKTO" from server<STEAM_0:1:847376805>
+[20:39:56] Client "KASHAKTO" connected.
+[20:40:12] ALADYWKA suicided!
+[20:40:12] ALADYWKA suicided!
+[20:40:13] Client "KASHAKTO" spawned in server <STEAM_0:1:847376805> (took 17 seconds).
+[20:41:05] Kazah killed KASHAKTO using player
+[20:41:06] baunti: да че так долго?
+[20:41:16] Kazah suicided!
+[20:41:16] Dropped "KASHAKTO" from server<STEAM_0:1:847376805>
+[20:41:35] Client "KASHAKTO" connected.
+[20:41:39] baunti: ты кто?
+[20:41:40] Azatoth suicided!
+[20:42:06] Client "KASHAKTO" spawned in server <STEAM_0:1:847376805> (took 31 seconds).
+[20:42:26] KASHAKTO suicided!
+[20:42:38] Dropped "KASHAKTO" from server<STEAM_0:1:847376805>
+[20:44:50] Беброман2004 suicided!
+[20:44:50] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:44:53] Беброман2004 suicided!
+[20:44:53] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:44:56] Беброман2004 suicided!
+[20:44:56] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:44:59] Беброман2004 suicided!
+[20:44:59] (Console) banned Беброман2004 for 10 minute(s) (Kicked and Banned for RDM)
+[20:45:19] вусикс suicided!
+[20:45:19] (Console) banned вусикс for 10 minute(s) (Kicked and Banned for RDM)
+[20:45:27] Kazah suicided!
+[20:45:28] Dropped "Беброман2004" from server<STEAM_0:0:165302080>
+[20:45:33] baunti: пошли их ебать
+[20:45:43] Crowley Skyline suicided!
+[20:45:43] (Console) banned Crowley Skyline for 10 minute(s) (Kicked and Banned for RDM)
+[20:46:10] Stanley5 suicided!
+[20:46:18] GaGarin suicided!
+[20:47:23] ФитöĤяшкā ツ suicided!
+[20:47:25] Stanley5<STEAM_0:0:190493017> spawned NPC npc_drg_huggy_wuggy
+[20:47:25] baunti was killed by npc_drg_huggy_wuggy
+[20:47:27] ALADYWKA suicided!
+[20:47:38] baunti: ТАРХун
+[20:47:43] Dropped "baunti" from server<STEAM_0:1:427024250>
+[20:47:43] baunti suicided!
+[20:48:40] Crowley Skyline suicided!
+[20:48:40] (Console) banned Crowley Skyline for 10 minute(s) (Kicked and Banned for RDM)
+[20:49:47] Kazah suicided!
+[20:49:51] вусикс suicided!
+[20:49:53] ФитöĤяшкā ツ suicided!
+[20:50:38] ALADYWKA suicided!
+[20:50:42] Azatoth suicided!
+[20:50:50] Dropped "ALADYWKA" from server<STEAM_0:1:499599183>
+[20:50:50] ALADYWKA suicided!
+[20:51:43] Stanley5 suicided!
+[20:52:01] вусикс suicided!
+[20:52:01] вусикс suicided!
+[20:52:12] Azatoth suicided!
+[20:52:12] Azatoth suicided!
+[20:52:46] Kazah suicided!
+[20:52:46] Kazah suicided!
+[20:53:09] Crowley Skyline suicided!
+[20:53:11] ФитöĤяшкā ツ suicided!
+[20:53:40] Crowley Skyline suicided!
+[20:54:14] Kazah suicided!
+[20:55:22] Azatoth suicided!
+[20:55:51] вусикс suicided!
+[20:56:08] Stanley5 suicided!
+[20:56:51] ФитöĤяшкā ツ suicided!
+[20:57:45] БОЦМАН ДОЛБАЁБ suicided!
+[20:57:46] Stanley5<STEAM_0:0:190493017> spawned NPC npc_drg_huggy_wuggy
+[20:57:49] Stanley5<STEAM_0:0:190493017> spawned NPC npc_drg_huggy_wuggy
+[20:57:49] GaGarin suicided!
+[20:58:07] БОЦМАН ДОЛБАЁБ suicided!
+[20:58:20] Azatoth suicided!
+[20:58:25] Dropped "Azatoth" from server<STEAM_0:1:434220474>
+[20:59:24] Crowley Skyline suicided!
+[20:59:36] Stanley5 suicided!
+[20:59:36] Stanley5 suicided!
+[20:59:36] ФитöĤяшкā ツ suicided!
+[20:59:39] Kazah suicided!
+[21:00:59] Kazah suicided!
+[21:01:07] БОЦМАН ДОЛБАЁБ suicided!
+[21:01:07] ФитöĤяшкā ツ suicided!
+[21:01:29] Dropped "БОЦМАН ДОЛБАЁБ" from server<STEAM_0:1:707791100>
+[21:01:45] Stanley5: хуй
+[21:01:46] Stanley5: хуй
+[21:01:47] Stanley5: хуй
+[21:01:48] Stanley5: хуй
+[21:01:49] Stanley5: хуй
+[21:01:50] Stanley5 played sound ambient/creatures/town_child_scream1.wav
+[21:01:52] Stanley5 played sound ambient/creatures/town_child_scream1.wav
+[21:01:53] Stanley5 played sound ambient/creatures/town_child_scream1.wav
+[21:01:55] Stanley5 played sound ambient/creatures/town_child_scream1.wav
+[21:01:56] Stanley5 played sound ambient/creatures/town_child_scream1.wav
+[21:01:57] Stanley5 played sound ambient/creatures/town_child_scream1.wav
+[21:02:00] Crowley Skyline suicided!
+[21:02:00] Crowley Skyline suicided!
+[21:02:02] вусикс suicided!
+[21:02:02] вусикс suicided!
+[21:02:11] Dropped "Stanley5" from server<STEAM_0:0:190493017>
+[21:02:11] Stanley5 suicided!
+[21:02:48] GaGarin suicided!
+[21:02:53] Client "oolong_leaf" connected.
+[21:03:01] Dropped "GaGarin" from server<STEAM_0:1:63073442>
+[21:03:08] Kazah suicided!
+[21:03:08] Kazah suicided!
+[21:03:19] Client "oolong_leaf" spawned in server <STEAM_0:1:568805709> (took 26 seconds).
+[21:04:23] вусикс suicided!
+[21:04:23] вусикс suicided!
+[21:04:23] вусикс suicided!
+[21:04:23] вусикс suicided!
+[21:04:23] Dropped "вусикс" from server<STEAM_0:1:242039710>
+[21:04:23] ФитöĤяшкā ツ suicided!
+[21:04:47] Crowley Skyline suicided!
+[21:04:47] Crowley Skyline suicided!
+[21:04:47] Crowley Skyline suicided!
+[21:04:47] (Console) banned Crowley Skyline for 10 minute(s) (Kicked and Banned for RDM)
+[21:04:47] (Console) banned Crowley Skyline for 10 minute(s) (Kicked and Banned for RDM)
+[21:04:47] (Console) banned Crowley Skyline for 10 minute(s) (Kicked and Banned for RDM)
+[21:04:47] Kazah suicided!
+[21:04:51] ФитöĤяшкā ツ suicided!
+[21:04:51] ФитöĤяшкā ツ suicided!
+[21:05:16] Client "вусикс" connected.
+[21:05:34] Client "вусикс" spawned in server <STEAM_0:1:242039710> (took 18 seconds).
+[21:05:41] Kazah suicided!
+[21:05:58] Crowley Skyline suicided!
+[21:06:01] ФитöĤяшкā ツ suicided!
+[21:06:32] oolong_leaf suicided!
+[21:06:34] Crowley Skyline was killed by func_movelinear
+[21:07:46] Kazah suicided!
+[21:07:51] ФитöĤяшкā ツ suicided!
+[21:08:52] вусикс suicided!
+[21:09:03] Crowley Skyline suicided!
+[21:09:03] Crowley Skyline suicided!
+[21:09:16] oolong_leaf suicided!
+[21:09:30] ФитöĤяшкā ツ suicided!
+[21:09:33] Kazah suicided!
+[21:10:03] oolong_leaf suicided!
+[21:10:47] Crowley Skyline suicided!
+[21:10:48] Kazah suicided!
+[21:12:03] oolong_leaf suicided!
+[21:12:11] Kazah suicided!
+[21:13:22] Crowley Skyline suicided!
+[21:13:57] Crowley Skyline suicided!
+[21:14:03] вусикс suicided!
+[21:14:06] ФитöĤяшкā ツ suicided!
+[21:14:35] ФитöĤяшкā ツ suicided!
+[21:14:47] вусикс suicided!
+[21:15:17] Crowley Skyline suicided!
+[21:15:20] oolong_leaf suicided!
+[21:15:42] вусикс suicided!
+[21:15:42] Kazah suicided!
+[21:15:52] Crowley Skyline suicided!
+[21:15:54] ФитöĤяшкā ツ suicided!
+[21:16:24] вусикс suicided!
+[21:16:29] ФитöĤяшкā ツ suicided!
+[21:16:35] oolong_leaf suicided!
+[21:16:35] oolong_leaf suicided!
+[21:16:45] Crowley Skyline suicided!
+[21:16:49] Kazah suicided!
+[21:17:19] Kazah suicided!
+[21:17:26] Crowley Skyline suicided!
+[21:17:26] Crowley Skyline suicided!
+[21:17:51] oolong_leaf suicided!
+[21:18:00] ФитöĤяшкā ツ suicided!
+[21:18:21] вусикс<STEAM_0:1:242039710> spawned NPC npc_antlionguard
+[21:18:24] oolong_leaf suicided!
+[21:18:29] вусикс<STEAM_0:1:242039710> spawned NPC npc_antlionguard
+[21:18:30] вусикс<STEAM_0:1:242039710> spawned NPC npc_antlionguard
+[21:18:31] Dropped "Crowley Skyline" from server<STEAM_0:0:513586828>
+[21:18:31] Crowley Skyline suicided!
+[21:18:45] вусикс suicided!
+[21:18:54] вусикс<STEAM_0:1:242039710> spawned NPC npc_headcrab_black
+[21:18:59] вусикс<STEAM_0:1:242039710> spawned NPC npc_headcrab_black
+[21:19:00] вусикс<STEAM_0:1:242039710> spawned NPC npc_headcrab_black
+[21:19:01] вусикс<STEAM_0:1:242039710> spawned NPC npc_headcrab_black
+[21:19:20] вусикс<STEAM_0:1:242039710> spawned NPC npc_headcrab_black
+[21:19:42] вусикс<STEAM_0:1:242039710> spawned NPC npc_barnacle
+[21:19:50] вусикс<STEAM_0:1:242039710> spawned NPC npc_barnacle
+[21:20:10] ФитöĤяшкā ツ suicided!
+[21:20:39] вусикс suicided!
+[21:20:49] oolong_leaf suicided!
+[21:20:50] вусикс killed ФитöĤяшкā ツ using func_physbox
+[21:22:07] ФитöĤяшкā ツ suicided!
+[21:22:59] Kazah suicided!
+[21:23:06] oolong_leaf suicided!
+[21:23:06] ФитöĤяшкā ツ suicided!
+[21:23:06] вусикс suicided!
+[21:23:06] Kazah suicided!
+[21:23:35] (Console) changed the map to ttt_winterplant_v4
+[21:23:35] Server is shutting down/changing levels.
+
+
+
+[21:23:51] New map: ttt_winterplant_v4
+[21:23:51] Server is shutting down/changing levels.
+
+
+
+[21:24:06] New map: ttt_winterplant_v4
+[21:24:25] Client "вусикс" spawned in server <STEAM_0:1:242039710> (took 19 seconds).
+[21:24:37] Client "ФитöĤяшкā ツ" spawned in server <STEAM_0:1:114483606> (took 31 seconds).
+[21:24:46] вусикс: !noclip
+[21:25:07] вусикс suicided!
+[21:25:15] вусикс: !noclip
+[21:25:36] ФитöĤяшкā ツ: !роскомнадзор
+[21:25:42] ФитöĤяшкā ツ: !роскомнадзор
+[21:25:50] вусикс<STEAM_0:1:242039710> spawned sent sent_ball
+[21:25:56] ФитöĤяшкā ツ suicided!
+[21:26:03] вусикс: !noclip
+[21:26:12] вусикс<STEAM_0:1:242039710> spawned sent sent_ball
+[21:26:26] вусикс<STEAM_0:1:242039710> spawned sent sent_ball
+[21:26:34] вусикс<STEAM_0:1:242039710> spawned sent sent_ball
+[21:26:38] Client "Kazah" spawned in server <STEAM_0:1:625662918> (took 152 seconds).
+[21:26:45] вусикс<STEAM_0:1:242039710> spawned sent sent_ball
+[21:26:55] ФитöĤяшкā ツ suicided!
+[21:27:02] Dropped "вусикс" from server<STEAM_0:1:242039710>
+[21:27:02] вусикс suicided!
+[21:27:05] Dropped "ФитöĤяшкā ツ" from server<STEAM_0:1:114483606>
+[21:27:05] ФитöĤяшкā ツ suicided!
+[21:29:58] Kazah suicided!
+[21:34:26] Dropped "Kazah" from server<STEAM_0:1:625662918>
+[22:13:24] Client "Vorelas" connected.
+[22:15:21] Client "Vorelas" spawned in server <STEAM_0:1:569086770> (took 117 seconds).
+[22:15:53] Vorelas: !menu
+[22:16:07] (SILENT) Vorelas Respawned Themself
+[22:24:22] Vorelas<STEAM_0:1:569086770> spawned sent ent_jack_gmod_ezweapon_crossbow
+[22:24:31] Vorelas<STEAM_0:1:569086770> spawned sent ent_jack_gmod_ezammobox_a
+[22:25:03] Vorelas killed Vorelas
+[22:25:26] Vorelas: !menu
+[22:25:27] (SILENT) Vorelas Respawned Themself
+[22:31:48] Vorelas suicided!
+[22:31:55] Dropped "Vorelas" from server<STEAM_0:1:569086770>
+<Logging continued in "data/ulx_logs/04-16-24.txt">

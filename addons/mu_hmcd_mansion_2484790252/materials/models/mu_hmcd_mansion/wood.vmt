@@ -1,0 +1,11 @@
+"vertexlitgeneric"
+{
+"$basetexture" "models\mu_hmcd_mansion\wood"
+	"$surfaceprop" "wood"
+	"$bumpmap" "models\mu_hmcd_mansion\wood_bump"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	$envmapsaturation 0.1
+	"$envmaptint"			"[1 1 1]"
+
+}

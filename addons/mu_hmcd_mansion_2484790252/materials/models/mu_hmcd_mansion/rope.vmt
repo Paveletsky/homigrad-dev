@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\mu_hmcd_mansion\rope"
+	"$surfaceprop" "wood"
+	"$bumpmap" "models\mu_hmcd_mansion\rope_bump"
+}

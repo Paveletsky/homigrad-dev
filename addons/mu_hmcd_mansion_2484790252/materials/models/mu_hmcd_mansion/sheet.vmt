@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\mu_hmcd_mansion\sheet"
+	"$surfaceprop" "paper"
+	"$bumpmap" "models\mu_hmcd_mansion\sheet_bump"
+}

@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\mu_hmcd_mansion\pages"
+	"$surfaceprop" "paper"
+}

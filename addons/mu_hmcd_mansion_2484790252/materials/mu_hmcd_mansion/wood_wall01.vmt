@@ -1,0 +1,6 @@
+"lightmappedGeneric"
+{
+	"$baseTexture" "mu_hmcd_mansion/wood_wall01"
+	"$surfaceprop" "wood"
+	"$bumpmap" "mu_hmcd_mansion/wood_wall01_normal"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Говорилка - Google Ver.",
+  "type": "tool",
+  "tags": [
+    "fun",
+    "roleplay",
+    "realism"
+  ],
+  "ignore": [
+    "*.code-workspace"
+  ]
+}

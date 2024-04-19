@@ -1,0 +1,10 @@
+"vertexlitgeneric"
+{
+"$basetexture" "models\mu_hmcd_mansion\pool_ball\ball11"
+	"$surfaceprop" "metal"
+	"$envmap" "env_cubemap"
+	$basealphaenvmapmask 1
+	$envmapsaturation 0.1
+	"$envmaptint"			"[0.5 0.5 0.5]"
+
+}
