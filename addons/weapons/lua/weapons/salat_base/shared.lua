@@ -655,6 +655,7 @@ end)
 local util_QuickTrace = util.QuickTrace
 local math_Clamp = math.Clamp
 local closeAng = Angle(0,0,0)
+local closeHand = Angle(0,0,0)
 
 local angZero = Angle(0,0,0)
 local angSuicide = Angle(160,30,90)
@@ -722,7 +723,7 @@ function SWEP:Step()
 				local tr = util_QuickTrace(pos,dir,ply)
 				local dist = pos:DistToSqr(tr.HitPos)
 
-				self.isClose = self.dist <= 35 and not self:IsReloaded()
+				self.isClose = self.dist <= 45 and not self:IsReloaded()
 				
 				if SERVER then self:SetNWBool("isClose",self.isClose) end
 			end
@@ -745,12 +746,11 @@ function SWEP:Step()
 			end
 		end
 	else
+		if ply:GetEyeTrace().Entity then
+			self.isClose = false
+		end
+		
 		self.isClose = true
-		--[[if not self.TwoHands then
-			self:SetWeaponHoldType("normal")
-		else
-			self:SetWeaponHoldType("passive")
-		end--]]
 	end
 	self.lerpClose = LerpFT(0.1,self.lerpClose,(self.isClose and 1) or 0)
 
@@ -770,18 +770,30 @@ function SWEP:Step()
 		end
 	end
 
+	if ply:IsSprinting() then
+		return self:SetWeaponHoldType(self.SafeHoldType or "normal")
+	end
+
 	clavicle:Set(angZero)
-	closeAng[3] = -20 * self.lerpClose--(-60 + math_Clamp(ply:EyeAngles()[1],0,60)) * self.lerpClose
+	closeAng[3] = -10 * self.lerpClose--(-60 + math_Clamp(ply:EyeAngles()[1],0,60)) * self.lerpClose
+
+	distance = -math.Clamp(self.dist, 0, 350) + 54
+	closeHand = Angle(((distance) * self.lerpClose), 0, 0)
+
+	forearm:Set(angZero)
 	clavicle:Add(closeAng)
+
+	hand:Set(closeHand)
+	hand:Add(closeHand)
 
 	if not ply:LookupBone("ValveBiped.Bip01_R_Forearm") then return end--;c
 
-	ply:ManipulateBoneAngles(ply:LookupBone("ValveBiped.Bip01_R_Forearm"),forearm,false)
-	ply:ManipulateBoneAngles(ply:LookupBone("ValveBiped.Bip01_R_Clavicle"),clavicle,false)
-	ply:ManipulateBoneAngles(ply:LookupBone("ValveBiped.Bip01_R_Hand"),hand,false)
+	ply:ManipulateBoneAngles(ply:LookupBone("ValveBiped.Bip01_R_Forearm"), forearm, false)
+	ply:ManipulateBoneAngles(ply:LookupBone("ValveBiped.Bip01_R_Clavicle"), clavicle, false)
+	ply:ManipulateBoneAngles(ply:LookupBone("ValveBiped.Bip01_R_Hand"), hand, false)
 
-	--ply:ManipulateBonePosition(ply:LookupBone("ValveBiped.Bip01_R_Upperarm"),upperarm_pos,false)
-	--ply:ManipulateBonePosition(ply:LookupBone("ValveBiped.Bip01_R_Clavicle"),clavicle_pos,false)
+	ply:ManipulateBoneAngles(ply:LookupBone("ValveBiped.Bip01_L_Clavicle"), clavicle, false)
+	ply:ManipulateBoneAngles(ply:LookupBone("ValveBiped.Bip01_L_Forearm"), forearm, false)
 end
 
 function SWEP:Holster( wep )

@@ -209,7 +209,6 @@ local scrw, scrh = ScrW(), ScrH()
 local whitelistweps = {
 	["weapon_physgun"] = true,
 	["gmod_tool"] = true,
-	["aact_weapact"] = true,
 	["gmod_camera"] = true,
 	["drgbase_possessor"] = true,
 }
@@ -223,13 +222,13 @@ function RagdollOwner(rag)
 end
 
 
-hook.Add("Think","popheadDaDA",function()
-	for i,ent in pairs(ents.FindByClass("prop_ragdoll")) do
+--hook.Add("Think","pophead",function()
+	--[[for i,ent in pairs(ents.FindByClass("prop_ragdoll")) do
 		if !IsValid(RagdollOwner(ent)) or !RagdollOwner(ent):Alive() then
 			ent:ManipulateBoneScale(6,Vector(1,1,1))
 		end
-	end
-end)
+	end]]--
+--end)
 
 hg_cool_camera = CreateClientConVar("hg_cool_camera","1",true,false,"huy",0,1)
 
@@ -309,7 +308,6 @@ local weps = {
 ["weapon_m3super"] = true,
 ["weapon_p220"] = true,
 ["weapon_hk_usp"] = true,
-["weapon_hk_arbalet"] = true,
 ["weapon_mp7"] = true,
 ["weapon_hk_usps"] = true,
 ["weapon_akm"] = true,
@@ -604,11 +602,6 @@ CalcView = function(ply,vec,ang,fov,znear,zfar)
 			vecWep = hand.Pos + hand.Ang:Up() * 2.43 - hand.Ang:Forward() * 10 + hand.Ang:Right() * 0.3
 			angWep = hand.Ang + Angle(-15,5,0)
 		end
-		if weaponClass == "weapon_hk_arbalet" then
-			--Vector(2.5,10,0.3)
-			vecWep = hand.Pos + hand.Ang:Up() * 8.3 - hand.Ang:Forward() * 8 + hand.Ang:Right() * 1.4
-			angWep = hand.Ang + Angle(0,0,0)
-		end
 		if weaponClass == "weapon_hk_usps" then
 			--Vector(3.9,10,1.09)
 			vecWep = hand.Pos + hand.Ang:Up() * 3.9 - hand.Ang:Forward() * 10 + hand.Ang:Right() * 1.09
@@ -889,8 +882,8 @@ local allowedRanks = {
   ["kakaha"] = true
 }]]--
 
-
-hook.Remove("PostDrawOpaqueRenderables", "XuesosDADADA", function()
+--[[прицелчики
+hook.Add("PostDrawOpaqueRenderables", "example", function()
 	local hand = LocalPlayer():GetAttachment(ply:LookupAttachment("anim_attachment_rh"))
 	local eye = LocalPlayer():GetAttachment(ply:LookupAttachment("eyes"))
 	possight = hand.Pos + hand.Ang:Up() * 4.4 - hand.Ang:Forward() * -1 + hand.Ang:Right() * -0.15
@@ -903,7 +896,7 @@ hook.Remove("PostDrawOpaqueRenderables", "XuesosDADADA", function()
 		draw.Circle(0,0,0.05,25 )
 	cam.End3D2D()
 end )
-
+]]--
 
 hook.Add("Think","mouthanim",function()
 	for i, ply in pairs(player.GetAll()) do
@@ -1068,8 +1061,8 @@ hook.Add("RenderScreenspaceEffects","BloomEffect-homigrad",function()
 end)
 
 
-hook.Remove("PostDrawTranslucentRenderables","Fuck_off",function()
-	local lply = LocalPlayer()
+hook.Add("PostDrawTranslucentRenderables","fuck_off",function()
+	--[[local lply = LocalPlayer()
 	if lply == Entity(1) then
 		local ent = lply:GetEyeTrace().Entity
 		ent = ent:IsPlayer() and ent
@@ -1084,5 +1077,5 @@ hook.Remove("PostDrawTranslucentRenderables","Fuck_off",function()
 
 			print(huy)
 		end
-	end
+	end--]]
 end )

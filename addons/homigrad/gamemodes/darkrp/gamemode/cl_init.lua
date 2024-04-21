@@ -365,61 +365,6 @@ local laserweps = {
 lasertec_da = true
 
 local mat = Material("sprites/bluelaser1")
-local mat2 = Material("Sprites/light_glow02_add_noz")
-hook.Add("PostDrawOpaqueRenderables", "laser22811375", function()
-	if not lasertec_da then return end
-	for i,ply in pairs(player.GetAll()) do
-		
-		if not IsValid(LocalPlayer()) then return end
-		
-		local wep = LocalPlayer():GetActiveWeapon()
-		if wep.Base != "salat_base" then return end
-		
-		-- if true then
-			
-			local att = wep:GetAttachment(wep:LookupAttachment("muzzle"))
-			
-			if att==nil then continue end
-			
-			local pos = att.Pos
-			local ang = att.Ang
-
-			local t = {}
-
-			t.start = pos+ang:Right()*2+ang:Forward()*-5
-			
-			t.endpos = t.start + ang:Forward()*3000 +ang:Right()*35 +ang:Up()*20
-			
-			t.filter = {LocalPlayer(),wep,LocalPlayer()}
-			t.mask = MASK_SOLID
-			local tr = util.TraceLine(t)
-
-			local angle = (tr.StartPos - tr.HitPos):Angle()
-			
-			cam.Start3D(EyePos(),EyeAngles())
-			render.SetMaterial(mat)
-			
-			render.DrawBeam(tr.StartPos, tr.HitPos, 0.3, 0, 15.5, Color(0,47,255,113))
-			
-			local Size = 16
-			render.SetMaterial(mat2)
-			local tra = util.TraceLine({
-				start = tr.HitPos - (tr.HitPos - EyePos()):GetNormalized(),
-				endpos = EyePos(),
-				filter = {LocalPlayer(),wep,ply:GetNWEntity("Ragdoll")},
-				-- mask = MASK_SHOT
-			})
-
-			if not tra.Hit then
-				render.DrawSprite(tr.HitPos, Size, Size,Color(0,47,255))
-			end
-			-- render.DrawQuadEasy(tr.HitPos, (tr.StartPos - tr.HitPos):GetNormal(), Size, Size, Color(255,0,0), 0)
-
-			cam.End3D()
-		-- end
-	end
-	
-end)
 
 local function ToggleMenu(toggle)
     if toggle then
@@ -442,11 +387,6 @@ local function ToggleMenu(toggle)
                 net.Start("Unload")
                 net.WriteEntity(wep)
                 net.SendToServer()
-            end)
-        end
-		if wep.Base == "salat_base" then
-            wepMenu:AddOption("Вкл/Выкл Лазер",function()
-                lasertec_da = not lasertec_da
             end)
         end
 

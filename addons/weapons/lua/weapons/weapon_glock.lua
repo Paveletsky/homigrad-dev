@@ -36,6 +36,7 @@ SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
 
 SWEP.HoldType = "revolver"
+SWEP.SafeHoldType = "normal"
 
 ------------------------------------------
 
@@ -53,3 +54,7 @@ SWEP.dwsItemPos = Vector(10,-1,-2)
 SWEP.addAng = Angle(0.4,0,0)
 SWEP.addPos = Vector(0,0,-1)
 --SWEP.vbwPos = Vector(7,-10,-6)
+
+function SWEP:ApplyEyeSpray()
+    self.eyeSpray = self.eyeSpray - Angle(2,0,0)
+end

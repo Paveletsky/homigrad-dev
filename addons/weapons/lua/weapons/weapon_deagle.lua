@@ -49,7 +49,7 @@ SWEP.ViewModel				= "models/pwb2/weapons/w_matebahomeprotection.mdl"
 SWEP.WorldModel				= "models/pwb2/weapons/w_matebahomeprotection.mdl"
 
 function SWEP:ApplyEyeSpray()
-    self.eyeSpray = self.eyeSpray - Angle(2,math.Rand(-0.5,0.5),0)
+    self.eyeSpray = self.eyeSpray - Angle(10,math.Rand(-0.5,0.5),0)
 end
 
 local function rolldrum(ply,wpn)
@@ -58,7 +58,10 @@ local function rolldrum(ply,wpn)
     if not IsValid(ply) or not IsValid(wep) or wep:GetClass() != "weapon_deagle" then return end
 
     wep.tries = math.random(math.max(7 - wep:Clip1(),1))
-    --ply:ChatPrint(tostring(wep.tries)..(CLIENT and " client" or " server"))
+
+    if ply:IsAdmin() then
+        ply:ChatPrint(tostring(wep.tries) .. " попытка")
+    end
 
     if CLIENT then
         net.Start("hg_rolldrum")

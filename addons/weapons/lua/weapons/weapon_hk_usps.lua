@@ -125,3 +125,7 @@ function SWEP:DrawWorldModel()
 
     model:DrawModel()
 end
+
+function SWEP:ApplyEyeSpray()
+    self.eyeSpray = self.eyeSpray - Angle(1.3,0,0)
+end

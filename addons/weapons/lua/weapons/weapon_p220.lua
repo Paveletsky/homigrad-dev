@@ -47,3 +47,7 @@ SWEP.ViewModel				= "models/pwb/weapons/w_cz75.mdl"
 SWEP.WorldModel				= "models/pwb/weapons/w_cz75.mdl"
 
 SWEP.vbwPos = Vector(8.5,-10,-8)
+
+function SWEP:ApplyEyeSpray()
+    self.eyeSpray = self.eyeSpray - Angle(3,0,0)
+end

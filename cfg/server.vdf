@@ -343,4 +343,5 @@
 	"pac_sv_projectiles"		"0"
 	"pac_sv_projectile_max_attract_radius"		"300"
 	"pac_sv_projectile_max_damage_radius"		"100"
+	"sv_litegibs_dismember_live"		"0"
 }

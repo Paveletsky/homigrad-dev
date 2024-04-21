@@ -51,3 +51,7 @@ SWEP.WorldModel				= "models/weapons/insurgency/w_makarov.mdl"
 SWEP.vbwPos = Vector(8,0,-6)
 SWEP.addPos = Vector(0,0,0.2)
 SWEP.addAng = Angle(0.4,0,0)
+
+function SWEP:ApplyEyeSpray()
+    self.eyeSpray = self.eyeSpray - Angle(2,0,0)
+end

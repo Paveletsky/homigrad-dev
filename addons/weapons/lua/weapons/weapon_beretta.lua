@@ -51,3 +51,7 @@ SWEP.vbwPos = Vector(8,-9,-8)
 
 SWEP.addPos = Vector(0,0,-0.9)
 SWEP.addAng = Angle(0.3,0,0)
+
+function SWEP:ApplyEyeSpray()
+    self.eyeSpray = self.eyeSpray - Angle(1.3,0,0)
+end
