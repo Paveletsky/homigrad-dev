@@ -30,7 +30,6 @@ hook.Add('dangautils.db.init', 'dangashop.db', function()
 
 end)
 
-dangautils.fs.include('sv_items.lua', 'sv')
 local meta = FindMetaTable 'Player'
 
 local osItem = {}
@@ -155,9 +154,6 @@ function osItem:OnBuy()
 
 end
 
-
--- print('хуй')
--- Entity(1):osGiveItem('coffee')
 function osItem:Remove(noDB)
 
 	if not noDB then
@@ -325,3 +321,6 @@ function meta:osSyncItems()
 	end)
 
 end
+
+-- print('хуй')
+-- Entity(1):osGiveItem('premium')

@@ -501,7 +501,7 @@
 	}
 	"group"	"dadmin"
 }
-"STEAM_0:0:597027690"	
+"STEAM_0:1:630913433"	
 {
 	"deny"	
 	{
@@ -509,8 +509,8 @@
 	"allow"	
 	{
 	}
-	"name"	"not approved by the vatican"
-	"group"	"downer"
+	"name"	"Сектор каго?...."
+	"group"	"operator_n"
 }
 "STEAM_0:1:520242926"	
 {
@@ -533,7 +533,7 @@
 	}
 	"group"	"dadmin"
 }
-"STEAM_0:0:421035503"	
+"STEAM_0:0:597027690"	
 {
 	"deny"	
 	{
@@ -541,8 +541,8 @@
 	"allow"	
 	{
 	}
-	"name"	"Minty"
-	"group"	"helper"
+	"name"	"not approved by the vatican"
+	"group"	"downer"
 }
 "STEAM_0:1:74275307"	
 {
@@ -850,7 +850,7 @@
 	"name"	"Chesnok"
 	"group"	"dadmin"
 }
-"STEAM_0:1:630913433"	
+"STEAM_0:0:421035503"	
 {
 	"deny"	
 	{
@@ -858,8 +858,8 @@
 	"allow"	
 	{
 	}
-	"name"	"Сектор каго?...."
-	"group"	"operator_n"
+	"name"	"Minty"
+	"group"	"helper"
 }
 "STEAM_0:0:192154643"	
 {

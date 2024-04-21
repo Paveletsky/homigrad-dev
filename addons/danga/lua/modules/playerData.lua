@@ -1,17 +1,29 @@
--- hook.Add('player.loaded', 'player-data', function(client)
-    
---     dangautils.db:PrepareQuery([[
--- 		SELECT data FROM greatude_users
---             WHERE steamId = ? 
--- 	]], { client:SteamID(), }, 
---     function(q, st, res)
---         if res and res.data then
---             res = util.JSONToTable(res[1].data) or {}
---             client.dbvars = data       
---         end
---     end)
+hook.Add('dangautils.db.init', 'dangaaccs', function()
 
--- end)
+	dangautils.db:RunQuery([[
+		CREATE TABLE IF NOT EXISTS homiusers (
+			id INT(8) UNSIGNED NOT NULL AUTO_INCREMENT,
+			steamID VARCHAR(30) NOT NULL,
+			data TEXT NOT NULL,
+		) ENGINE=INNODB CHARACTER SET utf8 COLLATE utf8_general_ci
+	]])
+
+end)
+
+hook.Add('player.loaded', 'player-data', function(client)
+    
+    dangautils.db:PrepareQuery([[
+		SELECT data FROM homiusers
+            WHERE steamId = ? 
+	]], { client:SteamID(), }, 
+    function(q, st, res)
+        if res and res.data then
+            res = util.JSONToTable(res[1].data) or {}
+            client.dbvars = data       
+        end
+    end)
+
+end)
 
 local meta = FindMetaTable 'Player'
 function meta:SetDBVar(name, val)
@@ -23,7 +35,7 @@ function meta:SetDBVar(name, val)
 
     local sid = self:SteamID()
     dangautils.db:PrepareQuery([[
-		SELECT data FROM greatude_users
+		SELECT data FROM homiusers
             WHERE steamId = ? 
 	]], { sid, }, 
     function(q, st, data)
@@ -31,7 +43,7 @@ function meta:SetDBVar(name, val)
         data[name] = val
 
         dangautils.db:PrepareQuery([[
-            UPDATE greatude_users
+            UPDATE homiusers
             SET data = ?	
             WHERE steamId = ?
         ]], { util.TableToJSON(data), sid })
