@@ -33,6 +33,34 @@ SWEP.DrawCrosshair			= false
 SWEP.ViewModel				= "models/weapons/insurgency/w_rpg7.mdl"
 SWEP.WorldModel				= "models/weapons/insurgency/w_rpg7.mdl"
 
+
+if SERVER then
+    function SWEP:GetPosAng()
+        local owner = self:GetOwner()
+        local Pos,Ang = owner:GetBonePosition(owner:LookupBone("ValveBiped.Bip01_R_Hand"))
+        if not Pos then return end
+        
+        Pos:Add(Ang:Forward() * self.dwmForward)
+        Pos:Add(Ang:Right() * self.dwmRight)
+        Pos:Add(Ang:Up() * self.dwmUp)
+
+
+        Ang:RotateAroundAxis(Ang:Up(),self.dwmAUp)
+        Ang:RotateAroundAxis(Ang:Right(),self.dwmARight)
+        Ang:RotateAroundAxis(Ang:Forward(),self.dwmAForward)
+
+        return Pos,Ang
+    end
+else
+    function SWEP:SetPosAng(Pos,Ang)
+        self.Pos = Pos
+        self.Ang = Ang
+    end
+    function SWEP:GetPosAng()
+        return self.Pos,self.Ang
+    end
+end
+
 function SWEP:PrimaryAttack()
     if self:Clip1() <= 0 then return end
     local shotpos = self:GetOwner():GetPos()+Vector(0,0,50) + self:GetOwner():EyeAngles():Forward()*60 +self:GetOwner():EyeAngles():Right()*5

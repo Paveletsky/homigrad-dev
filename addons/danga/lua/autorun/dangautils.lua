@@ -12,19 +12,35 @@ function dangautils.fs.Equal(word, min, max, to)
     return word:sub(min, max) == to
 end
 
-function dangautils.fs.include(path, side)
+function dangautils.fs.include(fileName, type)
 
-    if side == 'cl' then
-        if SERVER then AddCSLuaFile(path) end
-        if CLIENT then include(path) end
-    elseif side == 'sv' then
-        if SERVER then include(path) end
-    elseif side == 'sh' then
-        if SERVER then AddCSLuaFile(path) end
-        include(path)  
-    else
-        dangautils.console('File: '..path..' not found.')
-    end
+	if (!fileName) then
+		error("[BoK] Файл не найден.")
+	end
+
+	if ((type == "sv" or fileName:find("sv_")) and SERVER) then
+		return include(fileName)
+	elseif (type == "sh" or fileName:find("shared.lua") or fileName:find("sh_")) then
+		if (SERVER) then
+			AddCSLuaFile(fileName)
+		end
+
+		return include(fileName)
+	elseif (type == "cl" or fileName:find("cl_")) then
+		if (SERVER) then
+			AddCSLuaFile(fileName)
+		else
+			return include(fileName)
+		end
+	end
+	
+end
+
+function dangautils.fs.includeDir(directory)
+
+	for _, v in ipairs(file.Find(directory.."/*.lua", "LUA")) do
+		dangautils.fs.include(directory.."/"..v)
+	end
     
 end
 

@@ -487,7 +487,7 @@ CalcView = function(ply,vec,ang,fov,znear,zfar)
 		end
 	end
 
-	fov = Lerp(ScopeLerp,fov,75)
+	fov = Lerp(ScopeLerp, fov, 75)
 
 	angRecoil[3] = 0
 	
@@ -785,10 +785,13 @@ CalcView = function(ply,vec,ang,fov,znear,zfar)
 
 	vec = Vector(vec[1],vec[2],eye and eye.Pos[3] or vec[3])
 
-	vel = math.max(math.Round(Lerp(0.1,vel,lply:GetVelocity():Length())) - 1,0)
+	vel = math.max(math.Round(Lerp(0.1,vel,lply:GetVelocity():Length())) + 10, 10)
 	
-	sprinthuy = LerpFT(0.1,sprinthuy,-math.abs(math.sin(CurTime() * 6)) * vel / 400)
+	
+	local var = vel > 250 and 50 or 500
+	sprinthuy = LerpFT(0.1, sprinthuy, -math.abs(math.cos(CurTime() * 6)) * vel / var)
 	output_ang[1] = output_ang[1] + sprinthuy
+	-- output_ang[2] = output_ang[2] + sprinthuy
 
 	output_ang[3] = 0
 

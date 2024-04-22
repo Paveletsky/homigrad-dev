@@ -1,6 +1,16 @@
 hook.Add('dangautils.db.init', 'dangashop.db', function()
 
 	dangautils.db:RunQuery([[
+		CREATE TABLE IF NOT EXISTS homiusers (
+			id INT(8) UNSIGNED NOT NULL AUTO_INCREMENT,
+			steamID VARCHAR(30) NOT NULL,
+			data TEXT NOT NULL,
+				PRIMARY KEY (id),
+				UNIQUE (steamID)
+		) ENGINE=INNODB CHARACTER SET utf8 COLLATE utf8_general_ci
+	]])
+
+	dangautils.db:RunQuery([[
 		CREATE TABLE IF NOT EXISTS fundot_shop_users (
 			id INT(8) UNSIGNED NOT NULL AUTO_INCREMENT,
 			steamID VARCHAR(30) NOT NULL,

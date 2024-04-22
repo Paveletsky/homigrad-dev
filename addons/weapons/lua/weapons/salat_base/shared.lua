@@ -655,7 +655,6 @@ end)
 local util_QuickTrace = util.QuickTrace
 local math_Clamp = math.Clamp
 local closeAng = Angle(0,0,0)
-local closeHand = Angle(0,0,0)
 
 local angZero = Angle(0,0,0)
 local angSuicide = Angle(160,30,90)
@@ -796,6 +795,7 @@ function SWEP:Step()
 	ply:ManipulateBoneAngles(ply:LookupBone("ValveBiped.Bip01_L_Forearm"), forearm, false)
 end
 
+
 function SWEP:Holster( wep )
 	--if not IsFirstTimePredicted() then return end
 	local ply = self:GetOwner()
@@ -831,3 +831,4 @@ end
 function SWEP:ShouldDropOnDie()
 	return false
 end
+print('хуй')

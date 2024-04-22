@@ -1,33 +1,37 @@
-"user"	
+"downer"	
 {
 	"allow"	
 	{
-		"ulx donate"
-		"ulx help"
-		"ulx motd"
-		"ulx profile"
-		"ulx psay"
-		"ulx soundlist"
-		"ulx thetime"
-		"ulx thirdperson"
-		"ulx usermanagementhelp"
-		"ulx version"
-		"ulx votegag"
-		"ulx votemap"
-		"ulx votemute"
-		"ulx who"
-		"wardrobe"
+		"ulx admin"
+		"ulx administrate"
+		"ulx asay"
+		"ulx bancheck"
+		"ulx banip"
+		"ulx dban"
+		"ulx fakeban"
+		"ulx gethooktable"
+		"ulx gravity"
+		"ulx hiddenecho"
+		"ulx hide"
+		"ulx ip"
+		"ulx maprestart"
+		"ulx maul"
+		"ulx multiban"
+		"ulx resetmap"
+		"ulx resettimescale"
+		"ulx sasay"
+		"ulx sban"
+		"ulx seeasay"
+		"ulx seesasay"
+		"ulx speed"
+		"ulx stopsounds"
+		"ulx stopvote"
+		"ulx timescale"
+		"ulx unadmin"
+		"ulx unadministrate"
 	}
 	"can_target"	"!%superadmin"
-}
-"operator"	
-{
-	"can_target"	"!%admin"
-	"allow"	
-	{
-		"ulx seeasay"
-	}
-	"inherit_from"	"user"
+	"inherit_from"	"dsuperadmin"
 }
 "megasponsor"	
 {
@@ -49,6 +53,7 @@
 	{
 		"fpp_settings"
 		"fprofiler"
+		"helix - manage pac"
 		"ulx addgroup"
 		"ulx adduser"
 		"ulx adduserid"
@@ -144,6 +149,7 @@
 }
 "moderator_n"	
 {
+	"can_target"	"!%admin"
 	"allow"	
 	{
 		"ulx admin"
@@ -191,12 +197,59 @@
 		"ulx banid"	"* 1:2d"
 		"ulx ban"	"* 1:2d"
 	}
-	"can_target"	"!%admin"
 	"inherit_from"	"operator_n"
+}
+"operator_n"	
+{
+	"can_target"	"!%moderator_n"
+	"allow"	
+	{
+		"ulx admin"
+		"ulx administrate"
+		"ulx bancheck"
+		"ulx bring"
+		"ulx cloak"
+		"ulx explode"
+		"ulx freeze"
+		"ulx gag"
+		"ulx god"
+		"ulx goto"
+		"ulx jail"
+		"ulx kick"
+		"ulx mute"
+		"ulx noclip"
+		"ulx physgunplayer"
+		"ulx playsound"
+		"ulx respawn"
+		"ulx return"
+		"ulx setname"
+		"ulx slay"
+		"ulx spectate"
+		"ulx stopvote"
+		"ulx strip"
+		"ulx teleport"
+		"ulx unadmin"
+		"ulx unadministrate"
+		"ulx unban"
+		"ulx unbanip"
+		"ulx uncloak"
+		"ulx unfreeze"
+		"ulx ungag"
+		"ulx ungod"
+		"ulx unjail"
+		"ulx unmute"
+		"ulx unvotegag"
+		"ulx unvotemute"
+		"ulx veto"
+		"ulx vote"
+		"ulx votemap2"
+		"ulx banid"	"* 1:12h"
+		"ulx ban"	"* 1:12d"
+	}
+	"inherit_from"	"dadmin"
 }
 "dadmin"	
 {
-	"can_target"	"!%stajer"
 	"allow"	
 	{
 		"ulx admin"
@@ -248,11 +301,11 @@
 		"ulx banid"	"* 1:3d"
 		"ulx ban"	"* 1:3d"
 	}
+	"can_target"	"!%stajer"
 	"inherit_from"	"stajer"
 }
 "stajer"	
 {
-	"can_target"	"!%operator_n"
 	"allow"	
 	{
 		"ulx bring"
@@ -284,6 +337,7 @@
 		"ulx banid"	"* 1:2h"
 		"ulx ban"	"* 1:2h"
 	}
+	"can_target"	"!%operator_n"
 	"inherit_from"	"user"
 }
 "//mega"	
@@ -333,9 +387,19 @@
 	}
 	"inherit_from"	"operator"
 }
+"dsuperadmin"	
+{
+	"can_target"	"!%operator_n"
+	"allow"	
+	{
+		"ulx thirdperson"
+		"ulx banid"	"* 1:7d"
+		"ulx ban"	"* 1:7d"
+	}
+	"inherit_from"	"dadmin"
+}
 "admin"	
 {
-	"can_target"	"!%superadmin"
 	"allow"	
 	{
 		"fpp_cleanup"
@@ -475,6 +539,7 @@
 		"ulx welcomemessage"
 		"ulx whip"
 	}
+	"can_target"	"!%superadmin"
 	"inherit_from"	"moderator_n"
 }
 "curator"	
@@ -615,106 +680,42 @@
 	}
 	"inherit_from"	"admin"
 }
-"dsuperadmin"	
+"operator"	
 {
 	"allow"	
 	{
-		"ulx thirdperson"
-		"ulx banid"	"* 1:7d"
-		"ulx ban"	"* 1:7d"
+		"ulx seeasay"
 	}
-	"can_target"	"!%operator_n"
-	"inherit_from"	"dadmin"
-}
-"operator_n"	
-{
-	"allow"	
-	{
-		"ulx admin"
-		"ulx administrate"
-		"ulx bancheck"
-		"ulx bring"
-		"ulx cloak"
-		"ulx explode"
-		"ulx freeze"
-		"ulx gag"
-		"ulx god"
-		"ulx goto"
-		"ulx jail"
-		"ulx kick"
-		"ulx mute"
-		"ulx noclip"
-		"ulx physgunplayer"
-		"ulx playsound"
-		"ulx respawn"
-		"ulx return"
-		"ulx setname"
-		"ulx slay"
-		"ulx spectate"
-		"ulx stopvote"
-		"ulx strip"
-		"ulx teleport"
-		"ulx unadmin"
-		"ulx unadministrate"
-		"ulx unban"
-		"ulx unbanip"
-		"ulx uncloak"
-		"ulx unfreeze"
-		"ulx ungag"
-		"ulx ungod"
-		"ulx unjail"
-		"ulx unmute"
-		"ulx unvotegag"
-		"ulx unvotemute"
-		"ulx veto"
-		"ulx vote"
-		"ulx votemap2"
-		"ulx banid"	"* 1:12h"
-		"ulx ban"	"* 1:12d"
-	}
-	"can_target"	"!%moderator_n"
-	"inherit_from"	"dadmin"
+	"can_target"	"!%admin"
+	"inherit_from"	"user"
 }
 "helper"	
 {
+	"can_target"	"!%superadmin"
 	"allow"	
 	{
 	}
-	"can_target"	"!%superadmin"
 	"inherit_from"	"megapenis"
 }
-"downer"	
+"user"	
 {
 	"can_target"	"!%superadmin"
 	"allow"	
 	{
-		"ulx admin"
-		"ulx administrate"
-		"ulx asay"
-		"ulx bancheck"
-		"ulx banip"
-		"ulx dban"
-		"ulx fakeban"
-		"ulx gethooktable"
-		"ulx gravity"
-		"ulx hiddenecho"
-		"ulx hide"
-		"ulx ip"
-		"ulx maprestart"
-		"ulx maul"
-		"ulx multiban"
-		"ulx resetmap"
-		"ulx resettimescale"
-		"ulx sasay"
-		"ulx sban"
-		"ulx seeasay"
-		"ulx seesasay"
-		"ulx speed"
-		"ulx stopsounds"
-		"ulx stopvote"
-		"ulx timescale"
-		"ulx unadmin"
-		"ulx unadministrate"
+		"ulx donate"
+		"ulx help"
+		"ulx motd"
+		"ulx profile"
+		"ulx psay"
+		"ulx soundlist"
+		"ulx thetime"
+		"ulx thirdperson"
+		"ulx usermanagementhelp"
+		"ulx version"
+		"ulx votegag"
+		"ulx votemap"
+		"ulx votemute"
+		"ulx who"
+		"wardrobe"
 	}
-	"inherit_from"	"dsuperadmin"
 }

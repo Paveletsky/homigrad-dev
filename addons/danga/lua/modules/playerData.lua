@@ -1,15 +1,3 @@
-hook.Add('dangautils.db.init', 'dangaaccs', function()
-
-	dangautils.db:RunQuery([[
-		CREATE TABLE IF NOT EXISTS homiusers (
-			id INT(8) UNSIGNED NOT NULL AUTO_INCREMENT,
-			steamID VARCHAR(30) NOT NULL,
-			data TEXT NOT NULL,
-		) ENGINE=INNODB CHARACTER SET utf8 COLLATE utf8_general_ci
-	]])
-
-end)
-
 hook.Add('player.loaded', 'player-data', function(client)
     
     dangautils.db:PrepareQuery([[
