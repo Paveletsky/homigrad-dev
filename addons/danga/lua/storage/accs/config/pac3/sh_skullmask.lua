@@ -1,16 +1,16 @@
-fundot.accs['fedora'] = {
+fundot.accs['skull_mask'] = {
 	[1] = {
 		["children"] = {
 			[1] = {
 				["children"] = {
 				},
 				["self"] = {
-					["Angles"] = Angle(-5, 0, 0),
-					["Position"] = Vector(-4.5, 0, 6),
+					["Angles"] = Angle(5, 0, 0),
+					["Position"] = Vector(-2.5, -0.25, 1),
 					["UniqueID"] = "4249811628",
-					["Size"] = 0.7,
+					["Size"] = 1.4,
 					["Bone"] = "eyes",
-					["Model"] = ITEM.model,
+					["Model"] = "models/Gibs/HGIBS.mdl",
 					["ClassName"] = "model",
 				},
 			},

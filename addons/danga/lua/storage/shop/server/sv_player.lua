@@ -14,7 +14,7 @@ end
 function meta:osAddMoney(val)
 
 	if not self.osID then return false end
-	-- if not self:osHasMoney(-val) then return false end
+	if not self:osHasMoney(-val) then return false end
 
 	self.osBalance = self.osBalance + val
 	dangautils.db:PrepareQuery([[
@@ -47,7 +47,7 @@ function meta:osSyncBalance()
 		data = istable(data) and data[1]
 		if data then
 			if self.osBalance and self.osBalance < data.balance then
-				self:ChatPrint(self, 'ooc', "Баланс обновлен: " .. data.balance - self.osBalance)
+				self:ChatPrint("Баланс обновлен: " .. data.balance - self.osBalance)
 			end
 
 			self.osBalance = data.balance
@@ -104,6 +104,7 @@ function meta:osNetShop()
 			name = item.name,
 			cat = item.cat,
 			desc = item.desc,
+			PAC3 = item.PAC3,
 			price = item.price,
 			order = item.order,
 			icon = item.icon,

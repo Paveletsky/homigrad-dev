@@ -40,7 +40,12 @@ hook.Add('dangautils.db.init', 'dangashop.db', function()
 
 end)
 
+dangautils.fs.include('../sv_items.lua', 'sv')
+
 local meta = FindMetaTable 'Player'
+
+util.AddNetworkString 'octoshop.action'
+util.AddNetworkString 'octoshop.purchase'
 
 local osItem = {}
 osItem.__index = osItem
@@ -199,7 +204,7 @@ function meta:osPurchaseItem(class)
 		return false
 	end
 
-	if not self:osAddMoney(-classTable.price) then
+	if self:osHasMoney(-classTable.price) then
 		self:ChatPrint('Нет денег, ты что бомж?')
 		self:osNetBalance()
 		return false
@@ -207,8 +212,8 @@ function meta:osPurchaseItem(class)
 
 	self:osGiveItem(class, function(item)
 		item:OnBuy()
-		self:ChatPrint("Ты купил " .. classTable.name)
-
+		-- self:ChatPrint("Ты купил " .. classTable.name)
+		
 		dangautils.db:PrepareQuery([[
 			UPDATE fundot_shop_users
 				SET totalPurchases = totalPurchases + 1, totalSpent = totalSpent + ?
@@ -332,5 +337,61 @@ function meta:osSyncItems()
 
 end
 
--- print('хуй')
--- Entity(1):osGiveItem('premium')
+net.Receive('octoshop.purchase', function(len, ply)
+
+	local class = net.ReadString()
+	ply:osPurchaseItem(class)
+
+end)
+
+net.Receive('octoshop.action', function(len, ply)
+
+	local id = net.ReadUInt(32)
+	local action = net.ReadString()
+
+	local item = ply:osGetItem(id)
+	if not item then
+		ply:osNetInv()
+		return
+	end
+
+	if action == 'use' then
+		if item:CanUse() then
+			item:Use()
+		else
+			-- octoshop.notify(ply, L.octoshop_error_use)
+		end
+	elseif action == 'equip' then
+		if item:CanEquip() then
+			item:Equip()
+		else
+			-- octoshop.notify(ply, L.octoshop_error_equip)
+		end
+	elseif action == 'unequip' then
+		if item:CanUnequip() then
+			item:Unequip()
+		else
+			-- octoshop.notify(ply, L.octoshop_error_unequip)
+		end
+	elseif action == 'trade' then
+		local newOwner = net.ReadEntity()
+		if item:CanTrade() then
+			if IsValid(newOwner) and newOwner:IsPlayer() and newOwner.osID then
+				item:Move(newOwner)
+				-- octoshop.notify(ply, L.octoshop_you_give .. item.name .. L.octoshop_you_give2 .. newOwner:Name())
+				-- octoshop.notify(newOwner, L.octoshop_you_take .. item.name .. L.octoshop_you_take2 .. ply:Name())
+			else
+				-- octoshop.notify(ply, L.octoshop_error_receiver)
+			end
+		else
+			-- octoshop.notify(ply, L.octoshop_give_error)
+		end
+	elseif action == 'sell' then
+		if item:CanSell() then
+			-- octoshop.notify(ply, 'ooc', L.octoshop_soon_do)
+		else
+			-- octoshop.notify(ply, L.octoshop_you_cant_sell)
+		end
+	end
+
+end)

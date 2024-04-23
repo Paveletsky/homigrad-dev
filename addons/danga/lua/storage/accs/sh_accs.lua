@@ -6,8 +6,8 @@ ix.pac.list = ix.pac.list or {}
 
 fundot.accs = fundot.accs or {}
 
--- dangautils.fs.includeDir('config')
 dangautils.fs.include('config/pac3/sh_tophat.lua', 'sh')
+dangautils.fs.include('config/pac3/sh_skullmask.lua', 'sh')
 
 PLUGIN = GAMEMODE or {}
 
@@ -107,8 +107,6 @@ if (SERVER) then
 		self:SetNetVar("parts", {})
 	end
 
-	-- Entity(1):ResetParts()
-
 	function PLUGIN:PlayerSwitchWeapon(client, oldWeapon, newWeapon)
 		local oldItem = IsValid(oldWeapon) and oldWeapon.ixItem
 		local newItem = IsValid(newWeapon) and newWeapon.ixItem
@@ -140,6 +138,8 @@ else
 			end
 		end
 	end
+
+	fundot.AttachPAC = AttachPart
 
 	local function RemovePart(client, uniqueID)
 		local pacData = fundot.accs[uniqueID]
@@ -241,6 +241,8 @@ else
 			end
 		end
 	end
+
+	
 
 	-- function PLUGIN:OnEntityCreated(entity)
 	-- 	local class = entity:GetClass()

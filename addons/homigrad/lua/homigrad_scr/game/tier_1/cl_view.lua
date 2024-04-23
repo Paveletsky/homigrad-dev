@@ -125,7 +125,7 @@ hook.Add("RenderScene","octoweapons",function(pos,angle,fov)
 			draw.SimpleText(text,"DebugFixedSmall",ScrW() / 2,ScrH() / 2,white,TEXT_ALIGN_CENTER,TEXT_ALIGN_CENTER)
 		cam.End2D()
 
-		return true
+		return false
 	end
 
 	RENDERSCENE = true

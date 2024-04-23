@@ -39,6 +39,7 @@ end
 function dangautils.fs.includeDir(directory)
 
 	for _, v in ipairs(file.Find(directory.."/*.lua", "LUA")) do
+		-- print(v)
 		dangautils.fs.include(directory.."/"..v)
 	end
     

@@ -27,7 +27,7 @@ function e:SetModel(...)
     self.vRawCamPos = self.camPos
     self:SetLookAng((-self.camPos):Angle())
     self.tgtLookAngle = self.aLookAngle
-    self:SetFOV(30 * (self.fovMultiplier or 1))
+    self:SetFOV(40 * (self.fovMultiplier or 1))
     self:UpdatePos()
 end
 
@@ -75,7 +75,7 @@ function e:FixPosition()
     self.vCamPos = e - self.aLookAngle:Forward() * (e - self.vCamPos):Length()
 end
 
-function e:MoveCameraToOffset(newOffset, duration)
+function e:MoveCameraToOffset(newOffset, duration, newFov)
     if not duration or duration <= 0 then
         self.mdlOffset = newOffset
         self:UpdatePos()
