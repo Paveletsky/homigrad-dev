@@ -1,13 +1,26 @@
-util.AddNetworkString 'octoshop.rBalance'
-util.AddNetworkString 'octoshop.rInventory'
-util.AddNetworkString 'octoshop.rShop'
-util.AddNetworkString 'octoshop.useCoupon'
+util.AddNetworkString 'fundot.rBalance'
+util.AddNetworkString 'fundot.rInventory'
+util.AddNetworkString 'fundot.rShop'
+util.AddNetworkString 'fundot.useCoupon'
 
 local meta = FindMetaTable 'Player'
 
 function meta:osGetItems()
 
 	return self.osItems or {}
+
+end
+
+function meta:osGetMoney()
+
+	self.osBalance = self.osBalance or 0
+	return self.osBalance
+
+end
+
+function meta:osHasMoney(val)
+
+	return self:osGetMoney() >= val
 
 end
 
@@ -62,7 +75,7 @@ end
 
 function meta:osNetBalance()
 
-	net.Start('octoshop.rBalance')
+	net.Start('fundot.rBalance')
 		net.WriteUInt(self.osBalance or 0, 32)
 	net.Send(self)
 
@@ -73,10 +86,12 @@ function meta:osNetInv()
 
 	local toSend = {}
 	for itemID, item in pairs(self:osGetItems()) do
+		print('хуй')
 		table.insert(toSend, {
 			id = itemID,
 			class = item.class,
 			name = item.name,
+			icon = item.icon,
 			canUse = item:CanUse(),
 			canEquip = item:CanEquip(),
 			canUnequip = item:CanUnequip(),
@@ -87,7 +102,7 @@ function meta:osNetInv()
 		})
 	end
 
-	net.Start('octoshop.rInventory')
+	net.Start('fundot.rInventory')
 		net.WriteTable(toSend)
 	net.Send(self)
 
@@ -114,19 +129,19 @@ function meta:osNetShop()
 		})
 	end
 
-	net.Start('octoshop.rShop')
+	net.Start('fundot.rShop')
 		net.WriteTable(toSend)
 	net.Send(self)
 
 end
 
-net.Receive('octoshop.rShop', function(len, ply)
+net.Receive('fundot.rShop', function(len, ply)
 
 	ply:osNetShop()
 
 end)
 
-net.Receive('octoshop.rInventory', function(len, ply)
+net.Receive('fundot.rInventory', function(len, ply)
 
 	ply:osSyncBalance()
 	ply:osNetInv()
@@ -173,4 +188,4 @@ function meta:osSyncPlayerData()
 
 end
 
-hook.Add('player.loaded', 'octoshop', meta.osSyncPlayerData)
+hook.Add('player.loaded', 'fundot', meta.osSyncPlayerData)

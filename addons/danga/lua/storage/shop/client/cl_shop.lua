@@ -71,7 +71,7 @@ function PANEL:Init()
         self.InventoryListView:Dock(FILL)
         self.InventoryListView:AddColumn("Предметы")
         self.InventoryListView:DockMargin(0, -16, 0, 0)
-        self.InventoryListView:SetDataHeight(35)
+        self.InventoryListView:SetDataHeight(75)
 
     self.ShopListView = self.ShopPanel:Add("DListView")
         self.ShopListView:Dock(LEFT)
@@ -177,10 +177,10 @@ end
 
 function PANEL:Show()
     print("Sending request to the server...")
-    net.Start('octoshop.rInventory') 
+    net.Start('fundot.rInventory') 
     net.SendToServer()
 
-    net.Start('octoshop.rShop') 
+    net.Start('fundot.rShop') 
     net.SendToServer()
 end
 
@@ -242,7 +242,7 @@ local function CreateItem(item, grid)
             local menu = DermaMenu()
                 menu:AddOption( "Купить", function() 
                     if item.canBuy then
-                        net.Start('octoshop.purchase')
+                        net.Start('fundot.purchase')
                             net.WriteString(item.class)
                         net.SendToServer()
                     end
@@ -328,8 +328,16 @@ function PANEL:UpdateInv(items)
     self.InventoryListView:Clear()
 
     for k, v in pairs(items) do
-        self.InventoryListView:AddLine(v.name)
+        local itemPanel = self.InventoryListView:AddLine(v.name):Add("DPanel")
+        itemPanel:Dock(RIGHT)
+        itemPanel:SetWide(100)
+
+        local itemIcon = itemPanel:Add("DSprite")
+        itemIcon:Dock(FILL)
+        itemIcon:SetMaterial(v.icon)
     end
+
+    SetListViewFont(self.InventoryListView, 'fdShopFontBig')
 end
 
 function PANEL:UpdateShop()
@@ -357,21 +365,21 @@ function PANEL:UpdateShop()
     SetListViewFont(self.ShopListView, 'fdShopSemiFont')
 end
 
-net.Receive('octoshop.rInventory', function(len)
+net.Receive('fundot.rInventory', function(len)
 
 	local data = net.ReadTable()
 	fundot.ShopMenu:UpdateInv(data)
 
 end)
 
-net.Receive('octoshop.rInventory', function(len)
+net.Receive('fundot.rInventory', function(len)
 
 	local data = net.ReadTable()
 	fundot.ShopMenu:UpdateInv(data)
 
 end)
 
-net.Receive('octoshop.rShop', function(len)
+net.Receive('fundot.rShop', function(len)
 
 	local data = net.ReadTable()
 	for i, item in ipairs(data) do

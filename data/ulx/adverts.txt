@@ -1,0 +1,47 @@
+; Here's where you put advertisements
+;
+; Whether an advertisement is a center advertisement (csay) or text box advertisement (tsay) is determined by
+; whether or not the "time_on_screen" key is present. If it is present, it's a csay.
+;
+; The 'time' argument inside a center advertisement and the number following a chat advertisement are the
+; time it takes between each showing of this advertisement in seconds. Set it to 300 and the advertisement
+; will show every five minutes.
+;
+; If you want to make it so that one advertisement is shown and then will always be followed by another,
+; put them in a table. For example, if you add the following to the bottom of the file, A will always show
+; first followed by B.
+; "my_group"
+; {
+;     {
+;         "text" "Advertisement A"
+;         "time" "200"
+;     }
+;     {
+;         "text" "Advertisement B"
+;         "time" "300"
+;     }
+; }
+
+
+
+{
+	"text" "Гайд по управлению регдоллами https://oldhomigrad.ru/wiki.html"
+	"red" "255"
+	"green" "255"
+	"blue" "255"
+	"time" "101"
+}
+{
+	"text" "Discord server - [ https://discord.gg/txwFXfZ44s ]"
+	"red" "0"
+	"green" "209"
+	"blue" "242"
+	"time" "25"
+}
+{
+	"text" "Donate - F6 or /donate"
+	"red" "19"
+	"green" "219"
+	"blue" "202"
+	"time" "347"
+}
