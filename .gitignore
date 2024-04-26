@@ -30,6 +30,6 @@
 /map.pack
 /modelsounds.cache
 data/ulib/users.txt
-sv.db
+/sv.db
 /data/*.txt
 /data/dppv
