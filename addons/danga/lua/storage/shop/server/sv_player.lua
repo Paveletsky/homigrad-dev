@@ -86,7 +86,7 @@ function meta:osNetInv()
 
 	local toSend = {}
 	for itemID, item in pairs(self:osGetItems()) do
-		print('хуй')
+		print(item)
 		table.insert(toSend, {
 			id = itemID,
 			class = item.class,

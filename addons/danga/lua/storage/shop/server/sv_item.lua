@@ -44,8 +44,8 @@ dangautils.fs.include('../sv_items.lua', 'sv')
 
 local meta = FindMetaTable 'Player'
 
-util.AddNetworkString 'fundot.action'
-util.AddNetworkString 'fundot.purchase'
+util.AddNetworkString 'octoshop.action'
+util.AddNetworkString 'octoshop.purchase'
 
 local osItem = {}
 osItem.__index = osItem
@@ -225,7 +225,7 @@ function meta:osPurchaseItem(class)
 	end)
 
 end
-net.Receive('fundot.purchase', function(len, ply)
+net.Receive('octoshop.purchase', function(len, ply)
 
 	local class = net.ReadString()
 	ply:osPurchaseItem(class)
@@ -267,7 +267,7 @@ end
 function osItem:OnGiven()
 
 	if self:GetData('expire') and os.time() >= self:GetData('expire') then
-		print(self:GetOwner(), 'warning', L.fundot_item_expired .. self.name ..L.fundot_item_expired2)
+		print(self:GetOwner(), 'warning', L.octoshop_item_expired .. self.name ..L.octoshop_item_expired2)
 		self:Remove()
 		return
 	end
@@ -337,14 +337,14 @@ function meta:osSyncItems()
 
 end
 
-net.Receive('fundot.purchase', function(len, ply)
+net.Receive('octoshop.purchase', function(len, ply)
 
 	local class = net.ReadString()
 	ply:osPurchaseItem(class)
 
 end)
 
-net.Receive('fundot.action', function(len, ply)
+net.Receive('octoshop.action', function(len, ply)
 
 	local id = net.ReadUInt(32)
 	local action = net.ReadString()
@@ -359,38 +359,38 @@ net.Receive('fundot.action', function(len, ply)
 		if item:CanUse() then
 			item:Use()
 		else
-			-- fundot.notify(ply, L.fundot_error_use)
+			-- octoshop.notify(ply, L.octoshop_error_use)
 		end
 	elseif action == 'equip' then
 		if item:CanEquip() then
 			item:Equip()
 		else
-			-- fundot.notify(ply, L.fundot_error_equip)
+			-- octoshop.notify(ply, L.octoshop_error_equip)
 		end
 	elseif action == 'unequip' then
 		if item:CanUnequip() then
 			item:Unequip()
 		else
-			-- fundot.notify(ply, L.fundot_error_unequip)
+			-- octoshop.notify(ply, L.octoshop_error_unequip)
 		end
 	elseif action == 'trade' then
 		local newOwner = net.ReadEntity()
 		if item:CanTrade() then
 			if IsValid(newOwner) and newOwner:IsPlayer() and newOwner.osID then
 				item:Move(newOwner)
-				-- fundot.notify(ply, L.fundot_you_give .. item.name .. L.fundot_you_give2 .. newOwner:Name())
-				-- fundot.notify(newOwner, L.fundot_you_take .. item.name .. L.fundot_you_take2 .. ply:Name())
+				-- octoshop.notify(ply, L.octoshop_you_give .. item.name .. L.octoshop_you_give2 .. newOwner:Name())
+				-- octoshop.notify(newOwner, L.octoshop_you_take .. item.name .. L.octoshop_you_take2 .. ply:Name())
 			else
-				-- fundot.notify(ply, L.fundot_error_receiver)
+				-- octoshop.notify(ply, L.octoshop_error_receiver)
 			end
 		else
-			-- fundot.notify(ply, L.fundot_give_error)
+			-- octoshop.notify(ply, L.octoshop_give_error)
 		end
 	elseif action == 'sell' then
 		if item:CanSell() then
-			-- fundot.notify(ply, 'ooc', L.fundot_soon_do)
+			-- octoshop.notify(ply, 'ooc', L.octoshop_soon_do)
 		else
-			-- fundot.notify(ply, L.fundot_you_cant_sell)
+			-- octoshop.notify(ply, L.octoshop_you_cant_sell)
 		end
 	end
 
