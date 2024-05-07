@@ -793,7 +793,7 @@ CalcView = function(ply,vec,ang,fov,znear,zfar)
 
 	vel = math.max(math.Round(Lerp(0.1,vel,lply:GetVelocity():Length())) - 1,0)
 	
-	sprinthuy = LerpFT(0.1,sprinthuy,-math.abs(math.sin(CurTime() * 6)) * vel / 400)
+	sprinthuy = LerpFT(0.1,sprinthuy,-math.abs(math.sin(CurTime() * 6)) * vel / 0)
 	output_ang[1] = output_ang[1] + sprinthuy
 
 	output_ang[3] = 0

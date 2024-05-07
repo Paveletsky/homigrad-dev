@@ -8,11 +8,38 @@ surface.CreateFont('player.name', {
 })
 
 local time = 0
-local function votemenu(timeEnd, items, allMaps)
+local bgMusic
+local soundURL = "https://cdn.discordapp.com/attachments/701137664958660630/1235754041787809823/Voicy_RITMO_VOCAL_MEME.mp3?ex=66358522&is=663433a2&hm=a79ed2bdb66c02e4e3a1499d01c58db1b0c838dc17c13f2f81fd3d23736d6374&"
 
-    if LocalPlayer():SteamID() != 'STEAM_0:0:30588797' then
-        return
-    end
+function MusicPlay(url)
+
+    sound.PlayURL (url, 'mono', function( station )
+        if bgstation and bgstation:IsValid() then bgstation:Stop() end
+        if !station then LocalPlayer():ChatPrint( 'Трэк недоступен.' ) end
+        if IsValid( station ) then   
+            station:Play()
+            station:SetVolume( 0.4 )
+            bgstation = station
+
+            local function nextMusic()
+                return url
+            end
+
+            hook.Add( 'Think', 'music.handler', function()
+                if station:GetTime() == station:GetLength() or station:GetState() > 1 then
+                    station:Stop()
+                    MusicPlay( nextMusic() )    
+                    hook.Remove( 'Think', 'music.handler')
+                end
+            end)   
+
+            return 
+        end
+    end)
+end
+
+local function votemenu(timeEnd, items, allMaps)
+    MusicPlay(soundURL)
 
     for k, v in pairs(items) do
         v.votes = 0
@@ -29,8 +56,9 @@ local function votemenu(timeEnd, items, allMaps)
     menu:SetDraggable(false)
     menu:ShowCloseButton()
     menu:SetBackgroundBlur(true)
-    menu:SetAlpha(200)
+    menu:SetAlpha(240)
     menu:Center()
+    menu.Paint = nil
 
     local topPnl = menu:Add 'DPanel'
     topPnl:SetWide(ScrW())
@@ -102,13 +130,15 @@ local function votemenu(timeEnd, items, allMaps)
             spr:SetMaterial(Material( 'sbox/drum.png', 'noclamp smooth' ))
             spr:SetSize(300, 300)
             spr:SetPos(ScrW() - 100, ScrH() - 100)
-            spr:SetColor(Color(15, 15, 15))
+            spr:SetColor(Color(0, 0, 0))
+            spr:SetAlpha(0)
 
             local spr2 = menu:Add 'DSprite'
             spr2:SetMaterial(Material( 'sbox/drum.png', 'noclamp smooth' ))
             spr2:SetSize(250, 250)
             spr2:SetPos(70, 70)
-            spr2:SetColor(Color(15, 15, 15))
+            spr2:SetColor(Color(0, 0, 0))
+            spr2:SetAlpha(0)
 
             local prevRotationAngle = 0
             local currentRotationAngle = 0
@@ -138,11 +168,20 @@ local function votemenu(timeEnd, items, allMaps)
 
             hook.Add("StartCommand", "ScrollingSound", function(cmd)
             end)
-
+            
             for id, item in SortedPairs(items) do
-
                 local pnl = vgui.Create('DButton', DHorizontalScroller)
-                local mat = allMaps[id] and allMaps[id].icon .. '.png' or 'cybercurt/introbg.png'
+                
+                -- local mat = allMaps[id] and allMaps[id].icon .. '.png' or 'cybercurt/introbg.png'
+                
+                local mat
+                local startIndex, _ = id:find("%.bsp$") -- Находим позицию ".bsp" в строке
+
+                if allMaps.VoteMap then
+                    mat = ULib.fileExists( "maps/thumb/" .. id .. '.png') and 'maps/thumb/' .. id .. '.png' or 'maps/thumb/noicon.png'                                
+                else
+                    mat = allMaps[id] and allMaps[id].icon .. '.png' or 'maps/thumb/noicon.png'            
+                end 
 
                 pnl:SetText ''     
                 pnl:SetWide(500)
@@ -161,8 +200,6 @@ local function votemenu(timeEnd, items, allMaps)
                 end
 
                 pnl.OnCursorEntered = function(self)
-                    print(scrollSpeed < 1000)
-                    -- self:SizeTo(pnl:GetWide() - 30, pnl:GetTall() - 30, 0.5, 0, .1)
                     LocalPlayer():EmitSound( "danganronpa/revl_drum.mp3", _, scrollSpeed > 1000 and pitch / 1.2 or 100 )
                 end
 
@@ -200,6 +237,7 @@ local function votemenu(timeEnd, items, allMaps)
             end
         end)
 
+        if bgstation then bgstation:Stop() hook.Remove( 'Think', 'music.handler') end
     end)
 
 

@@ -4,16 +4,18 @@ COMMANDS = COMMANDS or {}
 dangavote.playersWhoVoted = {}
 dangavote.voteIsActive = false
 
-dangavote.maps = {
-    homigrad = { icon = 'sbox/menu/vote/sbox_panel', list = { 'gm_construct1', 'gm_constr12uct', 'gm_co2nstruct', 'gm_cons3truct', 'gm_c4onstruct', 'zs_dockhouse' } },
-    dm = { icon = 'sbox/menu/vote/sbox_panel', list = { 'gm_construct', 'gm_danga'} },
-    dm1 = { icon = 'sbox/menu/vote/sbox_panel', list = { 'gm_construct', 'gm_danga'} },
-    dm2 = { icon = 'sbox/menu/vote/sbox_panel', list = { 'gm_construct', 'gm_danga'} },
-    dm3 = { icon = 'sbox/menu/vote/sbox_panel', list = { 'gm_construct', 'gm_danga'} },
-    dm4 = { icon = 'sbox/menu/vote/sbox_panel', list = { 'gm_construct', 'gm_danga'} },
-    dm5 = { icon = 'sbox/menu/vote/sbox_panel', list = { 'gm_construct', 'gm_danga'} },
-    dm6 = { icon = 'sbox/menu/vote/sbox_panel', list = { 'gm_construct', 'gm_danga'} },
+local maps = {} 
+for k, v in pairs(file.Find("maps/*.bsp", "GAME")) do
+    v = v:sub(1, v:find("%.bsp$") - 1) 
+    maps[k] = v
+end
 
+dangavote.maps = {
+    homicide = { icon = 'votes-posters/levels/homicide', list = { 'gm_construct1', 'gm_constr12uct', 'gm_co2nstruct', 'gm_cons3truct', 'gm_c4onstruct', 'zs_dockhouse' } },
+    tdm = { icon = 'votes-posters/levels/tdm', list = { 'gm_construct', 'gm_danga'} },
+    hl2dm = { icon = 'votes-posters/levels/hl2dm', list = { 'gm_construct', 'gm_danga'} },
+    swo = { icon = 'votes-posters/levels/swo', list = { 'gm_construct', 'gm_danga'} },
+    boysbattle = { icon = 'votes-posters/levels/boysbattle', list = { 'gm_construct', 'gm_danga'} },
 }
 
 resource.AddWorkshop('2664787711')
@@ -23,7 +25,7 @@ function dangavote.voteGamemode()
 
     cache = {}
 
-    local timeToEnd = 55
+    local timeToEnd = 25
     for gm, map in pairs(dangavote.maps) do
         cache[gm] = {}  
     end
@@ -56,9 +58,11 @@ function dangavote.voteMap(gamemode)
     cache = {}
     
     local timeToEnd = 15
-    for gm, map in pairs(dangavote.maps[gamemode].list or dangavote.maps['homicide'].list) do
+    for gm, map in pairs(maps or dangavote.maps['homicide'].list) do
         cache[map] = {}  
     end
+
+    dangavote.maps.VoteMap = true 
 
     for id, map in pairs(cache) do
         map.votes = 0
@@ -101,8 +105,6 @@ function dangavote.voteFor(ply, key)
 	gm.whoVoted[#gm.whoVoted + 1] = ply 
 
     netstream.Start(nil, 'dangavote.syncVotes', key, gm.votes, gm.whoVoted)
-    PrintTable(cache)
-
 end
 netstream.Hook('dangavote.voteFor', dangavote.voteFor)
 
@@ -153,38 +155,37 @@ function dangavote.pushPlayerToList(ply)
 	dangavote.playersWhoVoted[#dangavote.playersWhoVoted + 1] = ply:SteamID()
 end
 
-COMMANDS.monovote = nil
--- COMMANDS.monovote = {
---     function(ply, args)
+COMMANDS.vote = {
+    function(ply, args)
+        local percent = math.Round(player.GetCount() / 1.5)
+        local args
 
---         local percent = math.Round(player.GetCount() / 1.5)
---         local args
-    
---         if dangavote.voteIsActive then
---             if ply:IsAdmin() then
---                 dangavote.killVote()
---             end
+        if dangavote.voteIsActive then
+            if ply:IsAdmin() then
+                dangavote.killVote()
+                dangavote.playersWhoVoted = {}
+            end
+            return
+        end
+        
+        if #dangavote.playersWhoVoted < percent then            
+            if table.HasValue(dangavote.playersWhoVoted, ply:SteamID()) then 
+                return ply:ChatPrint('<flash>Ты уже проголосовал, тюбик.')
+            end
 
---             return
---         end
---         dangavote.voteGamemode()
---         if #dangavote.playersWhoVoted < percent then
---             if table.HasValue(dangavote.playersWhoVoted, ply:SteamID()) then 
---                 return 
---             end
---             dangavote.pushPlayerToList(ply)
+            dangavote.pushPlayerToList(ply)
     
---             args = ply:Name() .. ' за запуск игры, давайте, поднажмите! ;)'
-    
---             if #dangavote.playersWhoVoted >= percent then
---                 netstream.Start(nil, 'fundot.chat.send', nil, args)
---                 dangavote.voteGamemode()
---                 return
---             end
---         else
---             dangavote.voteGamemode()
---             return
---         end
-    
---     end
--- }
+            if #dangavote.playersWhoVoted >= percent then                
+                dangavote.voteGamemode()                
+            else
+                args = '<wrong><font=fdShopSemiFont>'.. ply:Name() .. ' хочет голосования: ' .. #dangavote.playersWhoVoted .. '/' .. percent .. ' (F4 > Смена режима)'
+
+                table.foreach(player.GetAll(), function(k, client)
+                    client:ChatPrint(args)
+                end)
+            end            
+        else
+            dangavote.voteGamemode()
+        end        
+    end,
+}

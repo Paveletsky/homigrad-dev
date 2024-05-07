@@ -1042,8 +1042,9 @@ hook.Add("Player Think", "FakeControl", function(ply, time)
 					teleportdistance = 0,
 					deltatime = 0.01,
 				}
-
+		
 				physa:Wake()
+				
 				if not ply.suiciding or TwoHandedOrNo[ply.curweapon] then
 					if TwoHandedOrNo[ply.curweapon] and IsValid(ply.wep) then
 						local ang = ply:EyeAngles()
@@ -1056,6 +1057,10 @@ hook.Add("Player Think", "FakeControl", function(ply, time)
 						phys:ComputeShadowControl(shadowparams)
 						shadowparams.pos = shadowparams.pos + eyeangs:Forward() * -50 + eyeangs:Right() * -15
 						physa:ComputeShadowControl(shadowparams)
+
+						physa:EnableCollisions(false)
+						phys:EnableCollisions(false)
+						ply.wep:GetPhysicsObject():EnableCollisions(false)
 					elseif IsValid(ply.wep) and IsValid(ply.wep:GetPhysicsObject()) then
 						ang:RotateAroundAxis(ply:EyeAngles():Forward(), 90)
 						ang:RotateAroundAxis(ply:EyeAngles():Up(), 110)

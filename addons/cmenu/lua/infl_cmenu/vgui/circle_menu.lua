@@ -384,6 +384,9 @@ end
 
 local KeyDown
 
+local GM = GAMEMODE or {}
+
+-- hook.Remove("OnContextMenuClose","infl.Cmenu")
 -- hook.Add("OnContextMenuOpen","infl.Cmenu",function() if not ValidPanel(PIS.RadialMenu) then PIS:OpenRadialMenu() end end)
 -- hook.Add("OnContextMenuClose","infl.Cmenu",function() if ValidPanel(PIS.RadialMenu) then PIS.RadialMenu:Remove() end end)
 

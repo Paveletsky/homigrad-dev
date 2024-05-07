@@ -84,18 +84,18 @@ PIS.Config.WheelColors = {
 local LeadCP = {}
 
 PIS.Config:AddMenu("other", "confetti", "Развлечение", info, {
-	{name = "Танцы", 	mat = "electric_stovetop", col = white, func = function() MMDGUI() end},
-	{name = "Гардероб",	mat = "formal_outfit", col = white, func = function() wardrobe.openMenu() end},
+	{name = "Магазин", 	mat = "shop2", col = white, func = function() 
+	    if fundot.ShopMenu then fundot.ShopMenu:Remove() end
+    	fundot.ShopMenu = vgui.Create('fdShopPanel')
+	end},
+	{name = "Выбор модели",	mat = "formal_outfit", col = white, func = function() RunConsoleCommand("playermodel_selector") end},
 })
-
-PIS.Config:AddMenu("clans", "group3", "Кланы", info, function()
-	RunConsoleCommand('bk_guildmenu')
-end)
-
--- PIS.Config:AddMenu("profile", "resume", "Профиль", info, function()
--- end)
 
 PIS.Config:AddMenu("links", "evidence", "Ссылки", info, {
-	{name = "Discord", 	mat = "radio", col = white, func = function() gui.OpenURL( "https://discord.gg/584dVs3gyh" ) end},
-	-- {name = "Правила", mat = "document", col = white, func = function() gui.OpenURL( "https://google.com" ) end}, 
+	{name = "Дискорд", 	mat = "bubble_info", col = white, func = function() gui.OpenURL( "https://discord.gg/txwFXfZ44s" ) end},
+	{name = "Сайт", mat = "electronics", col = white, func = function() gui.OpenURL( "https://oldhomigrad.ru/" ) end}, 
 })
+
+PIS.Config:AddMenu("clans", "megaphone_", "Смена режима", info, function()
+	LocalPlayer():ConCommand("hg_say vote")
+end)
