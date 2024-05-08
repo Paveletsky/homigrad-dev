@@ -32,5 +32,5 @@ hook.Add("Think","level",function()
 end)
 
 hook.Add("PlayerStartVoice","level",function(ply)
-	return true
+	-- return true
 end)
