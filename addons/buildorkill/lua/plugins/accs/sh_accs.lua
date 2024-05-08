@@ -38,7 +38,7 @@ if (CLIENT) then
 
 	-- you need the proper permission to open the editor
 	function PLUGIN:PrePACEditorOpen()
-		if  LocalPlayer():IsSuperAdmin() then
+		if !LocalPlayer():IsSuperAdmin() then
 			bok.gui.Notify('Доступно по подписке "Шпакер". Магазин в F4.', 3, 'vo/k_lab/ba_whoops.wav')
 			return false
 		end
