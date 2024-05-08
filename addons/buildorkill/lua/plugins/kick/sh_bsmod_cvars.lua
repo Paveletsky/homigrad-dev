@@ -1,0 +1,38 @@
+CreateConVar( "bsmod_kick_enabled", 1, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Enable kick." )
+CreateConVar( "bsmod_kick_delay", 0.00, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Kick delay." )
+CreateConVar( "bsmod_kick_damage_min", 10, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Minimum kick damage." )
+CreateConVar( "bsmod_kick_damage_max", 15, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Maximum kick damage." )
+
+CreateConVar( "bsmod_punch_effect", 1, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE}, "Enable punch smoke effect." )
+CreateConVar( "bsmod_punch_damage_min", 10, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Minimum punch damage." )
+CreateConVar( "bsmod_punch_damage_max", 15, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Maximum punch damage." )
+
+CreateConVar( "bsmod_punch_blocking_resistance", 50, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Percent of damage to resist by blocking." )
+
+CreateConVar( "bsmod_killmove_enable_players", 1, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Enable killmoves on Players." )
+CreateConVar( "bsmod_killmove_enable_npcs", 1, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Enable killmoves on NPCs." )
+CreateConVar( "bsmod_killmove_enable_teammates", 0, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Enable killmoves on Team Members." )
+CreateConVar( "bsmod_killmove_stun_npcs", 1, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Stuns NPCs that are killmovable." )
+CreateConVar( "bsmod_killmove_anytime", 0, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Enable killmoving at any time." )
+CreateConVar( "bsmod_killmove_anytime_behind", 0, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Enable killmoving at any time from behind." )
+CreateConVar( "bsmod_killmove_minhealth", 25, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Minimum health for entities to be killmoved." )
+CreateConVar( "bsmod_killmove_time", 5.00, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Killmove time delay." )
+CreateConVar( "bsmod_killmove_spawn_healthvial", 0, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Drop a health vial after killmoving." )
+CreateConVar( "bsmod_killmove_spawn_healthkit", 0, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Drop a health kit after killmoving." )
+CreateConVar( "bsmod_killmove_disable_defaults", 0, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Disable default killmoves in favour of custom ones." )
+CreateConVar( "bsmod_killmove_chance", 4, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Denominator for NPC killmovable chance." )
+CreateConVar( "bsmod_killmove_by_kicking", 0, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Kicking also initiates killmoves." )
+CreateConVar( "bsmod_killmove_player_damage_only", 1, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Player damage will only make targets killmovable." )
+
+CreateClientConVar( "bsmod_killmove_glow", 1, FCVAR_ARCHIVE, "Enable the glow effect when able to killmove." )
+CreateClientConVar( "bsmod_debug_calcview", 0, FCVAR_ARCHIVE, "List all CalcView hooks for debugging." )
+
+CreateClientConVar( "bsmod_killmove_thirdperson", 0, FCVAR_ARCHIVE, "Show KillMoves in thirdperson." )
+CreateClientConVar( "bsmod_killmove_thirdperson_distance", 100, FCVAR_ARCHIVE )
+CreateClientConVar( "bsmod_killmove_thirdperson_pitch", 25, FCVAR_ARCHIVE )
+CreateClientConVar( "bsmod_killmove_thirdperson_yaw", -35, FCVAR_ARCHIVE )
+CreateClientConVar( "bsmod_killmove_thirdperson_offsetup", -15, FCVAR_ARCHIVE )
+CreateClientConVar( "bsmod_killmove_thirdperson_offsetright", 0, FCVAR_ARCHIVE )
+CreateClientConVar( "bsmod_killmove_thirdperson_randomyaw", 0, FCVAR_ARCHIVE )
+
+--CreateClientConVar( "bsmod_enable_hints", 1, FCVAR_ARCHIVE, "Enable hints when you first spawn." )
