@@ -51,7 +51,7 @@ PIS.PingCache = {}
 function PIS:GetPingIcon(mat)
 
 	if not PIS.PingCache[mat] then 
-		PIS.PingCache[mat] = Material("pixel_icons/"..mat..".png","smooth")
+		PIS.PingCache[mat] = Material(mat..'.png',"smooth")
 	end
 
 	return PIS.PingCache[mat]

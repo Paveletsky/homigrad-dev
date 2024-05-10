@@ -31,15 +31,15 @@ local function OpenContextMenu(ply, argm, cmd)
     end
 
     local wep = ply:GetActiveWeapon()
-
+    
     if ply:Alive() then
-        if wep and wep:GetClass()!="weapon_hands" then
+        if wep != NULL and wep:GetClass() != "weapon_hands" then
             AddOption("Выкинуть", function()
                 LocalPlayer():ConCommand("say *drop")
             end)
         end
 
-        if wep and wep:Clip1()>0 then
+        if wep != NULL and wep:Clip1()>0 then
             AddOption("Разрядить",function()
                 net.Start("Unload")
                 net.WriteEntity(wep)

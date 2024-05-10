@@ -153,6 +153,8 @@ end
 function pace.CloseEditor()
 	pace.RestoreExternalHooks()
 
+	if hook.Run("PrePACEditorClose", pac.LocalPlayer) == false then return end
+
 	if pace.Editor:IsValid() then
 		local x = pace.Editor:GetPos()
 		cookie.Set("pac_editor_x", tostring(x))
@@ -272,8 +274,10 @@ end)
 concommand.Add("pac_editor", function(_, _, args)
 	if args[1] == "toggle" then
 		if pace.IsActive() then
+			fundot.ViewOFF = false 
 			pace.CloseEditor()
 		else
+			fundot.ViewOFF = true
 			pace.OpenEditor()
 		end
 	else

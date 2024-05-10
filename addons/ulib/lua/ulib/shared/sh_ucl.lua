@@ -55,7 +55,8 @@ function ucl.query( ply, access, hide )
 
 	-- First check the player's info
 	if table.HasValue( playerInfo.deny, access ) then return false end -- Deny overrides all else
-	if table.HasValue( playerInfo.allow, access ) then return true end
+	if table.HasValue( playerInfo.allow, access ) then return true end	
+
 	if playerInfo.allow[ access ] then return true, playerInfo.allow[ access ] end -- Access tag
 
 	-- Now move onto groups and group inheritance

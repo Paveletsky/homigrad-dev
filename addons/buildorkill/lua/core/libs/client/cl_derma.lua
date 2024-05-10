@@ -45,7 +45,7 @@ hook.Add('Think', 'bkInitSkin', function()
 	
 	SKIN.colTab						= SKIN.colPropertySheet
 	SKIN.colTabInactive				= Color(140, 140, 140, 255)
-	SKIN.colTabShadow				= Color(0, 0, 0, 170)
+	SKIN.colTabShadow				= Color(255, 255, 255, 170)
 	-- SKIN.colTabText					= Color(255, 255, 255, 255)
 	SKIN.colTabTextInactive			= Color(255, 255, 255, 200)
 	
@@ -56,8 +56,8 @@ hook.Add('Think', 'bkInitSkin', function()
 	
 	SKIN.colNumberWangBG			= Color( 255, 240, 150, 255 )
 	SKIN.colTextEntryBG				= Color( 240, 240, 240, 255 )
-	SKIN.colTextEntryBorder			= Color( 20, 20, 20, 255 )
-	SKIN.colTextEntryText			= Color( 20, 20, 20, 255 )
+	SKIN.colTextEntryBorder			= Color( 255, 255, 255)
+	SKIN.colTextEntryText			= Color( 251, 251, 251)
 	SKIN.colTextEntryTextHighlight	= Color( 20, 200, 250, 255 )
 	SKIN.colTextEntryTextCursor		= Color( 0, 0, 100, 255 )
 	SKIN.colTextEntryTextPlaceholder= Color( 128, 128, 128, 255 )
@@ -325,14 +325,15 @@ hook.Add('Think', 'bkInitSkin', function()
 	function SKIN:PaintTooltip( pnl, w, h )
 	
 		surface.DisableClipping(true)
-	
-		draw.RoundedBox(4, -3, 0, w + 6, h, Color(0,0,0, 240))
+	    local alpha = pnl:IsHovered() and 255 or 0 -- Определяем значение альфа-канала в зависимости от наличия наведения курсора
+
+		draw.RoundedBox(10, -3, 0, w + 6, h, Color(69,54,54, 240))
 		draw.NoTexture()
-		surface.DrawPoly({
-			{x = w/5 - 15, y = h},
-			{x = w/5 + 15, y = h},
-			{x = w/2, y = h + 25},
-		})
+		-- surface.DrawPoly({
+		-- 	{x = w/5 - 15, y = h},
+		-- 	{x = w/5 + 15, y = h},
+		-- 	{x = w/2, y = h + 25},
+		-- })
 	
 		surface.DisableClipping(false)
 		pnl:SetFontInternal( "fdShopFontTooltip" )	
@@ -393,9 +394,14 @@ hook.Add('Think', 'bkInitSkin', function()
 	
 	function SKIN:PaintCollapsibleCategory(pnl, w, h)
 	
-		draw.RoundedBox(4, 0, 5, w, h, Color(39, 39, 39, 250))
-		draw.RoundedBox(4, 0, 0, w, 20, Color(26, 26, 26))
-	
+		draw.RoundedBox(4, 0, 5, w, h, Color(37, 37, 37, 250))
+		draw.RoundedBox(4, 0, 0, w, 20, Color(110, 101, 101))
+		
+		-- if not pnl.m_TextColorSet then
+		-- 	pnl:SetTextColor(Color(255,255,255))
+		-- 	pnl.m_TextColorSet = true
+		-- end
+		
 	end
 	
 	function SKIN:PaintMenu( pnl, w, h )
@@ -403,10 +409,33 @@ hook.Add('Think', 'bkInitSkin', function()
 		surface.DisableClipping(true)
 		surface.DisableClipping(false)
 	
-		draw.RoundedBox(5, 0, 0, w, h, Color(35, 35, 35))
-	
+		draw.RoundedBox(4, 0, 0, w, h, Color(50, 35, 35))
+		pnl:SetFontInternal( "fdShopFontRegular" )	
+
 	end
 	
+	function SKIN:PaintMenuOption( pnl, w, h )
+	
+		if pnl.m_bBackground and (pnl.Hovered or pnl.Highlight) then
+			draw.RoundedBox(4, 0, 0, w, h, Color(0, 10, 10, 100))
+		end
+
+		if pnl:GetChecked() then
+			draw.SimpleText(utf8.char(0xf00c), 'Trebuchet24', 16, h/2, Color(255,255,255, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+			-- draw.RoundedBox(4, 0, 0, w, h, cols.o)
+		end
+
+		if not pnl.m_TextColorSet then
+			pnl:SetTextColor(Color(255,255,255))
+			pnl.m_TextColorSet = true
+		end
+
+		pnl:SetTextColor(Color(250,250,250))
+		pnl:SetFont( 'fdShopSemiFont' )
+	
+	
+	end
+
 	function SKIN:PaintMenuBar( pnl, w, h )
 	
 		draw.RoundedBox(0, 0, 0, w, h, Color(33, 33, 33))
@@ -484,28 +513,6 @@ hook.Add('Think', 'bkInitSkin', function()
 			pnl:SetTextColor(Color(30,30,30))
 			pnl.m_TextColorSet = true
 		end
-	
-	end
-	
-	function SKIN:PaintMenuOption( pnl, w, h )
-	
-		if pnl.m_bBackground and (pnl.Hovered or pnl.Highlight) then
-			draw.RoundedBox(4, 0, 0, w, h, Color(0, 10, 10, 100))
-		end
-	
-		if pnl:GetChecked() then
-			draw.SimpleText(utf8.char(0xf00c), 'ChatFont', 16, h/2, Color(255,255,255, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-			-- draw.RoundedBox(4, 0, 0, w, h, cols.o)
-		end
-	
-		if not pnl.m_TextColorSet then
-			pnl:SetTextColor(Color(255,255,255))
-			pnl.m_TextColorSet = true
-		end
-	
-		pnl:SetTextColor(Color(250,250,250))
-		pnl:SetFont( 'ChatFont' )
-	
 	
 	end
 	

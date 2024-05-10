@@ -1,4 +1,4 @@
-hook.Add('player.loaded', 'play-time', function(ply)
+hook.Add('HG:PlayerLoaded', 'play-time', function(ply)
 	ply:SetNetVar('time.total', ply:GetDBVar('time.total', 0))
 	ply:SetNetVar('time.session', CurTime())
 end)

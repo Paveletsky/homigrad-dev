@@ -12,13 +12,13 @@ hook.Add('dangautils.db.init', 'dangashop.db', function()
 
 	dangautils.db:RunQuery([[
 		CREATE TABLE IF NOT EXISTS fundot_shop_users (
-			id INT(8) UNSIGNED NOT NULL AUTO_INCREMENT,
+			id INT(16) UNSIGNED NOT NULL AUTO_INCREMENT,
 			steamID VARCHAR(30) NOT NULL,
 			steamID64 VARCHAR(20) NOT NULL,
 			balance INT(10) NOT NULL,
-			totalTopup INT(10) NOT NULL,
-			totalSpent INT(10) NOT NULL,
-			totalPurchases INT(10) NOT NULL,
+			totalTopup INT(16) NOT NULL,
+			totalSpent INT(16) NOT NULL,
+			totalPurchases INT(16) NOT NULL,
 				PRIMARY KEY (id),
 				UNIQUE (steamID)
 		) ENGINE=INNODB CHARACTER SET utf8 COLLATE utf8_general_ci
@@ -31,10 +31,7 @@ hook.Add('dangautils.db.init', 'dangashop.db', function()
 			itemName VARCHAR(255) NOT NULL,
 			itemClass VARCHAR(30) NOT NULL,
 			data TEXT,
-				PRIMARY KEY (id),
-			CONSTRAINT Cons_OS_Items_Fundot
-				FOREIGN KEY (userID) REFERENCES fundot_shop_items(id)
-				ON UPDATE CASCADE ON DELETE CASCADE
+				PRIMARY KEY (id)
 		) ENGINE=INNODB CHARACTER SET utf8 COLLATE utf8_general_ci
 	]])
 
@@ -52,7 +49,7 @@ hook.Add('dangautils.db.init', 'dangashop.db', function()
 	]])
 
 end)
-
+-- hook.Run('dangautils.db.init')
 util.AddNetworkString 'fundot.action'
 util.AddNetworkString 'fundot.purchase'
 
@@ -109,6 +106,7 @@ function osItem:New(class, owner, callback)
 		'[]',
 	}, function(q, st, data)
 		if not item or not IsValid(owner) then return end
+
 		if st then
 			item.id = q:lastInsert()
 			print('Created item "' .. class .. '" for ' .. tostring(owner) .. ', ID: ' .. item.id)
@@ -531,11 +529,6 @@ function ply:osPurchaseItem(class)
 
 end
 
--- Entity(1):osSyncPlayerData()
--- Entity(1):osGiveItem('superadmin')
--- player.GetBySteamID('STEAM_0:0:30588797'):osSyncPlayerData()
--- player.GetBySteamID('STEAM_0:0:33626004'):osAddMoney(600)
-
 net.Receive('fundot.purchase', function(len, ply)
 
 	local class = net.ReadString()
@@ -558,7 +551,7 @@ net.Receive('fundot.action', function(len, ply)
 	if action == 'use' then
 		if item:CanUse() then
 			item:Use()
-			netstream.Start(ply, 'HG:Notify', 'Товар "'.. item.name ..'" активирован', 5, 'ui/hint.wav' )
+			-- netstream.Start(ply, 'HG:Notify', 'Товар "'.. item.name ..'" активирован', 5, 'ui/hint.wav' )
 		else
 			print(ply, 'L.fundot_error_use')
 		end
@@ -593,6 +586,9 @@ net.Receive('fundot.action', function(len, ply)
 		else
 			print(ply, 'L.fundot_you_cant_sell')
 		end
+	elseif action == 'remove' then
+		item:Remove()
+		netstream.Start(ply, 'HG:Notify', 'Предмет "'.. item.name ..'" удален', 5, 'ui/hint.wav' )
 	end
 
 end)

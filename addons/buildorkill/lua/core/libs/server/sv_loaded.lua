@@ -14,7 +14,7 @@ hook.Add('dangautils.run', 'player-onLoaded', function()
 		netstream.Hook('dangautils.pl.load', function(ply)
 			if whoLoaded[ply] then return end
 	
-			hook.Run('player.loaded', ply)
+			hook.Run('HG:PlayerLoaded', ply)
 			whoLoaded[ply] = true
 		end)
 	
@@ -25,7 +25,7 @@ hook.Add('dangautils.run', 'player-onLoaded', function()
 		hook.Add('PlayerInitialSpawn', 'dangautils.pl.load', function(ply)
 			if IsValid(ply) then
 				timer.Simple(1, function()
-					hook.Run('player.loaded', ply)
+					hook.Run('HG:PlayerLoaded', ply)
 				end)
 			end
 		end)

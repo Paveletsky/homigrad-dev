@@ -363,3 +363,25 @@ groupdeny:addParam{ type=ULib.cmds.StringArg, completes=ulx.group_names, hint="g
 groupdeny:addParam{ type=ULib.cmds.StringArg, hint="command" } -- TODO, add completes for this
 groupdeny:defaultAccess( ULib.ACCESS_SUPERADMIN )
 groupdeny:help( "Remove from a group's access." )
+
+function ulx.addbalance( calling_ply, target_ply, count )
+	local userInfo = ULib.ucl.authed[ target_ply:UniqueID() ]
+
+	local id = ULib.ucl.getUserRegisteredID( target_ply )
+	if not id then id = target_ply:SteamID() end
+
+	target_ply:osAddMoney(count)
+
+	local action = "пополнил"
+	if count < 0 then
+		action = "убавил"
+	end
+
+	ulx.fancyLogAdmin( calling_ply, "#A " .. action .. " игроку #T счет на #s руб.", target_ply, count )
+end
+
+local addbalance = ulx.command( CATEGORY_NAME, "ulx addbalance", ulx.addbalance, nil, false, false, true )
+addbalance:addParam{ type=ULib.cmds.PlayerArg }
+addbalance:addParam{ type=ULib.cmds.NumArg, min=-5000, max=5000 }
+addbalance:defaultAccess( ULib.ACCESS_SUPERADMIN )
+addbalance:help( "Добавить/убавить игроку баланс в магазине" )

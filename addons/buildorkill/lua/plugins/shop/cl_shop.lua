@@ -42,10 +42,12 @@ function PANEL:Init()
     self.PreviewAccessory = {}
     self.isShowed = false
 
-    self:SetSize(790, 450)
+    self:SetSize(900, 650)
     self:MakePopup()
-    self:Dock(FILL)
-    self:DockMargin(-5, 0, -5, -5)
+    self:SetPos(-ScrW(), 750 - (ScrH() / 2))
+    self:MoveTo(20, 750 - (ScrH() / 2), 1, 0, .1)
+    -- self:Dock(FILL)
+    -- self:DockMargin(-5, 0, -5, -5)
     self:SetTitle('')
     self:SetDraggable(false)
     self:ShowCloseButton(false)
@@ -55,7 +57,7 @@ function PANEL:Init()
         self.Cls:SetText('×')
         self.Cls:SetTextColor(Color(255, 255, 255))
         self.Cls:SetFontInternal('fdShopFontBig')
-        self.Cls:SetPos(ScrW()-46, 1)
+        self.Cls:SetPos(self:GetWide()-46, 1)
         self.Cls:SetSize(36, 36)
         self.Cls.Paint = nil
         self.Cls.DoClick = function(this)
@@ -64,7 +66,6 @@ function PANEL:Init()
 
     self.TabPanel = self:Add("DPropertySheet")
         self.TabPanel:Dock(FILL)
-        -- self.TabPanel:DockPadding(0, 30, 0, 0)
         self.TabPanel:DockMargin(15, 25, 15, 15)
         self.TabPanel.Paint = nil
         self.TabPanel:SetAlpha(200)
@@ -91,6 +92,7 @@ function PANEL:Init()
         self.InventoryListView:AddColumn("Предметы")
         self.InventoryListView:DockMargin(0, -16, 0, 0)
         self.InventoryListView:SetDataHeight(75)
+        self.InventoryListView:SetMultiSelect(false)
 
     self.ShopListView = self.ShopPanel:Add("DListView")
         self.ShopListView:Dock(LEFT)
@@ -98,6 +100,7 @@ function PANEL:Init()
         self.ShopListView:AddColumn("")
         self.ShopListView:SetDataHeight(35)        
         self.ShopListView:DockMargin(0, -16, 0, 0)
+        self.ShopListView:SetMultiSelect(false)
 
         self.ItemsPanel = self.ShopPanel:Add("DPanel")
         self.ItemsPanel:Dock(FILL)        
@@ -106,8 +109,9 @@ function PANEL:Init()
             draw.RoundedBox(10, 0, 0, w, h, Color(0, 0, 0, 250))            
             draw.RoundedBoxEx(10, 3, 0, w-6, 40, Color(50, 35, 35, 235), 0, 0, 0, 0)
 
+            local text = fundot.balance == 'загружается' and "Загрузка.." or "Баланс " .. fundot.balance .. 'руб.'
             draw.Text( {
-                text = "Йопташоп | Баланс " .. fundot.balance,
+                text = "Йопташоп | " .. text,
                 font = "fdShopFontBig",
                 xalign = TEXT_ALIGN_CENTER,
                 pos = { w/2, -1 }
@@ -115,11 +119,12 @@ function PANEL:Init()
         end
 
         local TopUp = self:Add("DButton")
-        TopUp:SetText('Пополнить баланс')
-        TopUp:SetTextColor(Color(255, 255, 255))
-        TopUp:SetFontInternal('fdShopSemiFont')
-        TopUp:SetPos(15, 5)
-        TopUp:SetSize(250, 36)
+        TopUp:SetText('Пополнить')
+        TopUp:SetTextColor(Color(80, 201, 0))
+        TopUp:SetFontInternal('fdShopFontRegular')
+        TopUp:SetPos(15, 10)
+        TopUp:SetImage('pixel_icons/coin3.png')
+        TopUp:SetSize(140, 25)
         TopUp.DoClick = function(this)
             self:Remove()
             LocalPlayer():ChatPrint('<wrong><font=fdShopFontBig>Баланс пополняется через менеджера сервера. Найти его можно в дискорд сервере')
@@ -179,21 +184,21 @@ end
 function PANEL:ShowModelPanel(catName, show)
     if show then        
         if !self.isShowed then
-            self:SizeTo(self:GetWide()+600, self:GetTall(), 0.1, 0, -1, function()
+            self:SizeTo(self:GetWide()+335, self:GetTall(), 0.1, 0, -1, function()
                 self.isShowed = true
             
                 self.ModelPanel:SetVisible(true)
                 self.ModelPanel:Dock(RIGHT)
-                self.ModelPanel:SizeTo(600, self:GetTall(), 0.1, 0, -1)
+                self.ModelPanel:SizeTo(335, self:GetTall(), 0.1, 0, -1)
             end)
-            -- self.Cls:MoveTo(self.Cls:GetX()+600, self.Cls:GetY(), 0.1, 0, -1)
+            self.Cls:MoveTo(self.Cls:GetX()+335, self.Cls:GetY(), 0.1, 0, -1)
         end
     else
         if self.isShowed then
-            self:SizeTo(self:GetWide()-600, self:GetTall(), 0.1, 0, -1, function()
+            self:SizeTo(self:GetWide()-335, self:GetTall(), 0.1, 0, -1, function()
                 self.isShowed = false
             end)
-            -- self.Cls:MoveTo(self.Cls:GetX()-600, self.Cls:GetY(), 0.1, 0, -1)
+            self.Cls:MoveTo(self.Cls:GetX()-335, self.Cls:GetY(), 0.1, 0, -1)
             self.ModelPanel:SizeTo(0, self:GetTall(), 0.1, 0, -1, function()
                 self.ModelPanel:SetVisible(false)
             end)
@@ -203,10 +208,10 @@ end
 
 function PANEL:Show()
     print("Sending request to the server...")
-    net.Start('fundot.rInventory') 
+    net.Start('HG:RequestInventory') 
     net.SendToServer()
 
-    net.Start('fundot.rShop') 
+    net.Start('HG:RequestShop') 
     net.SendToServer()
 end
 
@@ -225,7 +230,7 @@ end
 
 local function CreateJumpAnimation(panel)
     local originalY = panel.y
-    local jumpDistance = 10
+    local jumpDistance = 3
     local jumpTime = 0.2
 
     local startTime = SysTime()
@@ -253,8 +258,22 @@ local function CreateItem(self, item, grid)
     local itPnl = vgui.Create("DPanel")
         itPnl:SetSize(145, 200)
         grid:AddItem(itPnl)
+    
+    local attrCache = {}
+    table.foreach(item.attributes, function(id, data)
+        attrCache[id] = {x = 3}
+        
+        if (id > 1) then
+            attrCache[id].x = attrCache[id-1].x + 26 + 5
+        end
 
-    -- itPnl:SetTooltipPanelOverride('fdShopTooltip')
+        local attr = itPnl:Add("DImageButton")
+        attr:SetSize(26, 26)
+        attr:SetPos(attrCache[id].x, 3)
+        attr:SetTooltip(data[1])
+        attr:SetImage(data[2]) 
+    end)
+    
 
     local delay = 0.3
     CreateAnimation(itPnl, delay)
@@ -263,48 +282,31 @@ local function CreateItem(self, item, grid)
         CreateJumpAnimation(this)
         this:AlphaTo(240, 0.1, 0)
         this:SetCursor('hand')
+
+        self.PreviewAccessory = item.PAC3 and fundot.accs[item.PAC3] or {}
+        UpdatePreviewModel()
     end
 
     itPnl.OnMousePressed = function(this)
-        if selectedItem == this then
-            local menu = DermaMenu()
-                menu:AddOption( "Купить", function() 
-                    if item.canBuy then
-                        net.Start('fundot.purchase')
-                            net.WriteString(item.class)
-                        net.SendToServer()
-                    end
-                end)
-            menu:Open()
-        end
+        local menu = DermaMenu()
+            menu:AddOption( "Купить", function() 
+                if item.canBuy then
+                    net.Start('fundot.purchase')
+                        net.WriteString(item.class)
+                    net.SendToServer()
+                end
+            end):SetIcon('pixel_icons/money_hand.png')
+        menu:Open()
+        
         
         selectedItem = this
-        self.PreviewAccessory = item.PAC3 and fundot.accs[item.PAC3] or {}
-        UpdatePreviewModel()
     end
 
     itPnl.OnCursorExited = function(this)
         this:AlphaTo(255, 0.1, 0)
     end
 
-
-
-    -- tooltip.Paint = function( self, width, height )
-    --     if (item.attributes) then
-    --         for k, v in pairs(item.attributes) do
-    --             draw.Text({
-    --                 text = v[1],
-    --                 font = 'fdShopSemiFont',
-    --                 pos = {0, 0},
-    --             })
-    --             -- surface.SetDrawColor(255, 255, 255)
-    --             -- surface.SetMaterial(item and item.icon or Material('pixel_icons/emote_question.png', ''))
-    --             -- surface.DrawTexturedRect((w - 100) / 2, (h - 160) / 2, 100, 100)                        
-    --         end
-    --     end
-    -- end
-
-    -- itPnl:SetTooltip( 'tooltip' )
+    itPnl:SetTooltip( item.desc )
     
     itPnl.Paint = function(this, w, h)
         draw.RoundedBox(5, 0, 0, w, h, Color(50, 50, 50, selectedItem == this and 125 or 250))
@@ -357,9 +359,9 @@ function PANEL:ShowCategory(catName, cat)
     self.GridItems = scroll:Add("DGrid")
     local grid = self.GridItems
         grid:Dock(FILL)
-        grid:DockMargin(10, 10, 10, 0)
-        grid:SetCols(6)
-        grid:SetColWide(165)
+        grid:DockMargin(20, 20, 20, 0)
+        grid:SetCols(3)
+        grid:SetColWide(160)
         grid:SetRowHeight(210)
 
     self.RebuildGrid = function(this)
@@ -378,6 +380,32 @@ function PANEL:ShowCategory(catName, cat)
 
 end
 
+local function GetExpireColor(expireTime)
+    local timeLeft = expireTime - os.time()
+    local maxTime = 60 * 60 * 24 * 30
+
+    local percentElapsed = math.min(timeLeft / maxTime, 1)
+    local hue = percentElapsed * 120 -- Приводим значение hue к диапазону от 0 до 120
+
+    return HSVToColor(hue, 0.9, 0.5)
+end
+
+local StatusLabels = {}
+local function DrawStatus(id, data)
+    StatusLabels[id] = data
+
+    if id ~= 0 then
+        surface.SetFont( 'fdShopFontRegular' )  
+        local textWidth, textHeight = surface.GetTextSize(StatusLabels[id-1].text)
+        data.x = StatusLabels[id-1].x - textWidth - 15
+    end
+
+    draw.WordBox(5, data.x, data.y, 
+        data.text, 'fdShopFontRegular', 
+        data.boxClr, data.txtClr, 
+        data.xAlign, data.yAlign
+    )
+end
 
 function PANEL:UpdateInv(items)
     if not IsValid(self.InventoryListView) then return end
@@ -387,21 +415,51 @@ function PANEL:UpdateInv(items)
     for k, v in pairs(items) do
         local itemLine = self.InventoryListView:AddLine(v.name)
         local itemPanel = itemLine:Add("DPanel")
-        itemPanel:Dock(RIGHT)
-        itemPanel:SetWide(300)
 
-        itemLine.data = v
+        itemPanel:Dock(FILL)
+        itemPanel:SetMouseInputEnabled(false)
+
+        itemLine.data = v        
         itemPanel.Paint = function(this, w, h)
             surface.SetDrawColor(255, 255, 255)
             surface.SetMaterial(Material(v.icon or 'pixel_icons/emote_question.png', ''))
             surface.DrawTexturedRect((w - 64) - 15, (h - 64) / 2, 64, 64)    
-            
+
             if v.active then
-                draw.WordBox( 5, w-90, (h-29)/2, "Активировано", "fdShopFontRegular", Color( 56, 121, 47), Color( 255, 255, 255 ), TEXT_ALIGN_RIGHT)
+                DrawStatus(0, {
+                    x = 768,
+                    y = (h-29)/2,
+                    text = "Активировано",
+                    boxClr = Color( 56, 121, 47),
+                    txtClr = Color(255, 255, 255),
+                    xAlign = TEXT_ALIGN_RIGHT,
+                    yAlign = nil
+                })
+            end
+
+            if v.data.expire then
+                local expireColor = GetExpireColor(v.data.expire)
+                DrawStatus(1, {
+                    x = 768,
+                    y = (h-29)/2,
+                    text = os.date("До %m/%d %H:%M", v.data.expire),
+                    boxClr = expireColor,
+                    txtClr = Color(255, 255, 255),
+                    xAlign = TEXT_ALIGN_RIGHT,
+                    yAlign = nil
+                })
             end
 
             if v.canUnequip then
-                draw.WordBox( 5, w-200, (h-29)/2, "Надето", "fdShopFontRegular", Color( 47, 121, 109), Color( 255, 255, 255 ), TEXT_ALIGN_RIGHT)
+                DrawStatus(1, {
+                    x = 768,
+                    y = (h-29)/2,
+                    text = "Надето",
+                    boxClr = Color( 47, 121, 109),
+                    txtClr = Color(255, 255, 255),
+                    xAlign = TEXT_ALIGN_RIGHT,
+                    yAlign = nil
+                })
             end
         end
 
@@ -415,12 +473,12 @@ function PANEL:UpdateInv(items)
             local item = row.data
 
             if item.canUse then
-                m:AddOption('Юзануть', function()                    
+                m:AddOption('Использовать', function()                    
                     net.Start('fundot.action' )
                         net.WriteUInt(item.id, 32)
                         net.WriteString('use')
                     net.SendToServer()
-                end):SetIcon('icon16/user.png')
+                end):SetIcon('pixel_icons/hand.png')
             end
 
             if item.canEquip then
@@ -429,7 +487,7 @@ function PANEL:UpdateInv(items)
                         net.WriteUInt(item.id, 32)
                         net.WriteString('equip')
                     net.SendToServer()
-                end):SetIcon('icon16/lightbulb.png')
+                end):SetIcon('pixel_icons/round_add.png')
             end
 
             if item.canUnequip then
@@ -438,8 +496,22 @@ function PANEL:UpdateInv(items)
                         net.WriteUInt(item.id, 32)
                         net.WriteString('unequip')
                     net.SendToServer()
-                end):SetIcon('icon16/lightbulb_off.png')
+                end):SetIcon('pixel_icons/round_minus.png')
             end
+
+            m:AddOption('Удалить', function()
+                Derma_Query( "Уверен что хочешь удалить этот предмет?", "Подтвердить действие", 
+                    "Удалить",
+                    function() 
+                        net.Start('fundot.action' )
+                            net.WriteUInt(item.id, 32)
+                            net.WriteString('remove')
+                        net.SendToServer()
+                    end,
+                    "Нет",
+                    function() end
+                )
+            end):SetIcon('pixel_icons/round_warning.png')
 
             m:Open()
         end
@@ -473,27 +545,24 @@ function PANEL:UpdateShop()
     SetListViewFont(self.ShopListView, 'fdShopSemiFont')
 end
 
-net.Receive('fundot.rBalance', function(len, ply)
+net.Receive('HG:RequestBalance', function(len, ply)
 
 	fundot.balance = net.ReadUInt(32) or 0
 
 end)
 
-net.Receive('fundot.rInventory', function(len)
+net.Receive('HG:RequestInventory', function(len)
 
 	local data = net.ReadTable()
-	fundot.ShopMenu:UpdateInv(data)
 
+    if (fundot.ShopMenu) then
+        PrintTable(data)
+	    fundot.ShopMenu:UpdateInv(data)
+    end
+    
 end)
 
-net.Receive('fundot.rInventory', function(len)
-
-	local data = net.ReadTable()
-	fundot.ShopMenu:UpdateInv(data)
-
-end)
-
-net.Receive('fundot.rShop', function(len)
+net.Receive('HG:RequestShop', function(len)
 	local data = net.ReadTable()
 	for i, item in ipairs(data) do
 		fundot.items[item.class] = {

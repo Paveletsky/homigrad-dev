@@ -343,6 +343,7 @@ net.Receive("nodraw_helmet",function()
 end)
 
 CalcView = function(ply,vec,ang,fov,znear,zfar)
+	if (fundot and fundot.ViewOFF) then return end
 	-- if LocalPlayer():InVehicle() then return end
 	if IsValid(playerSettingsPanel) then return end
 	if IsValid ( LocalPlayer():GetActiveWeapon() ) and LocalPlayer():GetActiveWeapon():GetClass() == "aact_weapact" then return end
@@ -712,7 +713,6 @@ CalcView = function(ply,vec,ang,fov,znear,zfar)
 		end--]]
 	end
 
-
 	if not RENDERSCENE then
 		LerpEye = LerpAngleFT(smooth_cam:GetBool() and 0.25 or 1,LerpEye,angEye)
 	else
@@ -760,7 +760,7 @@ CalcView = function(ply,vec,ang,fov,znear,zfar)
 
 	if lply:InVehicle() or not firstPerson then return end
 
-	if !lply:Alive() or (IsValid(wep) and whitelistweps[wep:GetClass()]) or lply:GetMoveType() == MOVETYPE_NOCLIP or IsValid(playerSettingsPanel) then
+	if (fundot and fundot.ViewOFF) or !lply:Alive() or (IsValid(wep) and whitelistweps[wep:GetClass()]) or lply:GetMoveType() == MOVETYPE_NOCLIP or IsValid(playerSettingsPanel) then
 		view.origin = ply:EyePos()
 		view.angles = ply:EyeAngles()
 		view.drawviewer = false

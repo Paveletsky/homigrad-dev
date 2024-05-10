@@ -79,7 +79,7 @@ hook.Add("HUDPaint","homigrad-roundstate",function()
 			RunConsoleCommand("hg_bodycam", "0")
 		end
 
-		draw.RoundedBox(5, ScrW() - 230 - #nextName * 2.4, ScrH() - 65, 800, 50, Color(0, 0, 0, showRoundInfoColor.a - 30))
+		draw.RoundedBox(5, ScrW() - 250 - math.max(#nextName, #name) * 3, ScrH() - 65, 800, 50, Color(0, 0, 0, showRoundInfoColor.a - 30))
 		draw.SimpleText("Текущий режим: " .. name,"HomigradFont",ScrW() - 15, ScrH() - 60, showRoundInfoColor, TEXT_ALIGN_RIGHT)
 		draw.SimpleText("Следующий режим: " .. nextName,"HomigradFont",ScrW() - 15, ScrH() - 40,name ~= nextName and yellow or showRoundInfoColor, TEXT_ALIGN_RIGHT)
 	end

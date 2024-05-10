@@ -128,7 +128,7 @@ if SERVER then
 				return
 			end
 
-			if not ply:IsAdmin() then return end
+			if (!CAMI.PlayerHasAccess(ply, "Доступ к моделям", nil)) then return end
 			RunConsoleCommand(cvar, net_ReadString())
 		end
 	end)
@@ -243,7 +243,7 @@ if SERVER then
 	local plymeta = FindMetaTable("Player")
 	local CurrentPlySetModel
 	local function Allowed(ply)
-		if ply:IsAdmin() then
+		if (CAMI.PlayerHasAccess(ply, "Доступ к моделям", nil)) then 
 			return true
 		else
 			return false
@@ -371,7 +371,7 @@ end
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 if CLIENT then
-	-- if not LocalPlayer():IsAdmin() then return end
+	-- if not CAMI.PlayerHasAccess(LocalPlayer(), "Доступ к моделям", nil) then return end
 	local Version = "3.3"
 	local Menu = {}
 	local Frame
@@ -427,7 +427,7 @@ if CLIENT then
 
 	hook_Add("OnTextEntryLoseFocus", "lf_playermodel_keyboard_off", KeyboardOff)
 	local function LoadPlayerModel()
-		if LocalPlayer():IsAdmin() or GetConVar("sv_playermodel_selector_instantly"):GetBool() then
+		if CAMI.PlayerHasAccess(LocalPlayer(), "Доступ к моделям", nil) or GetConVar("sv_playermodel_selector_instantly"):GetBool() then
 			net_Start("lf_playermodel_update")
 			net_SendToServer()
 		end
@@ -547,7 +547,7 @@ if CLIENT then
 		Menu.ApplyButton:SetSize(120, 30)
 		Menu.ApplyButton:SetPos(fw - 560, 30)
 		Menu.ApplyButton:SetText("Apply playermodel")
-		Menu.ApplyButton:SetEnabled(LocalPlayer():IsAdmin() or GetConVar("sv_playermodel_selector_instantly"):GetBool())
+		Menu.ApplyButton:SetEnabled(CAMI.PlayerHasAccess(LocalPlayer(), "Доступ к моделям", nil) or GetConVar("sv_playermodel_selector_instantly"):GetBool())
 		Menu.ApplyButton.DoClick = LoadPlayerModel
 		Menu.ResetButton = Frame:Add("DButton")
 		Menu.ResetButton:SetSize(40, 20)
@@ -880,7 +880,7 @@ if CLIENT then
 		t:SetText("Forces all playermodel icons to be re-rendered. Useful if the icons are outdated after custom models changed their appearance. This may take a while, depending on the number of models and your PC's speed.")
 		t:SetDark(true)
 		t:SetWrap(true)
-		if LocalPlayer():IsAdmin() then
+		if CAMI.PlayerHasAccess(LocalPlayer(), "Доступ к моделям", nil) then
 			local panel = moretab:Add("DPanel")
 			moretab:AddSheet("Server", panel, "icon16/world.png")
 			panel:DockPadding(10, 10, 10, 10)
@@ -1156,7 +1156,7 @@ if CLIENT then
 		t:AddFunction("url", "copy", function(str) SetClipboardText(str) end)
 		local intro = [[Created by <a href="javascript:url.open( 'http://steamcommunity.com/id/libertyforce' )" oncontextmenu="url.copy( 'http://steamcommunity.com/id/libertyforce' )">LibertyForce</a>.<br>Thank you for installing this addon! Enjoying it?<br>
 			<a href="javascript:url.open( 'http://steamcommunity.com/sharedfiles/filedetails/?id=504945881' )" oncontextmenu="url.copy( 'http://steamcommunity.com/sharedfiles/filedetails/?id=504945881' )">Please leave a LIKE on the workshop page.</a>]]
-		if not game_SinglePlayer() and not LocalPlayer():IsAdmin() then intro = [[This server is running Enhanced PlayerModel Selector by <a href="javascript:url.open( 'http://steamcommunity.com/id/libertyforce' )" oncontextmenu="url.copy( 'http://steamcommunity.com/id/libertyforce' )">LibertyForce</a>. Enjoying it?<br>
+		if not game_SinglePlayer() and not CAMI.PlayerHasAccess(LocalPlayer(), "Доступ к моделям", nil) then intro = [[This server is running Enhanced PlayerModel Selector by <a href="javascript:url.open( 'http://steamcommunity.com/id/libertyforce' )" oncontextmenu="url.copy( 'http://steamcommunity.com/id/libertyforce' )">LibertyForce</a>. Enjoying it?<br>
 				<a href="javascript:url.open( 'http://steamcommunity.com/sharedfiles/filedetails/?id=504945881' )" oncontextmenu="url.copy( 'http://steamcommunity.com/sharedfiles/filedetails/?id=504945881' )">Click here to download this addon for SinglePlayer.</a>]] end
 		t:SetHTML([[
 				<html>
@@ -1424,7 +1424,7 @@ if CLIENT then
 	end
 
 	function Menu.Toggle()
-		if LocalPlayer():IsAdmin() then
+		if CAMI.PlayerHasAccess(LocalPlayer(), "Доступ к моделям", nil) then
 			if IsValid(Frame) then
 				Frame:ToggleVisible()
 			else

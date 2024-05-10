@@ -9,11 +9,6 @@ fundot.accs = fundot.accs or {}
 
 PLUGIN = GAMEMODE or {}
 
-CAMI.RegisterPrivilege({
-	Name = "Helix - Manage PAC",
-	MinAccess = "superadmin"
-})
-
 -- this stores pac3 part information to plugin's table'
 function ix.pac.RegisterPart(id, outfit)
 	fundot.accs[id] = outfit
@@ -37,16 +32,26 @@ if (CLIENT) then
 	end)
 
 	-- you need the proper permission to open the editor
-	function PLUGIN:PrePACEditorOpen()
-		if  LocalPlayer():IsSuperAdmin() then
-			bok.gui.Notify('Доступно по подписке "Шпакер". Магазин в F4.', 3, 'vo/k_lab/ba_whoops.wav')
+	function PLUGIN:PrePACEditorOpen(client)
+		if !GetConVar("pac_enable_editor_view"):GetBool() then
+			RunConsoleCommand('pac_enable_editor_view', 1)
+		end
+		
+		if (!CAMI.PlayerHasAccess(client, "Доступ к PAC3", nil)) then
+				bok.gui.Notify('Доступно по подписке "Шпакер". Магазин в F4.', 3, 'vo/k_lab/ba_whoops.wav')
 			return false
 		end
+
+		fundot.ViewOFF = true
+	end
+
+	function PLUGIN:PrePACEditorClose(client)
+		fundot.ViewOFF = false
 	end
 end
 
 function PLUGIN:pac_CanWearParts(client)
-	if (!CAMI.PlayerHasAccess(client, "Helix - Manage PAC", nil)) then
+	if (!CAMI.PlayerHasAccess(client, "Доступ к PAC3", nil)) then
 		return false
 	end
 end

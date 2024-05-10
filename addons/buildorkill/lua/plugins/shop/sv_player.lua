@@ -1,6 +1,6 @@
-util.AddNetworkString 'fundot.rBalance'
-util.AddNetworkString 'fundot.rInventory'
-util.AddNetworkString 'fundot.rShop'
+util.AddNetworkString 'HG:RequestBalance'
+util.AddNetworkString 'HG:RequestInventory'
+util.AddNetworkString 'HG:RequestShop'
 util.AddNetworkString 'fundot.useCoupon'
 
 local meta = FindMetaTable 'Player'
@@ -57,7 +57,7 @@ function meta:osSyncPlayerData()
 	end)
 
 end
-hook.Add('player.loaded', 'fundot', meta.osSyncPlayerData)
+hook.Add('HG:PlayerLoaded', 'fundot', meta.osSyncPlayerData)
 
 function meta:osGetMoney()
 
@@ -122,7 +122,7 @@ end
 
 function meta:osNetBalance()
 
-	net.Start('fundot.rBalance')
+	net.Start('HG:RequestBalance')
 		net.WriteUInt(self.osBalance or 0, 32)
 	net.Send(self)
 
@@ -145,10 +145,11 @@ function meta:osNetInv()
 			expire = item:GetExpire(),
 			active = item:GetData('active'),
 			data = item.data,
+			icon = item.classTable.icon,
 		})
 	end
 
-	net.Start('fundot.rInventory')
+	net.Start('HG:RequestInventory')
 		net.WriteTable(toSend)
 	net.Send(self)
 
@@ -174,13 +175,13 @@ function meta:osNetShop()
 		})
 	end
 
-	net.Start('fundot.rShop')
+	net.Start('HG:RequestShop')
 		net.WriteTable(toSend)
 	net.Send(self)
 
 end
 
-net.Receive('fundot.rShop', function(len, ply)
+net.Receive('HG:RequestShop', function(len, ply)
 
 	-- local cd = ply:osCooldown(3)
 	-- if not cd then return end
@@ -189,7 +190,7 @@ net.Receive('fundot.rShop', function(len, ply)
 
 end)
 
-net.Receive('fundot.rInventory', function(len, ply)
+net.Receive('HG:RequestInventory', function(len, ply)
 
 	-- local cd = ply:osCooldown(3)
 	-- if not cd then return end

@@ -83,19 +83,24 @@ PIS.Config.WheelColors = {
 
 local LeadCP = {}
 
-PIS.Config:AddMenu("other", "confetti", "Развлечение", info, {
-	{name = "Магазин", 	mat = "shop2", col = white, func = function() 
-	    if fundot.ShopMenu then fundot.ShopMenu:Remove() end
-    	fundot.ShopMenu = vgui.Create('fdShopPanel')
+PIS.Config:AddMenu("other", "pixel_icons/confetti", "Развлечение", info, {
+	{name = "PAC3", mat = "icon64/pac3", col = white, func = function() 
+		LocalPlayer():ConCommand("pac_editor")
 	end},
-	{name = "Выбор модели",	mat = "formal_outfit", col = white, func = function() RunConsoleCommand("playermodel_selector") end},
+	
+	{name = "Выбор модели",	mat = "pixel_icons/formal_outfit", col = white, func = function() RunConsoleCommand("playermodel_selector") end},
 })
 
-PIS.Config:AddMenu("links", "evidence", "Ссылки", info, {
-	{name = "Дискорд", 	mat = "bubble_info", col = white, func = function() gui.OpenURL( "https://discord.gg/txwFXfZ44s" ) end},
-	{name = "Сайт", mat = "electronics", col = white, func = function() gui.OpenURL( "https://oldhomigrad.ru/" ) end}, 
+PIS.Config:AddMenu("links", "pixel_icons/evidence", "Ссылки", info, {
+	{name = "Дискорд", 	mat = "pixel_icons/bubble_info", col = white, func = function() gui.OpenURL( "https://discord.gg/txwFXfZ44s" ) end},
+	{name = "Сайт", mat = "pixel_icons/electronics", col = white, func = function() gui.OpenURL( "https://oldhomigrad.ru/" ) end}, 
 })
 
-PIS.Config:AddMenu("clans", "megaphone_", "Смена режима", info, function()
-	LocalPlayer():ConCommand("hg_say vote")
+PIS.Config:AddMenu("shop", "pixel_icons/shop2", "Магазин", info, function()
+	if fundot.ShopMenu then fundot.ShopMenu:Remove() end
+	fundot.ShopMenu = vgui.Create('fdShopPanel')
 end)
+
+-- PIS.Config:AddMenu("clans", "pixel_icons/megaphone_", "Смена режима", info, function()
+-- 	LocalPlayer():ConCommand("hg_say vote")
+-- end)

@@ -48,8 +48,8 @@ ulx logEchoColorPlayerAsGroup 1 ; Whether or not to use group colors for players
 ulx logEchoColorPlayer "255 255 0" ; The color to use for players when ulx logEchoColorPlayerAsGroup 1 
 ulx logEchoColorMisc "0 255 0" ; The color for anything else in echoes
 
-ulx rslotsMode 1 
-ulx rslots 2 
+ulx rslotsMode 2 
+ulx rslots 6 
 ulx rslotsVisible 1 ; When this is 0, sv_visiblemaxplayers will be set to maxplayers - slots_currently_reserved
 ;Modes:
 ;0 - Off
@@ -60,7 +60,7 @@ ulx rslotsVisible 1 ; When this is 0, sv_visiblemaxplayers will be set to maxpla
 ;Difference between 1 and 2:
 ;I realize it's a bit confusing, so here's an example.
 ;On mode 1--
-;	You have maxplayers set to 10, rslots 2 
+;	You have maxplayers set to 10, rslots 6 
 ;	If a non-admin tries to join, they'll be kicked to keep the reserved slots open. Two admins join
 ;	and fill the two reserved slots. When non-admins leave, the two admins will still be filling the
 ;	two reserved slots, so another regular player can join and fill the server up again without being

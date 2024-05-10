@@ -23,7 +23,7 @@ local function syncItemsData()
 end
 hook.Add('Think', 'fundot.dataSync', syncItemsData)
 
-hook.Add('player.loaded', 'player-data', function(client)
+hook.Add('HG:PlayerLoaded', 'player-data', function(client)
 
 	dangautils.db:PrepareQuery([[
 		SELECT id, data FROM homigrad_users
@@ -38,7 +38,7 @@ hook.Add('player.loaded', 'player-data', function(client)
 		if data then
 			-- load data
 			client.id = data.id
-			client.dbvars = data.data
+			client.dbvars = util.JSONToTable(data.data)
 		else
 			-- new player
 			print('New player: ' .. tostring(client))
@@ -67,18 +67,18 @@ end)
 
 local meta = FindMetaTable 'Player'
 function meta:SetDBVar(name, val)
-
 	if not name or isfunction(val) then return end
-		
-	if self and self.dbvars then
-		self.dbvars = self.dbvars or {}
-		self.dbvars[name] = val
-	end
+
+    if not self.dbvars or type(self.dbvars) ~= "table" then
+        self.dbvars = self.dbvars or {}
+    end
+	
+	self.dbvars[name] = val
 
     if self.id then
         dataSync[name] = {id = self.id, data = self.dbvars}
     else
-        timer.Simple(0.1, function() self:SetData(name, val) end)
+        timer.Simple(0.1, function() self:SetDBVar(name, val) end)
     end
 
     return self

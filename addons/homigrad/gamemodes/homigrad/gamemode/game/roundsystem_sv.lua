@@ -279,10 +279,10 @@ local function donaterVoteLevelEnd(t,argv,calling_ply,args)
 		end
 	end
 
-	if winner == 2 then
+	if winner == 1 then
 		PrintMessage(HUD_PRINTTALK,"Раунд будет закончен.")
 		EndRound()
-	elseif winner == 1 then
+	elseif winner == 2 then
 		PrintMessage(HUD_PRINTTALK,"Раунд не будет закончен.")
 	else
 		PrintMessage(HUD_PRINTTALK,"Голосование не прошло успешно или было остановлено.")
@@ -291,20 +291,13 @@ local function donaterVoteLevelEnd(t,argv,calling_ply,args)
 	calling_ply.canVoteNext = CurTime() + 300
 end
 
-local admins = {
-	dadmin = true,
-	downer = true,
-	dsuperadmin = true,
-	helper = true,
-}
-
 COMMANDS.levelend = {function(ply,args)
-	if admins[ply:GetUserGroup()] then
+	if CAMI.PlayerHasAccess(ply, "Смена режимов", nil) then
 		EndRound()
 	else
 		local calling_ply = ply
 		if (calling_ply.canVoteNext or CurTime()) - CurTime() <= 0 then
-			ulx.doVote( "Закончить раунд?", { "No", "Yes" }, donaterVoteLevelEnd, 15, _, _, argv, calling_ply, args)
+			ulx.doVote( "Закончить раунд?", { "Да", "Нет" }, donaterVoteLevelEnd, 15, _, _, argv, calling_ply, args)
 		end
 	end
 end}
@@ -321,10 +314,10 @@ local function donaterVoteLevel(t,argv,calling_ply,args)
 		end
 	end
 
-	if winner == 2 then
+	if winner == 1 then
 		PrintMessage(HUD_PRINTTALK,"Режим сменится в следующем раунде на " .. tostring(args[1]))
 		SetActiveNextRound(args[1])
-	elseif winner == 1 then
+	elseif winner == 2 then
 		PrintMessage(HUD_PRINTTALK,"Смены режима не состоялось.")
 	else
 		PrintMessage(HUD_PRINTTALK,"Голосование не прошло успешно или было остановлено.")
@@ -334,24 +327,24 @@ local function donaterVoteLevel(t,argv,calling_ply,args)
 end
 
 COMMANDS.levelnext = {function(ply,args)
-	if admins[ply:GetUserGroup()] then
+	if CAMI.PlayerHasAccess(ply, "Смена режимов", nil) then
 		if not SetActiveNextRound(args[1]) then ply:ChatPrint("ты еблан, такого режима нет.") return end
 	else
 		local calling_ply = ply
 		
 		if (calling_ply.canVoteNext or CurTime()) - CurTime() <= 0 and table.HasValue(LevelList, args[1]) then
-			ulx.doVote( "Поменять режим следующего раунда на " .. tostring(args[1]) .. "?", { "No", "Yes" }, donaterVoteLevel, 15, _, _, argv, calling_ply, args)
+			ulx.doVote( "Поменять режим следующего раунда на " .. tostring(args[1]) .. "?", { "Да", "Нет" }, donaterVoteLevel, 15, _, _, argv, calling_ply, args)
 		end
 	end
 end}
 
 COMMANDS.levels = {function(ply,args)
 	local text = ""
-	for i,name in pairs(LevelList) do
+	for i, name in pairs(LevelList) do
 		text = text .. name .. "\n"
 	end
 
-	text = string.sub(text,1,#text - 1)
+	text = string.sub(text, 1, #text - 1)
 
 	ply:ChatPrint(text)
 end}
