@@ -9,8 +9,6 @@ hook.Add("Player Think", "ControlPlayersAdmins", function(ply, time)
 		local enta = ply:GetEyeTrace().Entity
 		if enta:IsPlayer() and not enta.fake and not IsValid(ply.CarryEnt) then
 			Faking(enta)
-
-			hook.Run('HG:OnPlayerTouched', ply, enta or nil)
 		end
 
 		if not IsValid(enta:GetPhysicsObject()) then return end
@@ -26,15 +24,17 @@ hook.Add("Player Think", "ControlPlayersAdmins", function(ply, time)
 			if ply:KeyPressed(IN_ATTACK) then
 				local text = ply:Name() .. " " .. tostring("дрочит ентити ") .. tostring(RagdollOwner(ply.CarryEnt) and RagdollOwner(ply.CarryEnt):Name() or ply.CarryEnt:GetClass())
 				
-				hook.Run('HG:OnPlayerTouched', ply, ply.CarryEnt or nil)
+				hook.Run('HG:OnPlayerTouched', ply, ply.CarryEnt and RagdollOwner(ply.CarryEnt) or nil)
 			end
 
 			ply.CarryEnt:SetPhysicsAttacker(ply, 5)
 			ply.CarryEntLen = math.max(ply.CarryEntLen or ply.CarryEnt:GetPos():Distance(ply:EyePos()), 50)
 			local ent = ply.CarryEnt
 			local len = ply.CarryEntLen
+			
 			ply.CarryEnt:GetPhysicsObjectNum(ply.CarryEntPhysbone):EnableMotion(true)
 			ply.CarryEnt.isheld = true
+
 			local ang = ply:EyeAngles()
 			ang[1] = 0
 			if ent and len then

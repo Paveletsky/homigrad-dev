@@ -1,4 +1,4 @@
-bok = bok or {util = {}, gui = {}, meta = {}}
+bok = bok or { util = {}, gui = {}, meta = {} }
 
 -- подключение базовых файлов
 include("core/sh_util.lua")

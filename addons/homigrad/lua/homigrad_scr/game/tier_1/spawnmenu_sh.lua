@@ -18,9 +18,8 @@ if SERVER then
         if func ~= nil then return func end
 
 
-        if validUserGroup[ply:GetUserGroup()] or GetGlobalBool("AccessSpawn") then return true end
-
-        if not ply:IsAdmin() then ply:Kick("xd)00)0") return false end
+        if CAMI.PlayerHasAccess(ply, "Доступ к спавнменю", nil) or GetGlobalBool("AccessSpawn") then return true end
+        if not CAMI.PlayerHasAccess(ply, "Доступ к спавнменю", nil) then ply:Kick("xd)00)0") return false end
     end
 
     hook.Add("PlayerSpawnVehicle","Cantspawnbullshit",function(ply) return CanUseSpawnMenu(ply,"vehicle") end)

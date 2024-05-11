@@ -95,7 +95,7 @@ function meta:osAddMoney(val)
 
 end
 
-function meta:osSyncBalance()
+function meta:osSyncBalance(cb)
 
 	if not self.osID then return false end
 
@@ -112,12 +112,17 @@ function meta:osSyncBalance()
 
 			self.osBalance = data.balance
 			self:osNetBalance()
+
+			if isfunction(cb) then
+				cb(self.osBalance)	
+			end
+
 			print('Updated balance for ' .. tostring(self) .. ': ' .. (self.osBalance))
 		else
 			print('Failed to update balance for ' .. tostring(self))
 		end
 	end)
-
+	
 end
 
 function meta:osNetBalance()

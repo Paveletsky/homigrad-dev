@@ -408,9 +408,9 @@ hook.Add("DoPlayerDeath", "blad", function(ply, att, dmginfo)
 	deadBodies = deadBodies or {}
 	deadBodies[rag:EntIndex()] = {rag, rag.Info}
 	if deadBodies == nil or not deadBodies then return end
-	net.Start("send_deadbodies")
-	net.WriteTable(deadBodies)
-	net.Send(ply)
+	-- net.Start("send_deadbodies")
+	-- net.WriteTable(deadBodies)
+	-- net.Send(ply)
 	rag.curweapon = ply.curweapon
 	if IsValid(rag.ZacConsLH) then
 		rag.ZacConsLH:Remove()

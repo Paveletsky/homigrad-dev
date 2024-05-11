@@ -1,0 +1,365 @@
+"STEAM_0:0:543433635"	
+{
+	"allow"	
+	{
+	}
+	"deny"	
+	{
+	}
+	"group"	"downer"
+}
+"STEAM_0:0:151776045"	
+{
+	"allow"	
+	{
+	}
+	"name"	"Evi"
+	"deny"	
+	{
+	}
+	"group"	"superadmin"
+}
+"STEAM_0:0:67645726"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"FurryON"
+	"group"	"superadmin"
+}
+"STEAM_0:0:33626004"	
+{
+	"allow"	
+	{
+	}
+	"name"	"Scorpiosha"
+	"deny"	
+	{
+	}
+	"group"	"downer"
+}
+"STEAM_1:1:512306095"	
+{
+	"allow"	
+	{
+	}
+	"deny"	
+	{
+	}
+	"group"	"admin"
+}
+"STEAM_0:1:639653305"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+		"Команды уровень 1"
+		"Смена режимов"
+	}
+	"name"	"Its me"
+	"group"	"fellow"
+}
+"STEAM_0:0:30588797"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+		"Команды уровень 1"
+		"Смена режимов"
+	}
+	"name"	"Makler"
+	"group"	"superadmin"
+}
+"STEAM_0:0:185099753"	
+{
+	"allow"	
+	{
+	}
+	"name"	"Dota Veteran"
+	"deny"	
+	{
+	}
+	"group"	"superadmin"
+}
+"STEAM_0:0:596024999"	
+{
+	"allow"	
+	{
+	}
+	"name"	"Raptor2010"
+	"deny"	
+	{
+	}
+	"group"	"admin"
+}
+"STEAM_0:0:740423881"	
+{
+	"name"	"Йогурт"
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:1:520242926"	
+{
+	"allow"	
+	{
+	}
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:1:630913433"	
+{
+	"name"	"Сектор каго?...."
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"operator_n"
+}
+"STEAM_0:0:806529259"	
+{
+	"name"	"Черешня"
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"downer"
+}
+"STEAM_0:0:117395677"	
+{
+	"allow"	
+	{
+	}
+	"name"	"Limitless Gregg"
+	"deny"	
+	{
+	}
+	"group"	"downer"
+}
+"STEAM_0:0:223423229"	
+{
+	"name"	"Ezik?"
+	"allow"	
+	{
+	}
+	"deny"	
+	{
+	}
+	"group"	"moderator_n"
+}
+"STEAM_0:1:600572117"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"Zomby"
+	"group"	"premium"
+}
+"STEAM_0:1:429035553"	
+{
+	"allow"	
+	{
+	}
+	"name"	"Мистер Котейкин"
+	"deny"	
+	{
+	}
+	"group"	"superadmin"
+}
+"STEAM_0:0:527884344"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+		"Доступ к моделям"
+	}
+	"name"	"MoUn"
+	"group"	"fellow"
+}
+"STEAM_0:1:27804115"	
+{
+	"name"	"SANSILK"
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:0:213007131"	
+{
+	"name"	"Чечен Визгун"
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"admin"
+}
+"STEAM_0:1:628835900"	
+{
+	"name"	"Бомбино"
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"admin"
+}
+"STEAM_0:0:63554495"	
+{
+	"allow"	
+	{
+	}
+	"deny"	
+	{
+	}
+	"group"	"downer"
+}
+"STEAM_0:1:512306095"	
+{
+	"allow"	
+	{
+	}
+	"name"	"Огузок"
+	"deny"	
+	{
+	}
+	"group"	"admin"
+}
+"STEAM_0:1:551189119"	
+{
+	"name"	"Бонзибадди"
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"group"	"admin"
+}
+"STEAM_0:1:596318784"	
+{
+	"allow"	
+	{
+	}
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:0:597027690"	
+{
+	"name"	"not approved by the vatican"
+	"allow"	
+	{
+	}
+	"deny"	
+	{
+	}
+	"group"	"downer"
+}
+"STEAM_0:1:625165354"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"картонка"
+	"group"	"moderator_n"
+}
+"STEAM_0:1:533465795"	
+{
+	"allow"	
+	{
+	}
+	"name"	"ZenchIX"
+	"deny"	
+	{
+	}
+	"group"	"dadmin"
+}
+"STEAM_0:0:421035503"	
+{
+	"allow"	
+	{
+	}
+	"name"	"Minty"
+	"deny"	
+	{
+	}
+	"group"	"helper"
+}
+"STEAM_0:1:159129715"	
+{
+	"allow"	
+	{
+	}
+	"name"	"(1)FurryOn"
+	"deny"	
+	{
+	}
+	"group"	"superadmin"
+}
+"STEAM_0:0:545239143"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"1300BS"
+	"group"	"downer"
+}
+"STEAM_0:1:460337618"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+		"Доступ к моделям"
+		"Смена режимов"
+	}
+	"name"	"zashita"
+	"group"	"fellow"
+}
+"STEAM_0:0:611792478"	
+{
+	"deny"	
+	{
+	}
+	"allow"	
+	{
+	}
+	"name"	"♥Baget on my stol♥"
+	"group"	"admin"
+}

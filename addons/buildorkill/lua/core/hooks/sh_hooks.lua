@@ -9,12 +9,22 @@ hook.Add('CanProperty', 'bkCanProperty', function(client, property, entity)
 end)
 
 CAMI.RegisterPrivilege{
-	Name = "Доступ к PAC3",
+	Name = "Доступ к pac3",
 	MinAccess = "superadmin"
 }
 
 CAMI.RegisterPrivilege{
     Name = "Доступ к моделям",
+    MinAccess = "superadmin" -- By default only superadmins can change settings
+}
+
+CAMI.RegisterPrivilege{
+    Name = "Команды уровень 1",
+    MinAccess = "superadmin" -- By default only superadmins can change settings
+}
+
+CAMI.RegisterPrivilege{
+    Name = "Команды уровень 2",
     MinAccess = "superadmin" -- By default only superadmins can change settings
 }
 

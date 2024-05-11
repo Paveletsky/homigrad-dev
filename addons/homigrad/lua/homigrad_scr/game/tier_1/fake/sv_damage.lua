@@ -135,7 +135,9 @@ hook.Add("EntityTakeDamage", "ragdamage", function(ent, dmginfo)
 	rubatPidor:SetDamageForce(dmginfo:GetDamageForce())
 	ply.LastDMGInfo = rubatPidor
 	dmginfo:ScaleDamage(0.5)
+
 	hook.Run("HomigradDamage", ply, hitgroup, dmginfo, rag, armorMul, armorDur, haveHelmet)
+
 	dmginfo:ScaleDamage(0.2)
 	if rag then
 		if dmginfo:GetDamageType() == DMG_CRUSH then dmginfo:ScaleDamage(10 / 40 / 15) end
@@ -185,12 +187,13 @@ local reasons = {
 }
 
 hook.Add("PlayerDeath", "plymessage", function(ply, hitgroup, dmginfo)
+
 	local att = ply.LastAttacker
-	--if not IsValid(att) then return end
 	local boneName = bonenames[ply.LastHitBoneName]
 	local add = boneName and " в " .. boneName or ""
 	local reason = ply.KillReason
 	local dmgInfo = dmgInfo or ply.LastDMGInfo
+
 	if ply == att then
 		ply:ChatPrint("Вы совершили суицид" .. add)
 	elseif reason then
@@ -198,18 +201,27 @@ hook.Add("PlayerDeath", "plymessage", function(ply, hitgroup, dmginfo)
 	elseif att then
 		local dmgtype = "от ранения"
 		dmgtype = dmgInfo:IsDamageType(DMG_BULLET + DMG_BUCKSHOT) and (dmgInfo:IsDamageType(DMG_BUCKSHOT) and "от ранения осколками/дробью" or "от огнестрельного ранения") or dmgInfo:IsExplosionDamage() and "от минно-взрывной травмы" or dmgInfo:IsDamageType(DMG_SLASH) and "от ножевого ранения" or dmgInfo:IsDamageType(DMG_CLUB + DMG_GENERIC) and "от ранения тупым оружием" or dmgtype
+		
 		ply:ChatPrint("Вы умерли " .. dmgtype .. add)
 		ply:ChatPrint("Вас убил игрок " .. att:Name())
 		player.EventPoint(att:GetPos(), "hitgroup killed", 512, att, ply)
 	else
 		ply:ChatPrint("Вы умерли при загадочных обстоятельствах")
 	end
+
+	hook.Run('HG:OnPlayerKilled', ply, att, hitgroup, dmgInfo, reasons[reason] or nil)
+
 end)
 
 hook.Add("HomigradDamage", "HitSoundDa", function(ply, hitgroup, dmginfo)
-	if not dmginfo:GetAttacker():IsPlayer() then return end
-	local pos = dmginfo:GetAttacker():GetPos()
-	-- ply:GetPos():Distance(pos)
+
+	if not dmginfo:GetAttacker():IsPlayer() then
+		return 
+	end
+
+	local pos = dmginfo:GetAttacker():GetPos()	
+
 	dmginfo:GetAttacker():EmitSound("Friends/message.wav", 100, ply:Health()/2, 0.3)
 	ply:EmitSound("Friends/message.wav", 100, ply:Health()/2, 0.3)
+
 end)

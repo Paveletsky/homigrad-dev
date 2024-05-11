@@ -83,7 +83,7 @@ local function playerAccess( ply )
 	end
 
 	if cur + slots > max then
-		ULib.queueFunctionCall( ULib.kick, ply, "[ULX] Reserved slot, sorry!" ) -- Wait a frame so all access hooks can be called properly.
+		ULib.queueFunctionCall( ULib.kick, ply, "Сервер заполнен, хочешь себе отдельный слот? Приобрети роль премиум игрока. \noldhomigrad.ru" ) -- Wait a frame so all access hooks can be called properly.
 	end
 end
 hook.Add( ULib.HOOK_UCLAUTH, "ULXReservedSlots", playerAccess, HOOK_MONITOR_LOW ) -- Run at the end of auth

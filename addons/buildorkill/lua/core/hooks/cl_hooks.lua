@@ -170,3 +170,5 @@ hook.Add("PlayerBindPress", "DisableQEBindings", function(ply, bind, pressed)
         end
     end
 end)
+
+hook.Remove("PlayerBindPress", "DisableQEBindings")

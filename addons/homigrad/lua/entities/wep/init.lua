@@ -41,7 +41,7 @@ function ENT:Use(taker)
 			self:Remove()
 			taker:Give(self.curweapon, true):SetClip1(lootInfo and lootInfo.Weapons[self.curweapon].Clip1 or self.Clip or 0)
 			if lootInfo then lootInfo.Weapons[self.curweapon] = nil end
-			if IsValid(ply) then
+			if IsValid(ply) and (ply.curweapon) then
 				ply:StripWeapon(ply.curweapon)
 				SavePlyInfo(ply)
 			end

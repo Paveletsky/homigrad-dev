@@ -29,7 +29,5 @@
 /data/ulx_logs
 /map.pack
 /modelsounds.cache
-data/ulib/users.txt
-/sv.db
 /data/*.txt
 /data/dppv

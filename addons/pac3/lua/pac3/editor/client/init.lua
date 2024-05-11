@@ -174,6 +174,7 @@ function pace.CloseEditor()
 
 	RunConsoleCommand("pac_in_editor", "0")
 	pace.SetInPAC3Editor(false)
+	fundot.hideHead(false)
 end
 
 function pace.HasFocus()
@@ -274,7 +275,7 @@ end)
 concommand.Add("pac_editor", function(_, _, args)
 	if args[1] == "toggle" then
 		if pace.IsActive() then
-			fundot.ViewOFF = false 
+			fundot.ViewOFF = false
 			pace.CloseEditor()
 		else
 			fundot.ViewOFF = true

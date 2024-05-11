@@ -1,3 +1,6 @@
+hook.Add('Think', 'FIX', function()
+	hook.Remove('Think', 'FIX')
+
 local t = {}
 local n, e, r, o
 local d = Material('materials/scopes/scope_dbm.png')
@@ -102,6 +105,81 @@ local CalcView--fuck
 local vel = 0
 local diffang = Vector(0,0,0)
 local diffpos = Vector(0,0,0)
+
+local function inOutQuad(t, b, c, d)
+	t = t / d * 2
+	if t < 1 then return c / 2 * math.pow(t, 2) + b end
+	return -c / 2 * ((t - 1) * (t - 3) - 1) + b
+end
+
+function fundot.lookMod(enabled, position, angles, radius)
+
+	fundot.lookActive = tobool(enabled) or nil
+	if not fundot.lookActive then
+		fundot.lookPosition = nil
+		fundot.lookAngles = nil
+		fundot.lookRadius = nil
+		return
+	end
+
+	angles:Normalize()
+
+	fundot.lookPosition = position
+	fundot.lookRadius = radius
+	fundot.lookAngles = angles
+
+end
+
+function fundot.hideHead(doHide)
+
+	local ply = LocalPlayer()
+	if not IsValid(ply) then return end
+
+	local hat = ply:LookupBone('ValveBiped.Bip01_Head1') or 6
+	ply:ManipulateBoneScale(hat, doHide and Vector(0.01, 0.01, 0.01) or Vector(1, 1, 1))
+	fundot.headHidden = doHide
+
+end
+netstream.Hook('HG:HideHead', fundot.hideHead)
+
+function fundot.flyTo(pos, ang, time)
+
+	time = time or 1
+	ease = ease or -1
+
+	fundot.startPos = fundot.LastViewPos
+	fundot.startAng = fundot.LastViewAng
+	fundot.tgtPos = pos
+	fundot.tgtAng = ang
+	fundot.flyStart = CurTime()
+	fundot.flyEnd = CurTime() + time
+	fundot.animActive = pos ~= nil
+
+end
+
+fundot.lookOff = Angle()
+local function inputMouseApply(cmd, x, y, ang)
+
+	if fundot.lookActive then
+		if lookOffActive then
+			fundot.lookOff.p = math.Clamp(fundot.lookOff.p + y * GetConVar('sensitivity'):GetFloat() / 200, -45, 45)
+			fundot.lookOff.y = math.Clamp(fundot.lookOff.y - x * GetConVar('sensitivity'):GetFloat() / 200, -60, 60)
+		end
+
+		if fundot.lookActive then
+			fundot.lookAngles = Lerp(FrameTime() * 90, fundot.lookAngles, fundot.lookAngles + Angle(-y, x, 0) * GetConVar('sensitivity'):GetFloat() / 300)
+			fundot.lookAngles.pitch = math.Clamp(fundot.lookAngles.pitch, -55, 55)
+		end
+
+		cmd:SetMouseX(0)
+		cmd:SetMouseY(0)
+		return true
+	elseif fundot.lookOff.p ~= 0 or fundot.lookOff.y ~= 0 then
+		fundot.lookOff.p = math.Approach(fundot.lookOff.p, 0, math.max(math.abs(fundot.lookOff.p), 0.2) * FrameTime() * 10)
+		fundot.lookOff.y = math.Approach(fundot.lookOff.y, 0, math.max(math.abs(fundot.lookOff.y), 0.2) * FrameTime() * 10)
+	end
+
+end
 
 hook.Add("RenderScene","octoweapons",function(pos,angle,fov)
 	if LocalPlayer():InVehicle() then return end
@@ -256,44 +334,44 @@ net.Receive("pophead",function(len)
 end)
 
 local weps = {
-["weapon_glock18"] = true,
-["weapon_glock"] = true,
-["weapon_ak74"] = true,
-["weapon_ar15"] = true,
-["weapon_beretta"] = true,
-["weapon_fiveseven"] = true,
-["weapon_mp5"] = true,
-["weapon_m3super"] = true,
-["weapon_p220"] = true,
-["weapon_hk_usp"] = true,
-["weapon_mp7"] = true,
-["weapon_hk_arbalet"] = true,
-["weapon_hk_usps"] = true,
-["weapon_akm"] = true,
-["weapon_deagle"] = true,
-["weapon_ak74u"] = true,
-["weapon_l1a1"] = true,
-["weapon_fal"] = true,
-["weapon_galil"] = true,
-["weapon_galilsar"] = true,
-["weapon_m14"] = true,
-["weapon_m1a1"] = true,
-["weapon_mk18"] = true,
-["weapon_m249"] = true,
-["weapon_m4a1"] = true,
-["weapon_minu14"] = true,
-["weapon_mp40"] = true,
-["weapon_rpk"] = true,
-["weapon_ump"] = true,
-["weapon_xm1014"] = true,
-["weapon_remington870"] = true,
-["weapon_taser"] = true,
-["weapon_sar2"] = true,
-["weapon_rpgg"] = true,
-["weapon_beanbag"] = true,
-["weapon_civil_famas"] = true,
-["weapon_spas12"] = true,
-["weapon_scout"] = true,
+	["weapon_glock18"] = true,
+	["weapon_glock"] = true,
+	["weapon_ak74"] = true,
+	["weapon_ar15"] = true,
+	["weapon_beretta"] = true,
+	["weapon_fiveseven"] = true,
+	["weapon_mp5"] = true,
+	["weapon_m3super"] = true,
+	["weapon_p220"] = true,
+	["weapon_hk_usp"] = true,
+	["weapon_mp7"] = true,
+	["weapon_hk_arbalet"] = true,
+	["weapon_hk_usps"] = true,
+	["weapon_akm"] = true,
+	["weapon_deagle"] = true,
+	["weapon_ak74u"] = true,
+	["weapon_l1a1"] = true,
+	["weapon_fal"] = true,
+	["weapon_galil"] = true,
+	["weapon_galilsar"] = true,
+	["weapon_m14"] = true,
+	["weapon_m1a1"] = true,
+	["weapon_mk18"] = true,
+	["weapon_m249"] = true,
+	["weapon_m4a1"] = true,
+	["weapon_minu14"] = true,
+	["weapon_mp40"] = true,
+	["weapon_rpk"] = true,
+	["weapon_ump"] = true,
+	["weapon_xm1014"] = true,
+	["weapon_remington870"] = true,
+	["weapon_taser"] = true,
+	["weapon_sar2"] = true,
+	["weapon_rpgg"] = true,
+	["weapon_beanbag"] = true,
+	["weapon_civil_famas"] = true,
+	["weapon_spas12"] = true,
+	["weapon_scout"] = true,
 }
 
 local ScopeLerp = 0
@@ -402,13 +480,15 @@ CalcView = function(ply,vec,ang,fov,znear,zfar)
 	firstPerson = GetViewEntity() == lply
 
 	local bone = lply:LookupBone("ValveBiped.Bip01_Head1")
-	if bone then
+
+	if bone and fundot.headHidden then
+		lply:ManipulateBoneScale(bone, firstPerson and vecZero or vecFull) 
 		
-		lply:ManipulateBoneScale(bone,firstPerson and vecZero or vecFull) 
 		if LocalPlayer():InVehicle() then
 			lply:ManipulateBoneScale(bone,vecFull) 
 		end
 	end
+
 	if not firstPerson then DRAWMODEL = true return end
 	local hand = ply:GetAttachment(ply:LookupAttachment("anim_attachment_rh"))
 	local eye = ply:GetAttachment(ply:LookupAttachment("eyes"))
@@ -785,9 +865,7 @@ CalcView = function(ply,vec,ang,fov,znear,zfar)
 	end
 
 	vec = Vector(vec[1],vec[2],eye and eye.Pos[3] or vec[3])
-
 	vel = math.max(math.Round(Lerp(0.1,vel,lply:GetVelocity():Length())) + 10, 10)
-	
 	
 	local var = vel > 250 and 50 or 500
 	sprinthuy = LerpFT(0.1, sprinthuy, -math.abs(math.cos(CurTime() * 6)) * vel / var)
@@ -846,17 +924,97 @@ CalcView = function(ply,vec,ang,fov,znear,zfar)
 	output_ang[3] = output_ang[3] + ADDROLL
 	
 	view.origin = output_pos
-	view.angles = output_ang
+	view.angles = output_ang + fundot.lookOff
 	view.drawviewer = true
 
 	oldview = table.Copy(view)
 
 	DRAWMODEL = true
 
+	fundot.calcPos = view.origin
+	fundot.calcAng = view.angles
+
+	if fundot.flyStart then
+		local st = math.Clamp(math.TimeFraction(fundot.flyStart, fundot.flyEnd, CurTime()), 0, 1)
+		local frac = inOutQuad(st, 0, 1, 1)
+
+		if frac > 0 then
+			view.origin = LerpVector(frac, fundot.startPos, fundot.tgtPos or fundot.calcPos)
+			view.angles = LerpAngle(frac, fundot.startAng, fundot.tgtAng or fundot.calcAng)
+		elseif frac == 1 and not fundot.tgtPos then
+			fundot.flyStart = nil
+		end
+	end
+
+	if fundot.lookActive then
+		local trace = util.TraceHull({
+			start = fundot.lookPosition,
+			endpos = fundot.lookPosition - fundot.lookAngles:Forward() * fundot.lookRadius,
+			mins = Vector(-3, -3, -3),
+			maxs = Vector(3, 3, 3),
+			filter = ply,
+		})
+
+		view.origin = trace.HitPos
+		view.angles = fundot.lookAngles
+	end
+
+	fundot.LastViewPos = view.origin
+	fundot.LastViewAng = view.angles
+
 	return view
 end
 
+function fundot.CameraToBody(bEnable)
+	if fundot.ViewOFF or fundot.LastViewAng == nil then
+		return
+	end	
+
+	local ply = LocalPlayer()
+
+	local dir = fundot.LastViewAng:Forward()
+	dir.z = -0.2
+	dir.x = -1
+	dir:Normalize()
+
+	local pos = fundot.LastViewPos + dir * 40
+	local tr = util.TraceHull({
+		start = fundot.LastViewPos,
+		endpos = pos,
+		mins = Vector(-3, -3, -3),
+		maxs = Vector(3, 3, 3),
+		filter = ply,
+	})
+	if tr.Hit then
+		pos = tr.HitPos
+	end
+
+	local lpPos = ply:GetPos() + Vector(0, 0, 50)
+	local ang = (lpPos - pos):Angle()
+
+	if bEnable then
+		fundot.flyTo(pos, ang, 0.3)
+		timer.Simple(0.1, function()
+			fundot.hideHead(false)
+		end)
+
+		local startPos = pos + ang:Forward() * fundot.LastViewPos:Distance(pos)
+		timer.Simple(0.3, function()
+			fundot.lookMod(true, startPos, ang, 40)
+		end)
+	else
+		fundot.flyTo(nil, nil, 0.3)
+		fundot.lookMod(false)
+		timer.Simple(0.1, function()			
+			fundot.hideHead(true)
+		end)
+	end	
+end
+
+fundot.hideHead(true)
+
 hook.Add("CalcView","VIEW",CalcView)
+hook.Add('InputMouseApply', 'dbg-view', inputMouseApply)
 
 hide = {
 	["CHudHealth"] = true,
@@ -1099,5 +1257,7 @@ hook.Add("CalcAddFOV","Zoom",function(ply)
 		value = LerpFT(0.03, value, 0) 
 		ADDFOV = ADDFOV + value
 	end
+
+end)
 
 end)

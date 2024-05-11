@@ -234,7 +234,7 @@ concommand.Add('pac_load_url', function(ply, cmd, args)
 	pace.LoadParts(url, tobool(args[2]))
 end)
 
-function pace.LoadPartsFromTable(data, clear, override_part)
+function pace.LoadPartsFromTable(data, clear, override_part, entity)
 	if pace.use_current_part_for_saveload and pace.current_part:IsValid() then
 		override_part = pace.current_part
 	end
@@ -257,7 +257,7 @@ function pace.LoadPartsFromTable(data, clear, override_part)
 			part = override_part
 			part:SetTable(data)
 		else
-			part = override_part or pac.CreatePart(data.self.ClassName, nil, data, pac.GetPartFromUniqueID(pac.Hash(pac.LocalPlayer), data.self.UniqueID):IsValid() and copy_id)
+			part = override_part or pac.CreatePart(data.self.ClassName, entity or nil, data, pac.GetPartFromUniqueID(pac.Hash(pac.LocalPlayer), data.self.UniqueID):IsValid() and copy_id)
 		end
 
 		table.insert(partsLoaded, part)

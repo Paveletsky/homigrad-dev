@@ -59,7 +59,7 @@ function tdm.GetTeamName(ply)
 	if team then
 		team = game[team]
 
-		return team[1],team[2]
+		return team[1] or 'Неизвестно', team[2] or color_white
 	end
 end
 

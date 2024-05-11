@@ -1,4 +1,4 @@
-bok = bok or {util = {}, meta = {}}
+bok = bok or { util = {}, meta = {} }
 
 -- отпкидываем игрокам файлы
 AddCSLuaFile("core/sh_util.lua")

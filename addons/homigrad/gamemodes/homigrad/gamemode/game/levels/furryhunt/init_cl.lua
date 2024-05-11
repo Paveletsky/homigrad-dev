@@ -21,7 +21,7 @@ function hunting.HUDPaint_RoundLeft(white2,time)
     if startRound > 0 and lply:Alive() then
         lply:ScreenFade(SCREENFADE.IN,Color(0,0,0,255),0.5,0.5)
 
-        draw.DrawText(name, "fdShopFontBig", ScrW() / 2, ScrH() / 2, Color( color and color.r or 255,  color and color.g or 255, color and color.b or 255, math.Clamp(startRound - 0.5,0,1) * 255 ), TEXT_ALIGN_CENTER )
+        draw.DrawText(name, "fdShopFontBig", ScrW() / 2, ScrH() / 2, Color( color.r or 255, color.g or 255, color.b or 255, math.Clamp(startRound - 0.5,0,1) * 255 ), TEXT_ALIGN_CENTER )
         --draw.DrawText( roundTypes[roundType], "HomigradFontBig", ScrW() / 2, ScrH() / 5, Color( 55,55,155,math.Clamp(startRound - 0.5,0,1) * 255 ), TEXT_ALIGN_CENTER )
 
         if lply:Team() == 1 then

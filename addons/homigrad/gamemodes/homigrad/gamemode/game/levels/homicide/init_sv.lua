@@ -137,13 +137,11 @@ function homicide.StartRoundSV()
         timer.Simple(1, function()
             if ply:Alive() then
                 ply:Freeze(true)
-                print("xuy")
             end
         end)
 
         timer.Simple(8, function()
             ply:Freeze(false)
-            print("nexuy")
         end)
     end
 

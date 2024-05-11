@@ -35,6 +35,7 @@ surface.CreateFont('fdShopFontTooltip', {
 fundot = fundot or {}
 fundot.items = {}
 fundot.balance = 'загружается'
+fundot.ShopTitle = ''
 
 bok.util.Include('plugins/accs/sh_accs.lua')
 
@@ -70,7 +71,7 @@ function PANEL:Init()
         self.TabPanel.Paint = nil
         self.TabPanel:SetAlpha(200)
         self.TabPanel.OnActiveTabChanged = function(old, new)
-            self:ShowModelPanel(false)
+            -- self:ShowModelPanel(false)
         end
     
     self.InventoryPanel = self.TabPanel:Add("DPanel")
@@ -109,9 +110,9 @@ function PANEL:Init()
             draw.RoundedBox(10, 0, 0, w, h, Color(0, 0, 0, 250))            
             draw.RoundedBoxEx(10, 3, 0, w-6, 40, Color(50, 35, 35, 235), 0, 0, 0, 0)
 
-            local text = fundot.balance == 'загружается' and "Загрузка.." or "Баланс " .. fundot.balance .. 'руб.'
+            fundot.ShopTitle = fundot.balance == 'загружается' and "Йопташоп | Загрузка.." or "Йопташоп | Баланс " .. fundot.balance .. 'руб.'
             draw.Text( {
-                text = "Йопташоп | " .. text,
+                text = fundot.ShopTitle,
                 font = "fdShopFontBig",
                 xalign = TEXT_ALIGN_CENTER,
                 pos = { w/2, -1 }
@@ -128,47 +129,19 @@ function PANEL:Init()
         TopUp.DoClick = function(this)
             self:Remove()
             LocalPlayer():ChatPrint('<wrong><font=fdShopFontBig>Баланс пополняется через менеджера сервера. Найти его можно в дискорд сервере')
-            -- bok.gui.Notify('Баланс пополняется через менеджера "Биржевой маклер". В дискорд сервере.', 10, 'ui/hint.wav')
         end
 
     self.ModelPanel = vgui.Create("DPanel", self.ShopPanel)        
         self.ModelPanel:SetSize(0, self:GetTall())
         self.ModelPanel:SetVisible(false)        
 
+    self.OnRemove = function()
+        fundot.CameraToBody(false)
 
-    self.Model = self.ModelPanel:Add("fdDAdjustableModelPanel")
-    local modelPanel = self.Model
-        modelPanel.canControl = true
-        modelPanel.camPos = Vector(110, 0, 15)
-        modelPanel.mdlOffset = Vector(0, 0, -30.5)
-        modelPanel.fovMultiplier = 0.20
-
-        modelPanel:Dock(FILL)
-        modelPanel:SetModel(LocalPlayer():GetModel())
-        
-        function UpdatePreviewModel()
-            if #self.PreviewAccessory > 0 then
-                local AccData = self.PreviewAccessory[1]['children'][1]['self']
-
-                modelPanel.hatModel = ClientsideModel(AccData['Model'])
-                modelPanel.hatModel:SetParent(self.Model.Entity)
-
-                modelPanel.PostDrawModel = function(this)
-                    local ply = modelPanel.Entity
-        
-                    local attachId = ply:LookupAttachment(AccData['Bone'])
-                    local attachPos = ply:GetAttachment(attachId)
-                    if not attachPos then return end
-                    local ang = attachPos.Ang + AccData['Angles'] 
-                    local pos = attachPos.Pos + AccData['Position']
-                
-                    this.hatModel:SetModelScale(AccData['Size'] or 1, 0)
-                    this.hatModel:SetRenderOrigin(pos)
-                    this.hatModel:SetRenderAngles(ang)
-                    this.hatModel:DrawModel()
-                end
-            end
+        if self.inPACPreview then
+            pace.ClearParts()
         end
+    end
 
     self:Show()  
 end
@@ -177,31 +150,6 @@ local function SetListViewFont(listView, font)
     for _, line in ipairs(listView:GetLines()) do
         for _, column in ipairs(line.Columns) do
             column:SetFont(font)
-        end
-    end
-end
-
-function PANEL:ShowModelPanel(catName, show)
-    if show then        
-        if !self.isShowed then
-            self:SizeTo(self:GetWide()+335, self:GetTall(), 0.1, 0, -1, function()
-                self.isShowed = true
-            
-                self.ModelPanel:SetVisible(true)
-                self.ModelPanel:Dock(RIGHT)
-                self.ModelPanel:SizeTo(335, self:GetTall(), 0.1, 0, -1)
-            end)
-            self.Cls:MoveTo(self.Cls:GetX()+335, self.Cls:GetY(), 0.1, 0, -1)
-        end
-    else
-        if self.isShowed then
-            self:SizeTo(self:GetWide()-335, self:GetTall(), 0.1, 0, -1, function()
-                self.isShowed = false
-            end)
-            self.Cls:MoveTo(self.Cls:GetX()-335, self.Cls:GetY(), 0.1, 0, -1)
-            self.ModelPanel:SizeTo(0, self:GetTall(), 0.1, 0, -1, function()
-                self.ModelPanel:SetVisible(false)
-            end)
         end
     end
 end
@@ -251,6 +199,7 @@ end
 local PreviewCats = {
     ['Тело'] = true,
     ['Головные уборы'] = true,
+    ['Костюмы'] = true,
 }
 
 local selectedItem = nil
@@ -260,6 +209,11 @@ local function CreateItem(self, item, grid)
         grid:AddItem(itPnl)
     
     local attrCache = {}
+
+    if (not item.canBuy) then
+        item.attributes[0] = {'Нельзя купить', 'pixel_icons/round_cancel.png'}
+    end
+
     table.foreach(item.attributes, function(id, data)
         attrCache[id] = {x = 3}
         
@@ -274,7 +228,6 @@ local function CreateItem(self, item, grid)
         attr:SetImage(data[2]) 
     end)
     
-
     local delay = 0.3
     CreateAnimation(itPnl, delay)
 
@@ -284,20 +237,27 @@ local function CreateItem(self, item, grid)
         this:SetCursor('hand')
 
         self.PreviewAccessory = item.PAC3 and fundot.accs[item.PAC3] or {}
-        UpdatePreviewModel()
     end
 
     itPnl.OnMousePressed = function(this)
         local menu = DermaMenu()
-            menu:AddOption( "Купить", function() 
-                if item.canBuy then
-                    net.Start('fundot.purchase')
-                        net.WriteString(item.class)
-                    net.SendToServer()
-                end
-            end):SetIcon('pixel_icons/money_hand.png')
-        menu:Open()
+
+            if item.canBuy then
+                menu:AddOption( "Купить", function()     
+                        net.Start('fundot.purchase')
+                            net.WriteString(item.class)
+                        net.SendToServer()                
+                end):SetIcon('pixel_icons/money_hand.png')
+            end
+
+            if (item.PAC3) then 
+                menu:AddOption( "Примерить", function() 
+                    self.inPACPreview = true
+                    pace.LoadPartsFromTable(fundot.accs[item.PAC3], true)
+                end):SetIcon('pixel_icons/man_mpolice.png')
+            end
         
+            menu:Open()
         
         selectedItem = this
     end
@@ -314,12 +274,39 @@ local function CreateItem(self, item, grid)
         surface.SetMaterial(item and item.icon or Material('pixel_icons/emote_question.png', ''))
         surface.DrawTexturedRect((w - 100) / 2, (h - 160) / 2, 100, 100)
 
-        draw.Text( {
-            text = item and item.name or "Хуита",
-            font = "fdShopSemiFont",
-            xalign = TEXT_ALIGN_CENTER,
-            pos = { w/2, h - 60 }
-        })
+                       surface.SetFont("fdShopSemiFont")
+        local tW, tH = surface.GetTextSize(item.name)
+
+        local words = {}
+        local i = 0
+
+        if tW > 130 then            
+            for word in item.name:gmatch("%S+") do
+                table.insert(words, word)
+                -- не больше двух строк
+                if #words > 2 then continue end
+
+                draw.Text( {
+                    text = word,
+                    font = "fdShopSemiFont",
+                    xalign = TEXT_ALIGN_CENTER,
+                    pos = { w/2, i ~= 1 and h - 90 or h - 60 }
+                })
+
+                i = i + 1
+            end
+        else
+            draw.Text( {
+                text = item and item.name or "Хуита",
+                font = "fdShopSemiFont",
+                xalign = TEXT_ALIGN_CENTER,
+                pos = { w/2, h - 60 }
+            })
+        end
+
+        -- draw.WordBox(
+        --     5, w/2, h-35, (item and item.price .. "P" or "0P"), "fdShopSemiFont", Color(84, 117, 145), color_white, TEXT_ALIGN_CENTER
+        -- )
 
         draw.Text( {
             text = item and item.price .. 'P' or "0P",
@@ -331,20 +318,6 @@ local function CreateItem(self, item, grid)
 end
 
 function PANEL:ShowCategory(catName, cat)
-    if PreviewCats[catName] then
-        if !self.ModelPanel:IsVisible() then
-            self:ShowModelPanel(catName, true)
-        end
-        
-        if catName == "Головные уборы" then
-            self.Model:MoveCameraToOffset(Vector(0, 0, -30), 0.2, 90)
-        else
-            self.Model:MoveCameraToOffset(Vector(0, 0, -15), 0.2)
-        end
-    else
-        self:ShowModelPanel(catName, true )
-    end
-    
     if (self.CurrentCat) then
         self.CurrentCat:Remove()
     end
@@ -352,6 +325,41 @@ function PANEL:ShowCategory(catName, cat)
     self.CurrentCat = self.ItemsPanel:Add("DPanel") 
     local pnl = self.CurrentCat
         pnl:Dock(FILL)
+
+        local l = pnl:Add("DLabel")
+            l:Dock(BOTTOM)
+            l:SetTall(45)
+            l:SetFont('Trebuchet24')
+            l:SetText('Нажми на пробел для предпросмотра')
+            l:SetContentAlignment(5)
+            l:SetVisible(false)
+
+        if PreviewCats[catName] then
+            if fundot.animActive then return end       
+            fundot.CameraToBody(true)
+            self:AlphaTo(200, 0.2, 0)
+            l:SetVisible(true)
+        else
+            self:AlphaTo(255, 0.2, 0)
+            fundot.CameraToBody(false)
+            l:SetVisible(false)
+            
+            if self.inPACPreview then
+                pace.ClearParts()
+            end
+        end
+        
+        local isActive = false
+        local OriginalPosX, OriginalPosY = self:GetPos()
+    
+        self.OnKeyCodePressed = function(self, keyCode)
+            if keyCode == KEY_SPACE then
+                self:MoveTo(!isActive and -ScrW() + self:GetWide() + 200 or OriginalPosX, OriginalPosY, 1, 0, .1)
+                self:SetMouseInputEnabled(isActive)
+    
+                isActive = !isActive
+            end
+        end
 
     local scroll = pnl:Add("DScrollPanel")
         scroll:Dock(FILL)
@@ -546,24 +554,21 @@ function PANEL:UpdateShop()
 end
 
 net.Receive('HG:RequestBalance', function(len, ply)
-
 	fundot.balance = net.ReadUInt(32) or 0
-
 end)
 
 net.Receive('HG:RequestInventory', function(len)
-
 	local data = net.ReadTable()
 
     if (fundot.ShopMenu) then
         PrintTable(data)
 	    fundot.ShopMenu:UpdateInv(data)
     end
-    
 end)
 
 net.Receive('HG:RequestShop', function(len)
 	local data = net.ReadTable()
+    
 	for i, item in ipairs(data) do
 		fundot.items[item.class] = {
 			name = item.name or L.what_it,
@@ -572,7 +577,7 @@ net.Receive('HG:RequestShop', function(len)
 			desc = item.desc or L.temporary_not_desc,
 			price = item.price or 0,
 			order = item.order or 999,
-            PAC3 = item.PAC3 or 'ХУЙ',
+            PAC3 = item.PAC3 or nil,
 			icon = Material(item.icon or 'pixel_icons/emote_question.png', ''),
 			color = item.col or Color(102,170,170),
 			hidden = item.hidden,
@@ -582,7 +587,6 @@ net.Receive('HG:RequestShop', function(len)
 	end
 
 	fundot.ShopMenu:UpdateShop()
-
 end)
 
 vgui.Register('fdShopPanel', PANEL, 'DFrame')

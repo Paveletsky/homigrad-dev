@@ -77,9 +77,9 @@ function GuiltCheck(att,ply)
 			att:Kill()
 
 			if not validUserGroup[att:GetUserGroup()] then
-				RunConsoleCommand("ulx","fakeban",att:Name(),"10","Kicked and Banned for RDM")
+				PrintMessageChat(3, "<color=255,0,0>Игрока " .. att:Name() .. " настигла карма за РДМ.")        
 			else
-				RunConsoleCommand("ulx","fakeban",att:Name(),"10","Kicked and Banned for RDM")
+				PrintMessageChat(3, "<color=255,0,0>Игрока " .. att:Name() .. " настигла карма за РДМ.")
 			end
 		end
 	end

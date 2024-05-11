@@ -37,7 +37,7 @@ if (CLIENT) then
 			RunConsoleCommand('pac_enable_editor_view', 1)
 		end
 		
-		if (!CAMI.PlayerHasAccess(client, "Доступ к PAC3", nil)) then
+		if (!CAMI.PlayerHasAccess(client, "Доступ к pac3", nil)) then
 				bok.gui.Notify('Доступно по подписке "Шпакер". Магазин в F4.', 3, 'vo/k_lab/ba_whoops.wav')
 			return false
 		end
@@ -51,7 +51,7 @@ if (CLIENT) then
 end
 
 function PLUGIN:pac_CanWearParts(client)
-	if (!CAMI.PlayerHasAccess(client, "Доступ к PAC3", nil)) then
+	if (!CAMI.PlayerHasAccess(client, "Доступ к pac3", nil)) then
 		return false
 	end
 end

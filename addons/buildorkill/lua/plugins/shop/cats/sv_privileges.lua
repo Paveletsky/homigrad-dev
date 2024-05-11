@@ -9,7 +9,7 @@ local ActivateAccess = function(item)
 
     if istable(item.classTable.cami) then
         table.foreach(item.classTable.cami, function(id, access)
-            RunConsoleCommand('ulx', 'userallowid', ply:SteamID(), access)
+            RunConsoleCommand('ulx', 'userallowid', ply:SteamID(), access, '')
         end)
     end
 
@@ -28,6 +28,17 @@ local AccessTaken = function(item)
     netstream.Start(ply, 'HG:Notify', 'Срок привелегии "'..item.name..'" истек.', 5, 'ui/hint.wav' )
     ply:osNetInv()
 end
+
+-- local p = player.GetBySteamID('STEAM_0:1:460337618')
+-- local i = p:osGetItems()
+
+-- p:osPlayerSyncData()
+-- i[28]:SetData('active', nil)
+-- i[28]:Use()
+
+-- local i = player.GetBySteamID('STEAM_0:0:30588797')
+-- print(i:UniqueID())
+-- PrintTable(ULib.ucl.authed[ i:UniqueID() ])
 
 fundot.registerItem('shpac', {
     cat = CATEGORY_NAME,
@@ -98,7 +109,7 @@ fundot.registerItem('levels', {
     cat = CATEGORY_NAME,
 	order = 100,
     name = 'Режимы',
-    cami = {'Смена режимов'},
+    cami = {'Смена режимов', 'Команды уровень 1'},
     desc = [[Сможешь менять режимы без голосования:
     - !levels (список режимов)
     - !levelnext (выбор следующего режима)
@@ -119,13 +130,12 @@ fundot.registerItem('levels', {
 fundot.registerItem('ban', {
     cat = CATEGORY_NAME,
 	order = 100,
-    name = 'ЗАБАНИТЬ',
+    name = 'УБРАТЬ ИГРОКА',
     cami = {'Доступ к моделям'},
     desc = [[Забань того, кто надоел/взбесил/неугодил
 На забаненого и тебя не будет распространяться правила оскорблений в дискорд-сервере.
 Подробности привелегии уточняй у менеджеров сервера.]],
-	attributes = {
-	},
+	attributes = { },
     price = 5000,
     icon = 'pixel_icons/jackolantern.png',
 	CanBuy = false,

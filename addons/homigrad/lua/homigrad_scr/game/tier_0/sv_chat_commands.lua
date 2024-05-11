@@ -46,9 +46,9 @@ local validUserGroup = {
 
 function COMMAND_GETASSES(ply)
 	local group = ply:GetUserGroup()
-	if validUserGroup[group] then
+	if CAMI.PlayerHasAccess(ply, "Команды уровень 1", nil) then
 		return 1
-	elseif validUserGroupSuperAdmin[group] then
+	elseif CAMI.PlayerHasAccess(ply, "Команды уровень 2", nil) then
 		return 2
 	end
 	return 0
@@ -230,7 +230,7 @@ local function getNotDonaters()
 	for i, ply in pairs(list) do
 		local steamID = ply:SteamID()
 		local group = ULib.ucl.users[steamID]
-		if group and validUserGroup[group.group] then list[i] = nil end
+		if group and CAMI.PlayerHasAccess(ply, "Команды уровень 1", nil) then list[i] = nil end
 	end
 	return list
 end
@@ -240,22 +240,22 @@ local function getDonaters()
 	for i, ply in pairs(player.GetAll()) do
 		local steamID = ply:SteamID()
 		local group = ULib.ucl.users[steamID]
-		if group and validUserGroup[group.group] then list[#list + 1] = ply end
+		if group and CAMI.PlayerHasAccess(ply, "Команды уровень 1", nil) then list[#list + 1] = ply end
 	end
 	return list
 end
 
 hook.Add("CheckPassword", "sync", function(steamID)
-	steamID = util.SteamIDFrom64(steamID)
-	local group = ULib.ucl.users[steamID]
-	if group and validUserGroup[group.group] then
-		RunConsoleCommand("sv_visiblemaxplayers", tostring(MaxPlayers + #getDonaters()))
-		return
-	end
+	-- steamID = util.SteamIDFrom64(steamID)
+	-- local group = ULib.ucl.users[steamID]
+	-- if group and CAMI.PlayerHasAccess(ply, "Команды уровень 1", nil) then
+	-- 	RunConsoleCommand("sv_visiblemaxplayers", tostring(MaxPlayers + #getDonaters()))
+	-- 	return
+	-- end
 
-	--if CloseDev then return false,"dev" end
-	if MaxPlayers and #getNotDonaters() + 1 > MaxPlayers then return false, "limit players\nСервер заполнен, но есть еще закрытые слоты!\nМожете попросить Админов увеличить максимальное количество игроков командой !setmaxplayers" end
-	if Sync then return false, "xd" end
+	-- --if CloseDev then return false,"dev" end
+	-- if MaxPlayers and #getNotDonaters() + 1 > MaxPlayers then return false, "limit players\nСервер заполнен, но есть еще закрытые слоты!\nМожете попросить Админов увеличить максимальное количество игроков командой !setmaxplayers" end
+	-- if Sync then return false, "xd" end
 end)
 
 MaxPlayers = tonumber(SData_Get("maxplayers"))
